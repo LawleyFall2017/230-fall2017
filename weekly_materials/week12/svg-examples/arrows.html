@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Experiments</title>
+    <style>
+        #container { margin: 0 auto; width: 400px; border: 1px solid gray; padding: 50px;}
+        #arrows { border: 1px solid black;}
+
+        @keyframes green2blue {
+            0% { fill: #249346;}
+            50% { fill: #ffffff; }
+            100% { fill: #27a9be; }
+        }
+
+        @keyframes purple2green {
+            0% { fill: #8f267d; }
+            50% { fill: #ffffff; }
+            100% { fill: #249346;}
+       }
+
+       @keyframes blue2purple {
+            0% { fill: #27a9be; }
+            50% { fill: #ffffff;}
+            100% { fill: #8f267d; }
+        }
+
+
+        .blue2purple {
+          animation: blue2purple 3s linear forwards;
+        }
+        .green2blue {
+          animation: green2blue 3s linear forwards;
+        }
+        .purple2green {
+          animation: purple2green 3s linear forwards;
+        }
+
+        .arrow {
+          transform: translate(-32.91px, -26.75px)
+          }
+
+        .blue {
+        fill: #249346;
+          }
+
+       .purple {
+        fill: #8f267d;
+          }
+
+       .green {
+        fill: #27a9be;
+       }
+
+
+    </style>
+</head>
+<body>
+<div id="container">
+<svg id="arrows" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82.75 91.68">
+
+    <path id="arrow1" class="blue arrow" d="M48.87,44.62C73,72.78,66.39,52.35,63.8,41,63.5,39.71,71.63,47,77.42,75.76c0,0-10.84.39-29.25-3.58-9-1.94,36.78.63-8.51-18.68C26.15,47.74,34.84,28.22,48.87,44.62Z" />
+    <path id="arrow2" class="purple arrow" d="M51,112.88c22.7-23.94,17.28-8.25,15,3.12-.27,1.35,7.65-6.14,12.57-35.11,0,0-10.32,4.48-28.32,4.5-8.46,0,32.35,4.14-8.75,18.87C27.67,109.23,37.12,127.48,51,112.88Z" />
+  <path id="arrow3" class="green arrow" d="M109.82,42.75C90.19,69.26,104.69,61.19,115.5,57c1.28-.5-4.72,8.6-32.39,18.48,0,0,2.62-10.94-.48-28.67C81.17,38.48,92.32,78,99.7,34.92,102.18,20.43,121.79,26.57,109.82,42.75Z" />
+
+</svg>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="arrows.js"></script>
+</body>
+</html>

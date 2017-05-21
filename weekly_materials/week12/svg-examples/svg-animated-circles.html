@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SVG Animated Circles</title>
+    <style>
+      html, body   { margin:0; width:100%; height: 100% }
+      circle { fill:rgba(255,0,0,.5) }
+    </style>
+  </head>
+
+  <body>
+    <svg width="100%" height="100%"></svg>
+  </body>
+
+  <script>
+    var xmlns = "http://www.w3.org/2000/svg"
+    var svg = document.querySelector( "svg" )
+
+    var setRandomSizeAndPosition = function( circle ) {
+      circle.setAttribute( "cx", Math.random() * window.innerWidth )
+      circle.setAttribute( "cy", Math.random() * window.innerHeight )
+      circle.setAttribute( "r" , Math.random() * 40 )
+    }
+
+    var setRandomSpeed = function( circle ) {
+      circle.speed = Math.random() * 5
+      if( Math.random() > .5 ) circle.speed *= -1
+    }
+
+    var setRandomColor = function( circle ) {
+      var r = Math.floor( Math.random() * 256 )
+      var g = Math.floor( Math.random() * 256 )
+      var b = Math.floor( Math.random() * 256 )                
+    
+      circle.style.fill = "rgba(" + r + "," + g + "," + b + ",.5)"
+    }
+
+    /**** create array of circles ****/
+    var circles = []
+    for( var i = 0; i < 1000; i++ ) {
+      circles[ i ] = document.createElementNS( xmlns, "circle" )
+
+      // append to SVG element
+      svg.appendChild( circles[ i ] )
+    }
+
+    // call helper functions on each circle
+    circles.forEach( setRandomSizeAndPosition )
+    circles.forEach( setRandomSpeed )
+    circles.forEach( setRandomColor )
+
+    var moveCircle = function( circle ) {
+      // convert attribute value from string to float
+      var x = parseFloat( circle.getAttribute( "cx" ) )
+      x += circle.speed
+      circle.setAttribute( "cx", x )
+    }
+    
+    setInterval( function() {
+      circles.forEach( moveCircle )
+    }, 1000 / 60 )
+
+  </script>
+</html>

@@ -1,0 +1,65 @@
+	* {
+		font-family: Spirax;
+		margin:0;padding:0;
+	}
+	
+	body{
+		padding-bottom:3em;
+		min-width: 1000px;
+	}
+	
+	p {
+		margin: .5em 1em;
+	}
+
+	q{
+		font-weight:bold;
+		font-size:125%;
+	}
+	
+	header {
+		background-color: #940007;
+		text-align:center;
+	}
+
+	h1 {
+		padding:0.5em;
+		font-size: 3.0em;
+		color:#c97d00;
+	}
+	
+	h2{
+		margin-left:.5em;
+	}
+	
+	section{
+		width:72%;
+		float:left;
+	}
+	
+	article{
+	margin-bottom:2em;
+	}
+	
+	aside{
+		float:right;
+		width:25%;
+		background-color: #120100;
+		color:white;
+	}
+	
+	footer{
+		background-color: #c97d00;
+		clear:both;
+		text-align:center;
+	}
+	
+	#calculator input{
+		font-size:100%;
+	}
+	
+	#results{
+		font-weight:bold;
+		font-size:110%;
+		margin-top: 2em;
+	}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG circles</title>
+    <style>
+      html, body { margin: 0; height: 100%; width: 100%; }
+      circle { fill: rgba(255,0,0,.5) }
+    </style>
+  </head>
+            
+  <body>           
+    <svg width="100%" height="100%"> </svg>
+
+    <script>
+    var xmlns = "http://www.w3.org/2000/svg";
+    var svg = document.querySelector( 'svg' );
+    
+    var circles = [];
+    for( var i = 0; i < 500; i++ ) {
+      var circle = document.createElementNS( xmlns, 'circle' );
+      
+      circle.setAttribute( 'cx', Math.random() * window.innerWidth );
+      circle.setAttribute( 'cy', Math.random() * window.innerHeight );
+      circle.setAttribute( 'r' , Math.random() * 40 );
+      
+      svg.appendChild( circle );
+    } 
+    
+  </script>
+  </body>
+</html>
