@@ -15,7 +15,7 @@
 - [Week 12 (Nov 14/16): JQuery & JQueryUI](#week12)
 - [Week 13 (Nov 21): SVG for the Web](#week13)
 - [Week 14 (Nov 28/30): Using JavaScript with SVG & CSS Graphics](#week14)
-- [Week 15 (Dec 5/7): Server-Side Coding & Practical Exam] (#week15)
+- [Week 15 (Dec 5/7): Server-Side Coding & Practical Exam](#week15)
 - [Finals Week: Makeup Practical Exam](#finals)
 
 ## <a name="week1">Week 1</a> (Aug 29/31): Overview: Syllabus, Expectations, Tools
