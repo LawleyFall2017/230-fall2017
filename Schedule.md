@@ -182,7 +182,7 @@ Your second [group project](projects/project3.md) deliverable--a content invento
 
 - **[Thursday Exercise](weekly_materials/week9/week9thursday.md)**: You'll be creating two web pages, one that uses JavaScript to modifies properties of elements on the page, and one that displays calculations based on user input. 
 
-## <a name="week10">Week 11</a> (Oct 31/Nov 2): Javascript for Interactivity
+## <a name="week11">Week 11</a> (Oct 31/Nov 2): Javascript for Interactivity
 This week is a continuation of basic Javascript programming, with a focus on HTML events and event listeners, as well as the interaction between Javascript and CSS. 
 
 - **[Tuesday Exercise](weekly_materials/week10/week10tuesday.md)**: You'll use some new JavaScript functions to create a currency calculator. 
