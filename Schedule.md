@@ -69,7 +69,7 @@ Do one of the following tutorials *before* class on Thursday. I recommend the fi
   
 - **[Thursday Exercise](weekly_materials/week4/Git%20In-Class%20Exercise.pdf)**
 
-## <a name="week3">Week 4</a> (Sep 19/21): Designing for the Web
+## <a name="week4">Week 4</a> (Sep 19/21): Designing for the Web
 When we talk about "web design," we're actually talking about a much wider range of concepts than graphic design--we're also talking about interaction design, usability, and accessibility. This week we'll talk about the range of design issues related to the web, including Jesse James Garrett's excellent diagram showing the various elements of user experience. In class, I'll have you break into groups to look at and critique a number of websites.
 
 
