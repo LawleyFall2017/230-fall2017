@@ -167,7 +167,7 @@ On Thursday we'll talk about the group project, and then you'll split into group
 
 
 
-## <a name="week9">Week 10</a> (Mar 28/30): Javascript Intro: Syntax, DOM, and Debuggers
+## <a name="week10">Week 10</a> (Oct 31/Nov 2): Javascript Intro: Syntax, DOM, and Debuggers
 We'll begin looking at Javascript this week, and its importance in building interactivity into websites. This week will be the basics--syntax, the Document Object Model, and basic debugging using both HTML editors (VS Code and/or Brackets) and Chrome's developer tools. 
 
 - **Tuesday Readings**
