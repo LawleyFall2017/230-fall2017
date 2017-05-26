@@ -3,6 +3,9 @@
 ## Description
 You will create a personal portfolio site to showcase your work to potential employers and/or customers. The site must include examples of your work, contact information, and your resume. The examples should include at least three different things you've created; those could be projects or exercises from this or other classes, or work you've done on your own. 
 
+  - [Breaking Into Game Design, Part 2: Build Your Portfolio](http://www.gamasutra.com/blogs/EthanLevy/20130621/194830/Breaking_into_game_design_Part_2__build_your_portfolio.php)
+  - [Graphic Design Portfolios: The New Online Resume](http://www.howdesign.com/design-career/resume-portfolio/graphic-design-portfolios-new-online-resume-design/)
+
 ## Page and Content Requirements
 - Landing page named index.html, including your name and an image (could be a photo or an avatar)
 - Gallery page with brief information about each of your work examples (examples can be projects or exercises from this class or other classes, or work you've done on your own)
@@ -54,4 +57,4 @@ Properly optimized media | 1 |
 ## Submission and Due Date
 The site must be placed in a portfolio directory inside of your igme230 directory (`http://people.rit.edu/youruserid/igme230/portfolio/`), and you should add two links to your project 1 page: one for the portfolio itself, and one directly to the notes.html page. 
 
-The completed site is due at 11:59pm on Saturday, March 18th. The page should appear properly at the URL specified above by that time. You do not need to send me email or post anything to myCourses.
+The completed site is due at 11:59pm on Sunday, October 15. The page should appear properly at the URL specified above by that time. You do not need to send me email or post anything to myCourses.
