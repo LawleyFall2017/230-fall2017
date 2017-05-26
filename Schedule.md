@@ -19,7 +19,7 @@
 - [Finals Week: Makeup Practical Exam](#finals)
 
 ## <a name="week1">Week 1</a> (Aug 29/31): Overview: Syllabus, Expectations, Tools
-On Tuesday, I will review the syllabus, goals, and requirements for class, and discuss the tools and technologies we'll be using for communication, collaboration, and content creation. On Thursday, we'll do a brief overview of the prerequisite knowledge of HTML, CSS, and FTP expected for this class. 
+On Tuesday, I will review the syllabus, goals, and requirements for class, and discuss the tools and technologies we'll be using for communication, collaboration, and content creation. On Thursday, we'll start on an HTML & CSS exercise that builds on your prerequisite knowledge from previous classes. 
 
 - **Tuesday Readings**
   - [Course Syllabus](README.md)
@@ -30,16 +30,17 @@ On Tuesday, I will review the syllabus, goals, and requirements for class, and d
   - In this exercise, you'll sign up for the (free) Github Student Developer Pack,  set up an account on the class Slack, and configure Visual Studio Code or Brackets for use in class. 
 
 - **Thursday Readings**
-   - Review the content in [Lynda.com HTML Essential Training, Lessons 2-7](https://www.lynda.com/HTML-tutorials/HTML-Essential-Training/170427-2.html?org=rit.edu). Some of it will be familiar (like basic HTML formatting). Other parts will be new (like structuring content with semantic tags, linking to regions inside a page, and creating complex lists).  
+   - Review the content in [Lynda.com HTML Essential Training, Lessons 2-7](https://www.lynda.com/HTML-tutorials/HTML-Essential-Training/170427-2.html?org=rit.edu). Some of it should be familiar (like basic HTML formatting). Other parts will be new (like structuring content with semantic tags, linking to regions inside a page, and creating complex lists).  
  
 - **[Thursday Exercise](./weekly_materials/week1/basicMarkupExercise.md)**
   - We will begin the process of marking up a text file with HTML and CSS  
 
 ## <a name="week2">Week 2</a> (Sep 5/7): CSS
-A deeper dive into aspects of CSS that aren't covered in the prereq classes: the box model, positioning, a variety of CSS selector types, and more.
+A deeper dive into aspects of CSS that aren't covered in the prereq classes: a variety of CSS selector types, using Google fonts, CSS positioning, and the box model.
 
 - **Tuesday Readings**
   - [Lynda.com: CSS Fundamentals, Sections 1-3](https://www.lynda.com/CSS-tutorials/CSS-Fundamentals/417645-2.html?org=rit.edu) 
+  This is a video-only tutorial, rather than a hands-on tutorial, so it will take less time to complete. Some of it will be review from past classes, but most of it goes into more detail that the prerequisite classes. 
 
 - **[Tuesday Exercise](./weekly_materials/week2/advancedMarkupExercise.md)**
   - We will revisit the file we worked on last week, adding additional CSS formatting.
