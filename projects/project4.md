@@ -8,7 +8,7 @@ Your focus should be on visuals and interaction, rather than text (although you 
 I will allow you to work with a partner, but *only* if in your proposal you provide detailed breakdowns of each person's specific responsibilities. 
 
 ## Resources
-I have put together [a list of tutorials and examples](project4-resources.md) that you can use for this project. If you find other sites that you think would be useful to add, let me know. 
+I have put together [a list of tutorials and examples](project4-resources.md) that you can use for this project. If you find other sites that you think would be useful to add, let me know.  
 
 ## Project Proposal (submit to myCourses and post to GitHub by 8am on Monday, 24 April)
 Before thinking about the technical aspects of your project, take some time to consider how you would like to approach it. What kind of experience do you intend to create? How will the three drawings relate to each other aesthetically and/or conceptually? What kind of interactivity will there be and how will you achieve it?

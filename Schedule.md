@@ -39,8 +39,7 @@ On Tuesday, I will review the syllabus, goals, and requirements for class, and d
 A deeper dive into aspects of CSS that aren't covered in the prereq classes: a variety of CSS selector types, using Google fonts, CSS positioning, and the box model.
 
 - **Tuesday Readings**
-  - [Lynda.com: CSS Fundamentals, Sections 1-3](https://www.lynda.com/CSS-tutorials/CSS-Fundamentals/417645-2.html?org=rit.edu) 
-  This is a video-only tutorial, rather than a hands-on tutorial, so it will take less time to complete. Some of it will be review from past classes, but most of it goes into more detail that the prerequisite classes. 
+  - [Lynda.com: CSS Fundamentals, Sections 1-3](https://www.lynda.com/CSS-tutorials/CSS-Fundamentals/417645-2.html?org=rit.edu): This is a video-only tutorial, rather than a hands-on tutorial, so it will take less time to complete. Some of it will be review from past classes, but most of it goes into more detail that the prerequisite classes. 
 
 - **[Tuesday Exercise](./weekly_materials/week2/advancedMarkupExercise.md)**
   - We will revisit the file we worked on last week, adding additional CSS formatting.
