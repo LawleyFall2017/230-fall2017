@@ -22,26 +22,23 @@ Click on the link to get the pack. You'll need to fill out the form with your RI
 
 I've created a Slack site for our class at [http://lawley230-fall2017.slack.com/](http://lawley230-fall2017.slack.com/). It's set up so anyone with an @rit.edu address can create an account, just to make things easier. (NOTE: Every Slack site uses its own login and password, so even if you already use Slack for another group, you'll need to create a new user ID and password for this one.)
 
-When you choose a user name, please make it something that my TA and I will be able to recognize easily in the chats. Your first name and last initial are ideal, although I'll accept your RIT ID as a username, as well. 
+Your user name should include your first name and either your last initial or your last name, like this:  lizlawley, liz_lawley, or lizl or liz_l. 
 
 After you've successfully logged into Slack, post a brief message in the #introductions channel so I know you're there. 
 
-## Extending Visual Studio Code
+## Using Visual Studio Code
 
-The text editor we'll be using in class for HTML, CSS, and Javascript is Visual Studio Code. It's free and cross-platform, and supports all of the technologies we'll be using the class. To get the most out of it, we're going to add some extensions. 
+The text editor I'll be using in class to demo HTML, CSS, and Javascript is Visual Studio Code. It's free and cross-platform, and supports all of the technologies we'll be using the class. To get the most out of it, however, you'll need to add some extensions. (If you prefer to use Brackets, that's fine--it has extensions to provide comparable functionality, but you'll need to find them yourself. You also may find that it doesn't work quite as well with GitHub, something that will be important later in the semester.)
 
-After launching Visual Studio Code, choose Extensions from the View menu. These are the extensions that I find most useful for the kinds of work we'll be doing in this class, and I recommend you install them on your own computer. 
+After launching VS Code, choose Extensions from the View menu. These are the extensions that I find most useful for the kinds of work we'll be doing in this class, and I recommend you install them on your own computer. 
 
 While you can install them in the lab, they need to be reinstalled every time you log in, so I'll let you know which extensions you need for specific in-class exercises. 
 
 - Hasher
 - HTML CSS Support
-- HTML Snippets
 - HTMLHint
 - htmltagwrap
-- jshint
 - Replace Smart Characters
-- stylelint
 
 We'll also be talking in class about VS Code's built-in HTML tools (like Emmet), as well as the additional functionality that these extensions provide. 
 

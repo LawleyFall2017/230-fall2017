@@ -13,7 +13,7 @@
 This course provides an introduction to web development tools and technologies, such as X/HTML, CSS, Javascript and DHTML, AJAX, web platforms and environments, and server-side programming methods.
 
 ## Prerequisite Knowledge
-I expect students in this class to have a basic working knowledge of HTML, CSS, and publishing to RIT's web hosting environment (people.rit.edu for GDD/NMID students, cias.rit.edu for NMD students), and basic principles of visual design. For GDD/NMID students, that material was covered in IGME-110. For NMD students, that information should have been covered in New Media Interactive I. More information on basic HTML and CSS, and a review exercise can be found in the [week0 folder](weekly_materials/week0). 
+I expect students in this class to have a basic working knowledge of HTML, CSS, and publishing to RIT's web hosting environment (people.rit.edu). For both GDD and New Media Interactive students, that material was covered in IGME-110. If you need a review of this material, you can use the [week 4 (Basic HTML and CSS)](https://github.com/LawleyFall2017/110-fall2017/blob/master/Schedule.md#week4) and/or [week 5 (publishing to the RIT web server)](https://github.com/LawleyFall2017/110-fall2017/blob/master/Schedule.md#week5) exercises from IGME-110. 
 
 ## Course Materials and Communication
 There is no required textbook for the course, but there will be an assortment of handouts and online readings that you will receive over the course of the semester. They will be uploaded to (or linked from) this Github site. 
