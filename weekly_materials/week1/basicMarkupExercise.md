@@ -49,7 +49,7 @@ Don't worry about adding links yet; we'll be doing that next week.
 
 Pay attention to the status bar at the bottom of the VS code window. If you see a number next to the triangle with an exclamation point, it means that VS Code has detected a problem with your code. If that happens, you can click on that number to see what the problem is. 
 
-When you're done, preview your document (Ctrl-Shift-P or Ctrl-Shift-L in VS Code if you installed the Preview on Web Server extension). It should look something like this: [cremebrulee1.png](cremebrulee1.png)
+When you're done, preview your document (Ctrl-Shift-P or Ctrl-Shift-L in VS Code if you installed the Preview on Web Server extension). It should look something like this: ![Creme Brulee Page Without CSS](cremebrulee1.png)
 
 ## Publishing Your Files
 
@@ -90,7 +90,7 @@ h1 {
     font-size: xx-large;
 }
 ```
-Save the changes your HTML and CSS files, and upload them to your week1 directory. Your cremebrulee.html file should now look more like this: [cremebrulee2.png](cremebrulee2.png)
+Save the changes your HTML and CSS files, and upload them to your week1 directory. Your cremebrulee.html file should now look more like this: ![Creme Brulee Page With CSS](cremebrulee2.png)
 
 You're done!
 
