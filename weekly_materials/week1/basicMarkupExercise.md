@@ -95,4 +95,4 @@ Save the changes your HTML and CSS files, and upload them to your week1 director
 You're done!
 
 ## Due Date
-You must have this exercise completed by midnight tomorrow night (11:59pm on Friday, September 1). On my grader or I will go to `http://people.rit.edu/youruserid/igme230/week1`, to see if all the files are there, and if they bear some resemblance to what was required. 
+You must have this exercise completed by midnight tomorrow night (11:59pm on Friday, September 1). On Saturday morning, my grader or I will go to `http://people.rit.edu/youruserid/igme230/week1`, to see if all the files are there, and if they bear some resemblance to what was required. 
