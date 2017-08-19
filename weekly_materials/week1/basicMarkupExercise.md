@@ -28,9 +28,9 @@ Open the cremebrulee.txt file in your editor. It currently has no HTML markup at
 
 Use File->Save As... to save a new copy of the file called cremebrulee.html. Make sure you save it to the week1 folder and give it an .html extension--it's the extension that tells your editor to enable its HTML support. 
 
-There are a lot of accented and foreign characters in this document. In HTML 4, the default character encoding for files was ISO-8859-1, which doesn't properly display special characters; they had to be escaped out (e.g. &eacute; had to be represented as `&eacute`, and & had to be represented as `&amp;`)--if you didn't do that, they didn't display properly in the browser. HTML 5 uses UTF-8 encoding, which allows those special characters to appear properly in your document.
+There are a lot of accented and foreign characters in this document. In HTML 4, the default character encoding for files was ISO-8859-1, which doesn't properly display special characters (like smart quotes and diacritical marks). Those characters had to be escaped out (e.g. &eacute; had to be represented as `&eacute;`, &copy; had to be represented as `&copy;`, and & had to be represented as `&amp;`)--if you didn't do that, they didn't display properly in the browser. HTML 5 uses UTF-8 encoding, which allows those special characters to appear properly in your document.
 
-Because this Wikipedia article has many diacritical accents, the UTF-8 encoding is very helpful. If you're using VS Code, try clicking in the bottom right corner of the window where it says "UTF-8", choose "Reopen with encoding," and select ISO-8859-1. Note what happens to all the non-standard characters in the document! (Switch it back to UTF-8 before you proceed.) 
+Because this Wikipedia article has many non-standard characters (like "smart" quotes and diacritical marks), the UTF-8 encoding is very helpful. If you're using VS Code, try clicking in the bottom right corner of the window where it says "UTF-8", choose "Reopen with encoding," and select ISO-8859-1. Note what happens to all the non-standard characters in the document! If your HTML document doesn't use a character set of UTF-8--which is the default for HTML 5, but not for previous versions of HTML--that's what will display on the page. (Switch back to UTF-8 before you proceed.) 
 
 We're going to use Emmet, a shorthand tool for adding HTML and CSS content to documents, to simplify the adding of some basic HTML structure. (I talked about this at the beginning of class.)
 
@@ -51,7 +51,7 @@ Pay attention to the status bar at the bottom of the VS code window. If you see 
 
 When you're done, preview your document (Ctrl-Shift-P or Ctrl-Shift-L in VS Code if you installed the Preview on Web Server extension). It should look something like this: [cremebrulee1.png](cremebrulee1.png)
 
-## Uploading
+## Publishing Your Files
 
 *Note for New Media Design students: If you haven't ever uploaded files to banjo.rit.edu, which is the file server for the people.rit.edu web server, you should review the [prerequisite knowledge](../../README.md#prereq)) section in the syllabus (and emailed before the semester began). If you think you'll need a bit more time to get this exercise done, please contact me directly via private message on Slack or email to my Elizabeth.Lawley at rit dot edu address, and I'll grant you an extension until Sunday.*
  
