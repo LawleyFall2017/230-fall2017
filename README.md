@@ -4,6 +4,7 @@
 - Professor Elizabeth Lawley  
 - Office: GOL-2545
 - Email: Elizabeth.Lawley@rit.edu
+- Slack: [proflawley](https://lawley-110-2017.slack.com/team/proflawley)
 - Office hours: T/Th 10-11am and 2-3pm 
 - Class meetings: T/TH in GOL-2570
     - Sec 02 (New Media) 2-3:20pm
@@ -27,6 +28,9 @@ MyCourses will *only* be used for grading (and the occasional copyrighted readin
 
 ## Course Organization
 Listening to a lecture is seldom the best way to learn to create things. As a result, when new topics are introduced I will expect you to complete the assigned readings or tutorials *before* the class where we discuss that topic. In most of our class meetings, I will give a short lecture providing context and additional information about the assigned materials, and then we'll do a short in-class exercise to get hands-on experience with the concepts being discussed.
+
+## [Course Topics & Schedule](Schedule.md)
+The schedule of topics, readings, and exercises can be found in the [Schedule.md](Schedule.md) file. Materials for in-class exercises can be found in the Github folder for that week's class.  It is your responsibility to check the schedule for each week's readings. You will find the in-class exercises very challenging if you do not complete the readings and/or tutorials for that week. 
 
 ## Attendance
 Because much of the class revolves around in-class exercises, attendance is critical. If you miss a class, you should check Github and/or Slack for information on the exercise, and complete it on your own time. If you know you'll be missing a class due to a conflict, please let me know, so I can make sure you have the materials for the exercise.  
@@ -61,9 +65,6 @@ You are expected to attend class regularly. In some cases, I will announce that 
 ### Final Practical Exam (pass/fail -- not included in final grade)
 There will be a final practical exam in the class, which will require you to demonstrate basic proficiency with the technologies we've covered during the semester. It is a pass/fail practical; if you receive at least 7/10 points, you pass the exam. If you fail the exam, you will have an opportunity to retake it during finals week, although you will need to earn at least 8/10 points to pass the second time. If you do not pass either exam, you will receive a failing grade in the class. If you do pass the exam, your exam grade will not impact your final grade in the class. 
 	
-## [Course Topics & Schedule](Schedule.md)
-The schedule of topics, readings, and exercises can be found in the [Schedule.md](Schedule.md) file. Materials for in-class exercises can be found in the Github folder for that week's class.  It is your responsibility to check the schedule for each week's readings. You will find the in-class exercises very challenging if you do not complete the readings and/or tutorials for that week. 
-
 ## Additional Policies
 
 ### Important RIT Deadlines
