@@ -1,6 +1,6 @@
 # Basic Javascript Exercise
 
-At the end of this exercise, you should have uploaded two HTML files to a week9 folder inside your igme230 directory on banjo.rit.edu: one called movies.html and one called calculator.html. These files must be uploaded by **noon on Saturday, April 1** for you to receive full credit. 
+At the end of this exercise, you should have uploaded two HTML files to a week9 folder inside your igme230 directory on banjo.rit.edu: one called movies.html and one called calculator.html. The files must be online no later than 11:59pm on Friday. 
 
 ## Overview & Goals
 Front-end programming, typically using JavaScript, is what is used to create interactive browser applications, experiences, and games. Today we'll start using JavaScript to modify elements on a page, and to start developing simple interactive experiences on web pages. 
@@ -314,7 +314,7 @@ Modify the calculate() function so that it adds all three fields together.
 
 Finally, add another button and associated function that multiply all three values rather than adding them. 
 
-When you're done, test it to make sure it works, and then upload calculator.html to the week9 folder on banjo.rit.edu
+When you're done, test it to make sure it works, and then upload calculator.html to your week9 folder on banjo.rit.edu. 
 
 ## General Coding Advice
 
