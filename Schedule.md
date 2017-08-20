@@ -39,7 +39,7 @@ On Tuesday, I will review the syllabus, goals, and requirements for class, and d
 This week we'll take a deeper dive into aspects of CSS that aren't covered in the prereq classes: the CSS box model, CSS element positioning, CSS selector types, and using Google fonts.
 
 - **Tuesday Readings**
-  - [Lynda.com: CSS Fundamentals, Sections 1-3](https://www.lynda.com/CSS-tutorials/CSS-Fundamentals/417645-2.html?org=rit.edu): This is a video-only tutorial, rather than a hands-on tutorial, so it will take less time to complete. Some of it will be review from past classes, but most of it goes into more detail that the prerequisite classes. 
+  - [Lynda.com: CSS Fundamentals, Sections 1-3](https://www.lynda.com/CSS-tutorials/CSS-Fundamentals/417645-2.html?org=rit.edu): This is a video-only tutorial, rather than a hands-on tutorial, so it will take less time to complete. Some of it will be review from past classes, but it goes into more detail that the prerequisite classes. 
 
 - **[Tuesday Exercise](./weekly_materials/week2/advancedMarkupExercise.md)**
   - We will revisit the file we worked on last week, adding additional CSS formatting.
@@ -50,35 +50,34 @@ This week we'll take a deeper dive into aspects of CSS that aren't covered in th
 - **[Thursday Exercise](./weekly_materials/week2/cssPositioningExercise.md)**
   - We will use CSS positioning to modify the layout of an HTML file 
 
-[Project 1](projects/project1.md) (a landing page for your classwork) is due at the end of this week (noon on Sunday, September 10th)
+[Project 1](projects/project1.md) (a landing page for your classwork) is due by midnight (11:59pm) on Sunday, September 10th)
   
 ## <a name="week3">Week 3</a> (Sep 12/14): Web Server Basics & Version Control 
-This week we'll talk about how web servers process the requests they receive from browsers, and how you can use .htaccess files to modify that behavior. We'll also talk about version control for websites, and you'll be introduced to Git and GitHub for tracking and maintaining files for your website(s).  
+This week we'll talk about how web servers process the requests they receive from browsers, and how you can use .htaccess files to modify that behavior. We'll also talk about version control for websites, and you'll be introduced to Git and GitHub for tracking and maintaining files for your website(s). I highly recommend starting on Thursday's GitHub tutorials *early*, as they'll take some time to work through. 
 
 - **Tuesday Readings**
   - [.htaccess-Guide](http://www.htaccess-guide.com/)
   - [Comprehensive guide to .htaccess](http://www.javascriptkit.com/howto/htaccess.shtml)
 
-- **[Tuesday Exercise](weekly_materials/week3/tuesdayExercise.md)**
-  - In today's exercise, you'll create an initial design document for your next project, a personal portfolio site. 
+- **[Tuesday Exercise](weekly_materials/week3/htaccessExercise.md)**
+  - In today's exercise, you'll create an .htaccess file for your banjo.rit.edu account. 
 
 - **Thursday Readings**
   - [Lynda.com: GitHub for Web Designers, Chapters 1-3](https://www.lynda.com/GitHub-tutorials/GitHub-Web-Designers/162276-2.html?org=rit.edu)
   
-- **[Thursday Exercise](weekly_materials/week3/Git%20In-Class%20Exercise.pdf)**
+- **[Thursday Exercise]** - currently being updated
 
 ## <a name="week4">Week 4</a> (Sep 19/21): Designing for the Web
-When we talk about "web design," we're actually talking about a much wider range of concepts than graphic design--we're also talking about interaction design, usability, and accessibility. This week we'll talk about the range of design issues related to the web. On Tuesday we'll focus on the design process as a whole; on Thursday we'll focus on some basic principles of visual design.
+When we talk about "web design," we're actually talking about a much wider range of concepts than graphic design--we're also talking about interaction design, usability, and accessibility. This week we'll talk about the range of design issues related to the web. On Tuesday we'll focus on the design process as a whole.
 
 - **Tuesday Readings**
   - [Interaction Design Basics](https://www.usability.gov/what-and-why/interaction-design.html)
   - [The Elements of User Experience](http://www.jjg.net/elements/pdf/elements.pdf)
 
-- **[Tuesday Exercise](weekly_materials/week4/designProcessExercise.md)**
-  - In today's exercise, you'll create an initial design document for your group project site. 
+- **[Tuesday/Thursday Exercise](weekly_materials/week4/designProcessExercise.md)**
+  - In today's exercise, you'll create an initial design document for your personal portfolio site. 
 
 - **Tuesday Lecture Links**
-  - [Slides from Tuesday's Lecture](weekly_materials/week4/230-Week3-UX&IA.pdf)
   - Flow Chart Tools
     - [Draw.io](http://draw.io/) - Free, web-based flowcharting tool
     - Google Drawings and Microsoft Word and PowerPoint have flowcharting symbols available
@@ -92,16 +91,14 @@ When we talk about "web design," we're actually talking about a much wider range
     - [Cacoo](https://cacoo.com/lang/en/tour) - Web-based. Free for ≤6 diagrams, I've requested an edu license for the class
     - [Balsamiq](https://balsamiq.com/) - Desktop for Mac and Windows. Free for 30 days. [License good until 20 May 2017 has been posted in our myCourses shell.](https://mycourses.rit.edu/d2l/le/news/633310/449029/view)
 
-  - Prototyping and Comp Tools
+  - Prototyping and Comp/Mockup Tools
     - [Style Tiles Approach](http://styletil.es/) - Alternative to graphics-heavy comps
     - [Axure](https://www.axure.com/edu) - Available on IGM lab computers, free license for students
     - [Invision](https://www.invisionapp.com/) - Free web-based tool
     - [Design the Web: Layer Comps](https://www.lynda.com/Photoshop-tutorials/Using-Layer-Comps-Show-Interactive-States/114904-2.html?org=rit.edu) - Lynda.com tutorial on using Photoshop for comps
 
-- **Thursday Readings**
 
-- **[Thursday Exercise](weekly_materials/week4/visualDesignExercise.md)**
-  - In today's exercise, you'll create mockups for your portfolio site. 
+- **Thursday Exercise** : In class you'll get critiques from your peers (and in some cases, from the professor). Those critiques should be used to update your design document as needed before turning it in on Sunday.
 
 ## <a name="week5">Week 5</a> (Sep 26/28): Responsive Design & CSS Media Queries
 Mobile devices now make up more than half of the traffic to major websites. And it's still the case that people regularly print out web pages for a variety of reasons. That means web designers need to make sure their pages work on a variety of screens, and in print format--not just on high-resolution computer monitors. The process of creating HTML and CSS that will adapt to a variety of devices is called responsive design. CSS Media Queries allow responsive design to work more effectively by determining how/where the page will be displayed. 
@@ -117,7 +114,7 @@ On Tuesday we'll look specifically at using CSS to create different versions of 
 On Thursday we'll dive more deeply into responsive design concepts.
   - [Lynda.com: Responsive Design Fundamentals](https://www.lynda.com/Web-Responsive-Design-tutorials/Responsive-Design-Fundamentals/104969-2.html?org=rit.edu) - Like the "CSS Fundamentals" tutorial from week 2, this is not a hands-on tutorial--instead, it is an overview of what responsive design is, why it's important, and how it's typically implemented. In class, we'll have a hands-on exercise applying these concepts. 
 
-- **[Thursday Homework](weekly_materials/week5/week5thurs.md)**: In this exercise you'll be adding CSS to a simple web page to create a basic responsive version. 
+- **[Thursday Exercise](weekly_materials/week5/responsiveExercise.md)**: In this exercise you'll be adding CSS to a simple web page to create a basic responsive version. 
  
 ## <a name="week6">Week 6</a> (Oct 3/5): CSS Flexbox, Complex Selectors, and Styling HTML Forms
 On Tuesday, we'll look at CSS Flexbox, a relatively new approach to creating flexible, responsive page layouts. While it's only supported by modern browsers, it's beginning to be more widely used in web design and development.  On Thursday, we'll talk about complex CSS selectors, and will cover the basics of creating and styling HTML forms (which you'll need when we start coding with JavaScript).  We'll also take time Thursday to do small group critiques of your personal portfolio project, which is due this weekend.  
@@ -158,6 +155,8 @@ This week we'll look at how CSS can be used to create transitions, animations, a
 ## <a name="week9">Week 9</a> (Oct 24/26): Javascript Intro: Syntax, DOM, and Debuggers
 We'll begin looking at Javascript this week, and its importance in building interactivity into websites. This week will be the basics--syntax, the Document Object Model, and basic debugging using both HTML editors (VS Code and/or Brackets) and Chrome's developer tools. 
 
+On Tuesday, I'll also meet with each group to provide feedback on your website design. 
+
 - **Tuesday Readings**
   - [MDN: Introduction to the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
 
@@ -165,17 +164,16 @@ We'll begin looking at Javascript this week, and its importance in building inte
   - [W3Schools Javascript Tutorial](https://www.w3schools.com/js/default.asp): Do the first 14 pages (JS HOME through JS Objects)
   - [W3Schools Javascript HTML DOM Tutorial](https://www.w3schools.com/js/js_htmldom.asp): Do the first six pages (DOM Intro through DOM CSS)
 
-- **[Thursday Exercise](weekly_materials/week9/jsBasicExercise.md)**: You'll be creating two web pages, one that uses JavaScript to modifies properties of elements on the page, and one that displays calculations based on user input. 
+- **[Thursday Exercise](weekly_materials/week9/jsBasicExercise.md)** : A basic Javascript exercise in which you'll provide interactive elements to change page appearance, and do basic mathematical calculations. 
 
 
 ## <a name="week10">Week 10</a> (Oct 31/Nov 2): Javascript for Interactivity
 This week is a continuation of basic Javascript programming, with a focus on HTML events and event listeners, as well as the interaction between Javascript and CSS. 
 
-- **[Tuesday Exercise](weekly_materials/week10/week10tuesday.md)**: You'll use some new JavaScript functions to create a currency calculator. 
+- **[Tuesday Exercise](weekly_materials/week10/jsEventListenersExercise.md)**: You'll use some new JavaScript functions to create a currency calculator. 
 
 - **[Thursday Exercise](weekly_materials/week10/jsCookiesExercise.md)**: You'll change page content and then save those changes to cookies so that they can be applied when the page is reloaded. 
-
-Your third [group project](projects/project3.md) deliverable--wireframes and mockups for each page type on the site--is due in class on Thursday.
+ 
 
 ## <a name="week11">Week 11</a> (Nov 7/9): JQuery & JQueryUI
 A great deal of the Javascript on the web uses a freely-available library of code called JQuery (which, in fact, was originally written by an RIT student!). This week we'll look at JQuery and how to use it in your pages. 
@@ -206,7 +204,9 @@ On Tuesday we'll talk about server-side authentication and simple server-side pr
 
 - **[Tuesday Exercise](weekly_materials/week15/phpAndAuthExercise.md)**: Basic PHP functions
 
-- **[Optional Exercise](weekly_materials/week15/phpEmailExercise.md): Creating a Contact Form with a PHP Script**: I've created an *optional* exercise that teaches you how to make a working contact form for your site that generates an email message. This will not be graded, but it's a useful thing to know how to do. 
+- **[Optional Exercise](weekly_materials/week15/phpEmailExercise.md): Creating a Contact Form with a PHP Script**: I've created an *optional* exercise that teaches you how to make a working contact form for your site that generates an email message. This will not be graded, nor will it be on the practical exam, but it's a useful thing to know how to do. 
 
 ## <a name="finals">Finals Week</a>: Practical Exam Makeup & Final Project Due
-If you fail the final practical exam in week 15 (a score lower than 7/10), you will need to take the makeup version during our final exam time slot (Tuesday, May 16, ) your [final individual project](projects/project4.md) will be due this week. 
+If you fail the final practical exam in week 15 (with a score lower than 7/10), you will need to take the makeup version during our final exam time slot. 
+
+Your [final individual project](projects/project4.md) will be due this week. 
