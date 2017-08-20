@@ -4,7 +4,7 @@
 - Professor Elizabeth Lawley  
 - Office: GOL-2545
 - Email: Elizabeth.Lawley@rit.edu
-- Slack: [proflawley](https://lawley-110-2017.slack.com/team/proflawley)
+- Slack: https://lawley-230-fall2017.slack.com/
 - Office hours: T/Th 10-11am and 2-3pm 
 - Class meetings: T/TH in GOL-2570
     - Sec 02 (New Media) 2-3:20pm

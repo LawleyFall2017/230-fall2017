@@ -20,7 +20,7 @@ Click on the link to get the pack. You'll need to fill out the form with your RI
 
 ## Slack
 
-I've created a Slack site for our class at [http://lawley230-fall2017.slack.com/](http://lawley230-fall2017.slack.com/). It's set up so anyone with an @rit.edu address can create an account, just to make things easier. (NOTE: Every Slack site uses its own login and password, so even if you already use Slack for another group, you'll need to create a new user ID and password for this one.)
+I've created a Slack site for our class at http://lawley-230-fall2017.slack.com/. It's set up so anyone with an @rit.edu address can create an account, just to make things easier. (NOTE: Every Slack site uses its own login and password, so even if you already use Slack for another group, you'll need to create a new user ID and password for this one.)
 
 Your user name should include your first name and either your last initial or your last name, like this:  `lizlawley`, `liz_lawley`, or `lizl` or `liz_l`. 
 
