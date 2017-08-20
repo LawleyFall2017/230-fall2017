@@ -8,6 +8,7 @@
 - Class meetings: T/TH in GOL-2570
     - Sec 02 (New Media) 2-3:20pm
     - Sec 01 (GDD) 3:30-4:50pm 
+- [Course Topics & Schedule](Schedule.md)
 
 ## Course Catalog Description 
 This course provides an introduction to web development tools and technologies, such as X/HTML, CSS, Javascript and DHTML, AJAX, web platforms and environments, and server-side programming methods.
@@ -60,7 +61,7 @@ You are expected to attend class regularly. In some cases, I will announce that 
 ### Final Practical Exam (pass/fail -- not included in final grade)
 There will be a final practical exam in the class, which will require you to demonstrate basic proficiency with the technologies we've covered during the semester. It is a pass/fail practical; if you receive at least 7/10 points, you pass the exam. If you fail the exam, you will have an opportunity to retake it during finals week, although you will need to earn at least 8/10 points to pass the second time. If you do not pass either exam, you will receive a failing grade in the class. If you do pass the exam, your exam grade will not impact your final grade in the class. 
 	
-## Course Topics & Schedule
+## [Course Topics & Schedule](Schedule.md)
 The schedule of topics, readings, and exercises can be found in the [Schedule.md](Schedule.md) file. Materials for in-class exercises can be found in the Github folder for that week's class.  It is your responsibility to check the schedule for each week's readings. You will find the in-class exercises very challenging if you do not complete the readings and/or tutorials for that week. 
 
 ## Additional Policies
