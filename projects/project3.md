@@ -1,26 +1,27 @@
 # Project 3 
 
 ## Description
-Working as part of a group, you'll design and implement a website, with deliverables for each of the stages we discussed in week 3: strategy, scope, structure, skeleton, and surface.  
+Working as part of a group, you'll create a detailed design document for a website, as well as developing and publishing that site. I will create a shared, private, GitHub repo for each group. 
 
 ## Deliverables
 
-### Strategy, Scope, and Structure (Submit to myCourses by 11:59pm on Sunday, 10/15)
-Begin by working as a group to determine who will have responsibility for various aspects of the project--who will be responsible for the documentation, the written content on the site, the wireframing, the visual design, the coding? Once you've determined individual responsibilities, each person should update their own section of the group's roles & responsibilities document to include that information. 
+### Roles and Responsibilities (Add to GitHub doc by 11:59pm on Sunday, 10/15)
+Begin by working as a group to determine who will have responsibility for various aspects of the project--who will be responsible for the documentation, the written content on the site, the wireframing, the visual design, the coding? Once you've determined individual responsibilities, **each person should update their own section** of the Roles-Responsibilities.md document in the group's GitHub repo with their own responsiblities. (Do not have one person enter this for everyone in the group; you will not get credit unless you were the one to commit the edit with your responsibilities.)
 
-Determine what the goal of the site will be (what specific problem or user need will you be addressing?), and generate a strategy/scope description reflecting that. Working with the content list I provide, generate an information architecture diagram showing how that content will be grouped and organized on your site. Include all of that information in a single PDF document that you submit to myCourses. It should also be added to the "designdocs" folder in your GitHub repo.
+### Strategy, Scope, and Structure (Add to GitHub doc by 11:59pm on Sunday, 10/15)
+Determine what the goal of the site will be (what specific problem or user need will you be addressing?), and generate a strategy/scope description reflecting that. Working with the content list I provide, generate an information architecture diagram showing how that content will be grouped and organized on your site. Include all of that information in the appropriate section of the DesignDoc.md file in your GitHub repo.
 
-### Skeleton (Submit to myCourses dropbox by 11:59pm on Sunday, 10/22)
-Create wireframes for each of your major page types (e.g. main/landing page, main category page, individual content page, about page, contact page), showing the basic grid and page layout you plan to use. We'll do a brief critique in class, and your group can start on design mockups and code once that's done. All of the wireframes should be added to a single PDF document that you upload to myCourses and GitHub. 
+### Skeleton/Wireframes (Add to GitHub doc by 11:59pm on Wednesday, 10/18)
+Create wireframes for each of your major page types (e.g. main/landing page, main category page, individual content page, about page, contact page), showing the basic grid and page layout you plan to use. We'll do a brief critique in class, and your group can start on design mockups and code once that's done. Add the wireframe images to your DesignDoc.md file in your group's GitHub repo. 
 
-### Surface (Submit to myCourses dropbox by 11:59pm on Sunday, 10/29)
-Create mockups in Photoshop or another graphics program showing your intended design for the site. There should be one mockup for each wireframe you created. Once again, we'll do a brief critique in class before you turn them in to myCourses. Include all of the mockups in a single PDF document that you upload to myCourses and GitHub.
+### Surface (Add to GitHub doc by 11:59pm on Monday, 10/23)
+Create mockups in Photoshop or another graphics program showing your intended design for the site. There should be one mockup for each wireframe you created. Once again, we'll do a brief critique in class before you turn them in to myCourses. Include all of the mockups in a single PDF document called Mockups.pdf that you upload to your group's GitHub repo.
 
-### Final Site (Posted on Github and on people.rit.edu by Sunday, 11/5)
-All files for the site must be posted to your shared GitHub repository. In addition, each group member must publish the site in their igme230 directory, and link from their classwork page to the final project--you can link to one shared copy, or to your own copy. (All copies should be identical; I will pick one person at random and grade the entire group using their version.) 
+### Final Site (Add to GitHub doc and published/linked to on web by 11:59pm on Sunday, 11/5)
+All files for the site must be posted to your shared GitHub repository. One group member must also publish the site in their igme230 directory, and all other group members must link to that single published version from their class landing page. 
 
-### Roles & Responsiblities Document
-Once the site is complete, each person should update their section of the roles & responsibilities document and describe what their actual contributions to the project were. 
+### Self-Assessment (Add to GitHub doc by 11:59pm on Sunday, 11/5)
+Once the site is complete, each person should update their section of the Roles-Responsibilities.md document to describe what their actual contributions to the project were. Did you do all of the things that were assigned to you? If not, why not? Did you do things that weren't assigned to you? If so, why? Do you feel that you did the best work that you could? I will draw heavily on this self-assessment, as well as the commit history for the website files, when assessing the participation component of your grade. 
 
 ## Page and Content Requirements
 - Landing page named index.html
@@ -53,8 +54,8 @@ Component | Percentage of Project Grade |
 --------- | --------------------------- |
 Strategy & Scope Document | 5% |
 Structure Document & Diagram | 10% |
-Skeleton Wireframes | 10% |
-Surface | 10% |
+Wireframes | 10% |
+Mockups | 10% |
 Participation | 25%  | 
 Final Site | 40% |
 
