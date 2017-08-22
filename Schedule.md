@@ -121,10 +121,9 @@ On Thursday we'll dive more deeply into responsive design concepts.
 On Tuesday, we'll look at CSS Flexbox, a relatively new approach to creating flexible, responsive page layouts. While it's only supported by modern browsers, it's beginning to be more widely used in web design and development.  On Thursday, we'll talk about complex CSS selectors, and will cover the basics of creating and styling HTML forms (which you'll need when we start coding with JavaScript).  We'll also take time Thursday to do small group critiques of your personal portfolio project, which is due this weekend.  
 
 - **Tuesday Readings**
-Choose **one** of the following: 
   - [MDN: Using CSS Flexible Boxes](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes)
   - [CSS Tricks: A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-  - [Lynda.com: CSS: Flexbox First Look](https://www.lynda.com/CSS-tutorials/CSS-Flexbox-First-Look/116352-2.html?org=rit.edu)
+ 
 
 - **[Tuesday Exercise](weekly_materials/week6/flexboxExercise.md)**: In this exercise you'll be creating a flexbox-based version of your classwork web page. 
 
@@ -149,7 +148,7 @@ This week we'll look at how CSS can be used to create transitions, animations, a
 
 - **Tuesday Readings**
   - [Lynda.com CSS:Animation](https://www.lynda.com/CSS-tutorials/CSS-Animation/439683-2.html?org=rit.edu)
-
+  
 - **[Tuesday Exercise](weekly_materials/week8/cssAnimationExercise.md)**: You'll be applying what you learned in the CSS Animation tutorial. 
 
 
