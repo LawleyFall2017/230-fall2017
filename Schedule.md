@@ -65,7 +65,8 @@ This week we'll talk about how web servers process the requests they receive fro
 - **Thursday Readings**
   - [Lynda.com: GitHub for Web Designers, Chapters 1-3](https://www.lynda.com/GitHub-tutorials/GitHub-Web-Designers/162276-2.html?org=rit.edu)
   
-- **[Thursday Exercise]** - currently being updated
+- **[Thursday Exercise](weekly_materials/week3/github-exercise.pdf)**
+  - In this exercise, you'll work with two different GitHub repositories to learn how to submit a pull request to a repository controlled by someone else, and how to collaboratively edit a file with other users. 
 
 ## <a name="week4">Week 4</a> (Sep 19/21): Designing for the Web
 When we talk about "web design," we're actually talking about a much wider range of concepts than graphic design--we're also talking about interaction design, usability, and accessibility. This week we'll talk about the range of design issues related to the web. On Tuesday we'll focus on the design process as a whole.
