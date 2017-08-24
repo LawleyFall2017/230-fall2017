@@ -5,17 +5,17 @@
 We'll be working with your cremebrulee.html file, adding semantic markup, internal and external links, and additional CSS formatting. We're going to go through all of this step-by-step together in class, so I can talk about the various items as we address them,and I expect the file to be uploaded by the end of class. If we run out of time, I'll extend the due date. 
 
 ## Validating Your Page
-If VS Code didn't report any errors while you were editing the file, your HTML is probably valid. (You'll get even better real-time error checking if you've installed the VS Code extension HTMLHint.) But it's also a good idea to run your page through the W3C validator (something I'll do for every assignment) just to be sure. You have a couple of ways to do this. The simplest is to go to http://validator.w3.org/, and paste the URL for your page into the box. If it shows any errors (don't worry about warnings for now), make sure you correct those before the end of class.
+If VS Code didn't report any errors while you were editing the file, your HTML is probably valid. (For even better real-time error checking, you can install the VS Code extension HTMLHint.) But it's also a good idea to run your page through the W3C validator (something I'll do for every assignment) just to be sure. You have a couple of ways to do this. The simplest is to go to http://validator.w3.org/, and paste the URL for your page into the box. (If your page isn't online yet, you can also paste in the code, or upload the file.) If it shows any errors (don't worry about warnings for now), make sure you correct those before the end of class.
 
 You can also install the excellent [Web Developer plug-in](https://chrispederick.com/work/web-developer/) for your browser (Chrome, Firefox, or Opera). It has a Tools menu that includes an option to run the current page through the W3C validator for HTML and/or CSS. That's what I use when I'm grading your pages. 
 
 ## Setting Up Folders and Files for Today's Exercise
 In your local igme230 folder, create a new folder called week2. This week's exercise files will go in that folder.
 
-Copy the cremebrulee.html, cremebrulee.css, and image files from the week1 folder into the week2 folder. Then use VS Code to open the week2 folder, so that you're working with the copies you just made. 
+Copy the cremebrulee.html, cremebrulee.css, and image files from your week1 folder into the week2 folder. Then use VS Code to open the week2 folder, so that you're working with the new copies you just made rather than your week1 files. 
 
 ## Adding Semantic Markup
-In last week's HTML Fundamental tutorial, the topic of "semantic markup" was introduced. We're going to add some semantic markup to the cremebrulee page now. 
+In lecture, I talked a bit about the concept of "semantic markup." We're going to add some semantic markup to the cremebrulee page now. 
 
 Start by enclosing the section that appears as an information box on the wikipedia page (starting with the line above the image, and ending with the cookbook/media line) in a `<section>` tag. Then give the opening tag an id of infobox, like this: `<section id="infobox">`. 
 
@@ -34,7 +34,7 @@ We're also going to add some semantic tags to the image in the Crema Catalana se
 </figure>
 ```
 
-IDs are typically used for assigning CSS properties, but they have other uses, as well. Because they are a unique identifier on the page, they can be used for internal links, as well as manipulated with Javascript. We won't be dealing with scripting today, but we are going to add internal links to the page. 
+IDs are typically used for assigning CSS properties, but they have other uses, as well. Because they are a unique identifier on the page, they can be used for internal links, or as targets for JavaScript actions. We won't be dealing with scripting today, but we are going to add internal links to the page. 
 
 ## Creating Contents Links
 While you've probably had some experience with linking from one web page on your site to another, and to pages on other sites, you may not have had experience with linking to a location on the same page. We're going to start with that, before we add external links.
@@ -253,7 +253,7 @@ To test this, we need to have at least one link on the page that goes to Wikiped
 
 Now you've got a wikipedia link at the top, and two non-wikipedia links in the references.
 
-We'll start with the code to add the image after all links:
+We'll start with the code to add the icon after all links:
 
 ```
 a[href^="http"]:after {
@@ -286,4 +286,4 @@ This works exactly like the rule above, but it only selects `<a>` elements that 
 ## Uploading and Due Date
 When you're done, you should use an SFTP program to upload your week2 folder to your igme230 folder on banjo.rit.edu. The completed html file should display properly at `http://people.rit.edu/yourRITid/igme230/week2/cremebrulee.html`
 
-If we are able to complete the work as a group in class, I will expect you upload the file before you leave. If (and only if) we are not able to complete the work in class, I will give you until Wednesday night at 11:59pm to complete it, and I will check them on Thursday morning. 
+It must be submitted by 11:59pm on Wednesday night. My grader or I will check them on Thursday morning. 

@@ -70,7 +70,7 @@ For today, since you've already done quite a bit of work, I'm going to give you 
 
 ```
 body {
-    font-family: 'Helvetica Neue','Helvetica','Nimbus Sans L','Arial','Liberation Sans',sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial,sans-serif;
     line-height: 1.4;
     padding-left: 20px;
 }
@@ -78,7 +78,7 @@ body {
 a { text-decoration: none; }
 
 h1, h2 {
-    font-family: 'Linux Libertine',Georgia,Times,serif;
+    font-family: 'Linux Libertine', Georgia, Times, 'Times New Roman', serif;
     line-height: 1.3;
     margin-bottom: 0.25em;
     padding: 0;

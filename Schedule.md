@@ -19,7 +19,7 @@
 - [Finals Week: Makeup Practical Exam](#finals)
 
 ## <a name="week1">Week 1</a> (Aug 29/31): Overview: Syllabus, Expectations, Tools
-On Tuesday, I will review the syllabus, goals, and requirements for class, and discuss the tools and technologies we'll be using for communication, collaboration, and content creation. On Thursday, we'll start on an HTML & CSS exercise that builds on your prerequisite knowledge from previous classes. 
+On Tuesday, I will review the syllabus, goals, and requirements for class, and discuss the tools and technologies we'll be using for communication, collaboration, and content creation. On Thursday, I'll talk about some general HTML and CSS concepts, and we'll start on an HTML & CSS exercise that builds on the content you should have covered in previous classes. 
 
 - **Tuesday Readings**
   - [Course Syllabus](README.md)
@@ -30,7 +30,7 @@ On Tuesday, I will review the syllabus, goals, and requirements for class, and d
   - In this exercise, you'll set up your GitHub account, set up an account on the class Slack, and configure either Visual Studio Code or Brackets for use in class. 
 
 - **Thursday Readings**
-   - Review the content in [Lynda.com HTML Essential Training, Lessons 2-7](https://www.lynda.com/HTML-tutorials/HTML-Essential-Training/170427-2.html?org=rit.edu). Some of it should be familiar (like basic HTML structure and markup). Other parts will be new (like structuring content with semantic tags, linking to regions inside a page, and creating complex lists).  
+   - Review the content in [Lynda.com HTML Essential Training, Lessons 1-3, 6, and 7](https://www.lynda.com/HTML-tutorials/HTML-Essential-Training/170427-2.html?org=rit.edu). Some of it should be familiar (like basic HTML structure and markup). Other parts may be new (like structuring content with semantic tags, linking to regions inside a page, and creating complex lists). To speed things up, you can skim the transcripts for new concepts, rather than watching all of the videos, and just watch the portions you need to get caught up. 
  
 - **[Thursday Exercise](./weekly_materials/week1/basicMarkupExercise.md)**
   - We will begin the process of marking up a text file with HTML and CSS  
@@ -39,7 +39,8 @@ On Tuesday, I will review the syllabus, goals, and requirements for class, and d
 This week we'll take a deeper dive into aspects of CSS that aren't covered in the prereq classes: the CSS box model, CSS element positioning, CSS selector types, and using Google fonts.
 
 - **Tuesday Readings**
-  - [Lynda.com: CSS Fundamentals, Sections 1-3](https://www.lynda.com/CSS-tutorials/CSS-Fundamentals/417645-2.html?org=rit.edu): This is a video-only tutorial, rather than a hands-on tutorial, so it will take less time to complete. Some of it will be review from past classes, but it goes into more detail that the prerequisite classes. 
+  - [Lynda.com HTML Essential Training, Lessons 4-5](https://www.lynda.com/HTML-tutorials/HTML-Essential-Training/170427-2.html?org=rit.edu). 
+  - [Lynda.com: Learning CSS, Sections 1-3](https://www.lynda.com/CSS-tutorials/CSS-Fundamentals/417645-2.html?org=rit.edu): This is a video-only tutorial, rather than a hands-on tutorial, so it will take less time to complete. Some of it will be review from past classes, but it goes into significantly more detail that the prerequisite classes. 
 
 - **[Tuesday Exercise](./weekly_materials/week2/advancedMarkupExercise.md)**
   - We will revisit the file we worked on last week, adding additional CSS formatting.
@@ -148,7 +149,7 @@ This week we'll look at how CSS can be used to create transitions, animations, a
 
 - **Tuesday Readings**
   - [Lynda.com CSS:Animation](https://www.lynda.com/CSS-tutorials/CSS-Animation/439683-2.html?org=rit.edu)
-  
+
 - **[Tuesday Exercise](weekly_materials/week8/cssAnimationExercise.md)**: You'll be applying what you learned in the CSS Animation tutorial. 
 
 
