@@ -75,6 +75,8 @@ When we talk about "web design," we're actually talking about a much wider range
 - **Tuesday Readings**
   - [Interaction Design Basics](https://www.usability.gov/what-and-why/interaction-design.html)
   - [The Elements of User Experience](http://www.jjg.net/elements/pdf/elements.pdf)
+  - [Making Material Design (6 min video)](https://www.youtube.com/watch?v=rrT6v5sOwJg)
+  - [How Google fixed its design process and started making beautiful apps (7 min video)](https://www.youtube.com/watch?v=VDNngQjN6o4)
 
 - **[Tuesday/Thursday Exercise](weekly_materials/week4/designProcessExercise.md)**
   - In today's exercise, you'll create an initial design document for your personal portfolio site. 
@@ -137,9 +139,10 @@ On Tuesday, we'll look at CSS Flexbox, a relatively new approach to creating fle
 ## <a name="week7">Week 7</a> (Oct 12): Web Frameworks
 Many responsive websites are built using pre-existing frameworks of CSS and JavaScript that enable the developer to focus on content and design rather than the underlying code necessary for responsive functionality.  
 
-- **Thursday Readings: Do *One* of These**
-  - [Building a Responsive Portfolio Site](https://www.lynda.com/CSS-tutorials/Building-Responsive-Portfolio-Site/372808-2.html?org=rit.edu): A basic introduction to using a CSS framework (in this case, Skeleton) to create a responsive website. 
-  - [Bootstrap 3 Fundamentals](https://www.lynda.com/Bootstrap-tutorials/Bootstrap-3-Essential-Training/417641-2.html?org=rit.edu): Even though Bootstrap is now up to version 4, this tutorial covers the basics of how Bootstrap works, and how you can use it to create responsive designs. If you decide to work with Bootstrap for a project, I recommend also completing [Bootstrap 4: First Look](https://www.lynda.com/Bootstrap-tutorials/Bootstrap-4-First-Look/372547-2.html?org=rit.edu), which looks at the differences between Bootstrap 3 and 4.
+- **Thursday Readings**
+  - [CSS Frameworks & Grids](https://www.lynda.com/CSS-tutorials/CSS-Frameworks-Grids-2016-Q3-REVISION/504266-2.html?org=rit.edu) - You don't need to do the exercises, just watch the vidoes. 
+  - [About Materialize](http://materializecss.com/about.html)
+  - 
 
 - **[Thursday Exercise](weekly_materials/week7/frameworkExercise.md)**: In this exercise you'll create a complex, responsive web page layout using a CSS Framework.
 
