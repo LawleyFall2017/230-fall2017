@@ -1,14 +1,14 @@
-# IGME-230 Web Design &amp; Implementation, Fall 2017: Uploading Files to people.rit.edu
+# IGME-230 Web Design &amp; Implementation, Fall 2017: Uploading Files to `people.rit.edu`
 
-I expect students in this class to have a basic working knowledge of HTML, CSS, and publishing to RIT's web hosting environment (people.rit.edu). For GDD and New Media Interactive students, that material was covered in IGME-110. For New Media Design students, my understanding is that you have also taken a class that covers basic web technologies.
+I expect students in this class to have a basic working knowledge of HTML, CSS, and publishing to RIT's web hosting environment (`people.rit.edu`). For GDD and New Media Interactive students, that material was covered in IGME-110. For New Media Design students, my understanding is that you have also taken a class that covers basic web technologies.
 
-If in your introductory web class you used the CIAS web server rather than RIT's people.rit.edu server, you'll need to get up to speed on using the RIT server. Here's a quick explanation of how to upload yor web files there. 
+If in your introductory web class you used the CIAS web server rather than RIT's `people.rit.edu` server, you'll need to get up to speed on using the RIT server. Here's a quick explanation of how to upload yor web files there. 
 
 ## banjo.rit.edu vs people.rit.edu
 
-The web server for individual users' files at RIT is people.rit.edu -- every RIT user has web space there. 
+The web server for individual users' files at RIT is `people.rit.edu` -- every RIT user has web space there. 
 
-However, the files that are displayed on people.rit.edu are actually stored on a server called banjo.rit.edu. So when you're uploading files using FTP, you're going to upload them to banjo.rit.edu. But when you're viewing those files through a browser, you're going to access them at people.rit.edu. 
+However, the files that are displayed on `people.rit.edu` are actually stored on another server called `banjo.rit.edu`. So when you're uploading files using FTP, you're going to upload them to `banjo.rit.edu`...but when you're viewing those files through a browser, you're going to access them at `people.rit.edu`. 
 
 ## Preparing Files to Upload
 
@@ -36,11 +36,11 @@ Now you need to test the files on the web server, to see if they’re accessible
 
 If the files and images show up, great! But it’s very possible that they won’t, because the access to the files may not be set properly by default. In that case, you'll probably get a 403 Access Forbidden error message. That means you need to change the permissions on the directories and files that you just uploaded so that they're accessible by the web server. 
 
-## Changing Folder and File Permissions on banjo.rit.edu
+## Changing Folder and File Permissions on `banjo.rit.edu`
 In the server panel on the right, make sure you have the www folder (not the igme230 folder) selected on the server. Right click on the folder in the right pane, choose “File Permissions” and make sure the permissions include read write and execute for the owner (that’s you), and read and execute for everyone else. The number in the box at the bottom should read “755” which is shorthand for those permissions. (You can either type the number into the box at the bottom, or check the boxes next to the permissions you want.) Make sure the box that reads "recurse into subdirectories" is selected, and choose "Apply to directories only." Click OK. This should change the permissions for the www directory, and all directories below of it, including the igme230 directory and the test directory. 
 
-Once you’ve checked the permissions on the folders, you need to also check the permissions for the individual files. Double click on a folder to open it, and repeat the process of right-clicking and choosing File Permissions for each of the individual files. The HTML and image files don’t need execute permissions, so the shortcut for their permissions is 644 rather than 755. 
+Once you’ve changed the permissions on the folders, you need to repeat that process to change the permissions for the individual files. They don't need execute permissions, so the shortcut for their permissions is 644 rather than 755. 
 
 ![Folder Permissions](folderpermissions.png)  ![File Permissions](filepermissions.png)
 
-Once you've changed the folder and file permissions, go back to the browser and try reloading `http://people.rit.edu/youruserid/igme230/test/`. If it still won't load, ask for help!
+Once you've changed the folder and file permissions, go back to the browser and try reloading `http://people.rit.edu/youruserid/igme230/test/`. If it still won't load, ask for help in Slack!
