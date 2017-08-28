@@ -48,4 +48,4 @@ The aside element is floated to the left, with a width of 30%, and padding on th
 ## Uploading and Due Date
 At the end of class, upload your HTML and CSS to your week2 folder on banjo.rit.edu. (Even if you didn't finish!) 
 
-Because your [first project](../../projects/project1.md) (your personal page for the class) is due this weekend, I want you focused on that, rather than this exercise, after class is over.
+As a reminder, your [first project](../../projects/project1.md)--a personal page for this class--is due this weekend. You're welcome to adapt this exercise for that purpose, although if you do you'll need to make sure that it still meets all the requirements for the assignment in terms of content (including annotations in your CSS so I'm sure you know what each definition is accomplishing). You also won't receive more than 1/3 points for design/typography unless you make appropriate modifications to the basic template. 
