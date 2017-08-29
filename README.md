@@ -1,14 +1,17 @@
 # IGME-230 Web Design &amp; Implementation, Fall 2017: Syllabus
 
 ## Instructor and Class Details
-- Professor Elizabeth Lawley  
+- Professor Elizabeth Lawley
 - Office: GOL-2545
 - Email: Elizabeth.Lawley@rit.edu
 - Slack: https://lawley-230-fall2017.slack.com/
-- Office hours: T/Th 10-11am and 2-3pm 
-- Class meetings: T/TH in GOL-2570
-    - Sec 02 (New Media) 2-3:20pm
-    - Sec 01 (GDD) 3:30-4:50pm 
+- Office hours: T/Th 10am-12pm 
+- Sec 02 (New Media) 
+    - 2-3:20pm GOL-2570
+    - TA:  Madison Yocum
+- Sec 01 (GDD)
+    - 3:30-4:50pm 
+    - TA: Anna Rosenberg
 - [Course Topics & Schedule](Schedule.md)
 
 ## Course Catalog Description 
