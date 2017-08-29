@@ -28,7 +28,7 @@ and leaves 15px of space between the text and the image. */
 ```
 
 ## Due Date
-The completed page is due at noon on Sunday, September 10th. The page should appear properly at the URL specified above by that time. You do not need to send me email or post anything to myCourses.
+The completed page is due at midnight (11:59pm) on Sunday, September 10th. The page should appear properly at the URL specified in the requirements by that time. You do not need to send me email or post anything to myCourses.
 
 ## Grading
 I will use this rubric for grading your pages:
@@ -45,4 +45,4 @@ Uses principles of design | 2 |
 Uses appropriate typography | 1 |
 
 ## Privacy Issues
-Occasionally there are reasons that a student doesn't want their name and image visible on the open web. If this is the case for you, please let me know and I'll help you set up password protection that limits access to the RIT community. 
+Occasionally there are reasons that a student doesn't want their name and image visible on the open web. If this is the case for you, please let me know and I'll help you set up password protection that limits access to your web pages. 
