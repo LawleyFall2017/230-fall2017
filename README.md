@@ -57,7 +57,7 @@ I give only three possible final grades in this class. You'll receive a grade of
 - **[Project 4](./projects/project4.md)**: Final Personal Project (20% of final grade, due 10 December 2017)
 
 ### In-Class Exercises (20% of final grade)
-Most in-class exercises will be due at the end of the class in which they are assigned. With more challenging in-class exercises and/or homework exercises, I will extend the due date until the weekend. Exercises and associated materials will be always be uploaded to that week's folder in this Github repository, and linked from the [Schedule.md](Schedule.md) file with information on their required submission date and time. I will accept late exercises, but there will be a 20% reduction in the grade for each week that it is late.
+Most in-class exercises will be due at the end of the class in which they are assigned. With more challenging in-class exercises and/or homework exercises, I will extend the due date until the weekend. Exercises and associated materials will be always be uploaded to that week's folder in this Github repository, and linked from the [Schedule.md](Schedule.md) file with information on their required submission date and time. I will accept late exercises, but you will receive reduced credit for late work.
 
 ### Class Participation (10% of final grade)
 You are expected to attend class regularly. In some cases, I will announce that attendance is optional *if* you complete that day's exercise before the start of class. 
