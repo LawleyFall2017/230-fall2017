@@ -2,15 +2,14 @@
 
 ## Instructor and Class Details
 - Professor Elizabeth Lawley
-- Office: GOL-2545
 - Email: Elizabeth.Lawley@rit.edu
 - Slack: https://lawley-230-fall2017.slack.com/
-- Office hours: T/Th 10am-12pm 
+- Office Hours: T/Th 10am-12pm in GOL-2545
 - Sec 02 (New Media) 
-    - 2-3:20pm GOL-2570
+    - 2-3:20pm in GOL-2570
     - TA:  Madison Yocum
 - Sec 01 (GDD)
-    - 3:30-4:50pm 
+    - 3:30-4:50pm in GOL-2570
     - TA: Anna Rosenberg
 - [Course Topics & Schedule](Schedule.md)
 
@@ -18,7 +17,7 @@
 This course provides an introduction to web development tools and technologies, such as X/HTML, CSS, Javascript and DHTML, AJAX, web platforms and environments, and server-side programming methods.
 
 ## <a name="prereq">Prerequisite Knowledge</prereq>
-I expect students in this class to have a basic working knowledge of HTML, CSS, and publishing to RIT's web hosting environment (people.rit.edu). For both GDD and New Media Interactive students, that material was covered in IGME-110. If you need a review of this material, you can use the [week 4 (Basic HTML and CSS)](https://github.com/LawleyFall2017/110-fall2017/blob/master/Schedule.md#week4) and/or [week 5 (publishing to the RIT web server)](https://github.com/LawleyFall2017/110-fall2017/blob/master/Schedule.md#week5) exercises from IGME-110. 
+I expect students in this class to have a basic working knowledge of HTML, CSS, and publishing to RIT's web hosting environment (people.rit.edu). For both GDD and New Media Interactive students, that material was covered in IGME-110. If you need a review of HTML & CSS, review the [Lynda.com HTML Essential Training tutorial](https://www.lynda.com/HTML-tutorials/HTML-Essential-Training/170427-2.html?org=rit.edu). I've also written up a [brief review/tutorial on how to upload files to the RIT server](weekly_materials/week0/uploading.md). 
 
 ## Course Materials and Communication
 There is no required textbook for the course, but there will be an assortment of handouts and online readings that you will receive over the course of the semester. They will be uploaded to (or linked from) this Github site. 
