@@ -1,6 +1,6 @@
 # IGME-230 Web Design &amp; Implementation, Fall 2017: Uploading Files to `people.rit.edu`
 
-I expect students in this class to have a basic working knowledge of HTML, CSS, and publishing to RIT's web hosting environment (`people.rit.edu`). For GDD and New Media Interactive students, that material was covered in IGME-110. For New Media Design students, my understanding is that you have also taken a class that covers basic web technologies.
+I expect students in this class to have a basic working knowledge of HTML, CSS, and publishing to RIT's web hosting environment (`people.rit.edu`).  For GDD and New Media Interactive students, that material was covered in IGME-110. For New Media Design students, my understanding is that you have also taken a class that covers basic web technologies.
 
 If in your introductory web class you used the CIAS web server rather than RIT's `people.rit.edu` server, you'll need to get up to speed on using the RIT server. Here's a quick explanation of how to upload yor web files there. 
 
