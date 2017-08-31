@@ -19,7 +19,7 @@ This course provides an introduction to web development tools and technologies, 
 ## <a name="prereq">Prerequisite Knowledge</prereq>
 I expect students in this class to have a basic working knowledge of HTML, CSS, and publishing to RIT's web hosting environment (people.rit.edu). For both GDD and New Media Interactive students, that material was covered in IGME-110. If you need a review of HTML & CSS, review the [Lynda.com HTML Essential Training tutorial](https://www.lynda.com/HTML-tutorials/HTML-Essential-Training/170427-2.html?org=rit.edu). I've also written up a [brief review/tutorial on how to upload files to the RIT server](weekly_materials/week0/uploading.md). 
 
-## Course Materials and Communication
+## Course Materials and Communication!
 There is no required textbook for the course, but there will be an assortment of handouts and online readings that you will receive over the course of the semester. They will be uploaded to (or linked from) this Github site. 
 
 I will be assigning a number of tutorials from the [Lynda.com](http://lynda.com) website, which you can access for free using your RIT login. 

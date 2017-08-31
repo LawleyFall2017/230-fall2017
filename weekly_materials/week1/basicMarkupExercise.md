@@ -6,6 +6,12 @@ In today's exercise, we will be taking a text document, marking it up as an HTML
 
 We will also be adding a configuration file to your RIT web space to override some of the server's (problematic) default behavior.
 
+## Important Resources
+
+- **[Mozilla Developer Network (MDN) Web Docs](https://developer.mozilla.org/en-US/)**: A regularly updated archive of tutorials and reference guides for a wide variety of web technologies. Widely used by professional web developers. 
+- **[W3 Schools](https://www.w3schools.com/)**: One of the older comprehensive web technology documentation sites. Used to have a reputation for being overly simplistic, but it has improved significantly in recent years. 
+
+
 ## Setting Up Your Folders and Files
 
 On your computer (or on a USB drive) create a folder called igme230, and inside of the igme230 folder, create folder called week1. The igme230 folder is where all of your exercises and projects for this class will be stored. The week1 folder is for today's exercise. 
@@ -20,7 +26,7 @@ You're also going to need to download the two images: [2014_0531_Crème_brûlée
 
 While you can use Visual Studio Code to open and edit a single file, it works best if you point it to your working folder. Launch the program, and use "Open Folder" to open the week1 folder. You should see the three files that you downloaded in the last step. 
 
-There are two VS Code extensions that will be particularly useful in today's exercise:  Preview on Web Server, which I mentioned on Tuesday, and htmltagwrap, which allows you to select a block of text and easily wrap it with an HTML tag. To install the extensions now, choose View->Extensions, or click on the square icon at the bottom of the far left sidebar. In the search bar at the top, type in the name of the extension you want to add. When it appears, click the green "Install" button to add it. (If you're using Brackets, it already has a live preview built in, and you can install an extension called HTML Wrapper.) 
+There are two VS Code extensions that will be particularly useful in today's exercise:  Preview on Web Server, and htmltagwrap, which allows you to select a block of text and easily wrap it with an HTML tag. To install a VS Code extension, choose View->Extensions, or click on the square icon at the bottom of the icon menu in the left sidebar. In the search bar at the top, type in the name of the extension you want to add. When it appears, click the green "Install" button to add it. (If you're using Brackets, it already has a live preview built in, and you can install an extension called HTML Wrapper.) It will probably prompt you to reload the current window in order to make the extension active. 
 
 ## Marking Up a Text File
 
@@ -28,15 +34,15 @@ Open the cremebrulee.txt file in your editor. It currently has no HTML markup at
 
 Use File->Save As... to save a new copy of the file called cremebrulee.html. Make sure you save it to the week1 folder and give it an .html extension--it's the extension that tells your editor to enable its HTML support. 
 
-There are a lot of accented and foreign characters in this document. In HTML 4, the default character encoding for files was ISO-8859-1, which doesn't properly display special characters (like smart quotes and diacritical marks). Those characters had to be escaped out (e.g. &eacute; had to be represented as `&eacute;`, &copy; had to be represented as `&copy;`, and & had to be represented as `&amp;`)--if you didn't do that, they didn't display properly in the browser. HTML 5 uses UTF-8 encoding, which allows those special characters to appear properly in your document.
+There are a lot of accented and foreign characters in this document. In HTML 4, the default character encoding for files was ISO-8859-1, which doesn't properly display special characters (like smart quotes and diacritical marks). Those characters had to be escaped out (e.g. &eacute; had to be represented as `&eacute;`, &copy; had to be represented as `&copy;`, and & had to be represented as `&amp;`)--if you didn't do that, they didn't display properly in the browser. HTML 5 uses UTF-8 encoding, which allows those special characters to appear properly in your document. 
 
 Because this Wikipedia article has many non-standard characters (like "smart" quotes and diacritical marks), the UTF-8 encoding is very helpful. If you're using VS Code, try clicking in the bottom right corner of the window where it says "UTF-8", choose "Reopen with encoding," and select ISO-8859-1. Note what happens to all the non-standard characters in the document! If your HTML document doesn't use a character set of UTF-8--which is the default for HTML 5, but not for previous versions of HTML--that's what will display on the page. (Switch back to UTF-8 before you proceed.) 
 
-We're going to use Emmet, a shorthand tool for adding HTML and CSS content to documents, to simplify the adding of some basic HTML structure. (I talked about this at the beginning of class.)
+We're going to use Emmet, a shorthand tool for adding HTML and CSS content to documents, to simplify the process of adding some basic HTML structure. (I talked about this a bit on Tuesday.)
 
 Make sure there's a blank line at the top of your document, and type `html:5` (in VS Code, you should see a tooltip telling you this is an Emmet abbreviation). Then press TAB. The abbreviation should be replaced with the basic structure for an HTML 5 document. Cut and paste the document text so that it's inside the `<body>` tag. 
 
-Now we need to mark the text up as HTML. (Use the actual wikipedia page as a refrerence.)
+Now we need to mark the text up as HTML. (Use the [actual wikipedia page](https://en.wikipedia.org/wiki/Cr%C3%A8me_br%C3%BBl%C3%A9e) as a reference.)
 
 - Add an h1 heading for the page title, and h2 headings for all of the subsections.
 - Add paragraph tags to the individual paragraphs of text. 
