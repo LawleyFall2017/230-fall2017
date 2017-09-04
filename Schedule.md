@@ -142,8 +142,7 @@ Many responsive websites are built using pre-existing frameworks of CSS and Java
 - **Thursday Readings**
   - [CSS Frameworks & Grids](https://www.lynda.com/CSS-tutorials/CSS-Frameworks-Grids-2016-Q3-REVISION/504266-2.html?org=rit.edu) - You don't need to do the exercises, just watch the vidoes. 
   - [About Materialize](http://materializecss.com/about.html)
-  - 
-
+ 
 - **[Thursday Exercise](weekly_materials/week7/frameworkExercise.md)**: In this exercise you'll create a complex, responsive web page layout using a CSS Framework.
 
 
