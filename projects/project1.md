@@ -4,7 +4,7 @@
 Create a landing page for your igme230 directory, which *must* load as the default page at the URL `http://people.rit.edu/~yourid/igme230/` . (Remember, to load as the default page in a directory, an HTML file must be named index.html) The page should include:
 - your name (and, optionally, the course name)
 - a (recognizable) picture of yourself
-- placeholders for links to your in-class exercises and class projects
+- placeholders for links to your in-class exercises and class projects (keeping in mind that the list of exercises will have at least 20 items, and probably more, before the end of the semester). 
 
 Do your best to use the principles of design you learned in IGME-110 or other design classes; I want to see the best you can do. (That does not mean putting in every type of bell and whistle you can imagine; keep it simple and clean!) This is your opportunity to make a good first impression :) 
 
@@ -28,7 +28,7 @@ and leaves 15px of space between the text and the image. */
 ```
 
 ## Due Date
-The completed page is due at midnight (11:59pm) on Sunday, September 10th. The page should appear properly at the URL specified in the requirements by that time. You do not need to send me email or post anything to myCourses.
+The completed page is due at midnight (11:59pm) on Thursday, September 14th. The page should appear properly at the URL specified in the requirements by that time. You do not need to send me email or post anything to myCourses.
 
 ## Grading
 I will use this rubric for grading your pages:
