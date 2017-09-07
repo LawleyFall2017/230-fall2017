@@ -6,10 +6,12 @@ Today you're going to put into practice some of the positioning information pres
 ## Setting Up Files and Folders
 You don't need a new folder for today's exercise; it's going to go into the same week2 folder that you created on Tuesday. 
 
-The HTML template you'll be using for this exercise is [layout.html](layout.html). To download an HTML file example from github, as with the text file last week, you should right-click on the "Raw" button in the top right corner, and save the file to the appropriate folder--in this case, your week2 folder. 
+The HTML template you'll be using for this exercise is [layout.html](layout.html). To download an HTML file example from github, as with the text file last week, you should right-click on the "Raw" button in the top right corner, and save the file to the appropriate folder--in this case, your week2 folder. You'll also need this image: 
+
+![lawley.jpg](lawley.jpg)
 
 ## Changing the Content
-You should edit the HTML file to replace my name and my photograph with your own, and you should add your own content in the sidebar and the main content section. (If you can't think of anything to say, I'm okay with you using "<a href="http://mashable.com/2013/07/11/lorem-ipsum/">lorem ipsum</a>" text.)
+Don't. :) Replicate what you see in the screen shot!
 
 ## CSS Formatting Tips
 I'm not going to walk you through creating the CSS, since I want you to start experimenting a bit with properties to see how they work. I will give you some information about how I did this. 
