@@ -40,10 +40,11 @@ The header also has a fixed height (of 50px). Both the header and the footer use
 ### Article Element
 The article element is floated right inside of the container div, with a width of 65%, a height of 500px; and padding on all sides.
 
-The portrait image is floated left inside of the article, and has additional padding on the right side to provide space between the image and the text. You'll need to play with padding and/or margin settings to get it to align properly with the text next to it. 
 
 ### Aside Element
-The aside element is floated to the left, with a width of 30%, a height of 500px, padding on the left and right to keep the contents from being too close to the edge of the element. I modified the size of the h2 element so that the headings were a more reasonable size. 
+The aside element is floated to the left, with a width of 30%, a height of 500px, padding on the left and right to keep the contents from being too close to the edge of the element. I modified the size of the h2 element so that the headings were a more reasonable size.
+
+The portrait image is at the top of the aside. You'll need to adjust padding and/or margin to align it properly.  
 
 ### Container Height and Scrolling Content
 To keep my overall layout visible on most browsers without a need to scroll, I used CSS to set an absolute height for the article and aside elements. Since the content in the larger container is too long to fit in a container of that height, I used overflow:scroll on the article to allow the content to scroll.
