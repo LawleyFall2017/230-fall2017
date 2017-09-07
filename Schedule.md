@@ -51,7 +51,7 @@ This week we'll take a deeper dive into aspects of CSS that aren't covered in th
 - **[Thursday Exercise](./weekly_materials/week2/cssPositioningExercise.md)**
   - We will use CSS positioning to modify the layout of an HTML file 
 
-[Project 1](projects/project1.md) (a landing page for your classwork) is due by midnight (11:59pm) on Thursday, September 14th)
+[Project 1](projects/project1.md) (a landing page for your classwork) is due by midnight (11:59pm) on Thursday, September 14th) 
   
 ## <a name="week3">Week 3</a> (Sep 12/14): Web Server Basics & Version Control 
 This week we'll talk about how web servers process the requests they receive from browsers, and how you can use .htaccess files to modify that behavior. We'll also talk about version control for websites, and you'll be introduced to Git and GitHub for tracking and maintaining files for your website(s). I highly recommend starting on Thursday's GitHub tutorials *early*, as they'll take some time to work through. 
