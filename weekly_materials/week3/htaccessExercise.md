@@ -4,7 +4,7 @@
 In today's exercise, you'll be adding an .htaccess file to your igme230 directory. The file will fixing some troublesome default behavior on the banjo.rit.edu server, and will also allow you to use a custom 404 page for your site. 
 
 
-## Using .htaccess To Change Default Server Behavior
+## Using .htaccess To Change Default Server Behavior 
 
 RIT's banjo/people web server uses a server module called "Pagespeed" to speed the loading of images--which is helpful when you have high-traffic websites like the main RIT page or departmental pages, but not really necessary for personal pages. The problem with this module is that it has the side effect of adding a lot of code to your pages when they're returned to the browser, making it harder to debug and validate them.  
 
