@@ -78,10 +78,14 @@ When we talk about "web design," we're actually talking about a much wider range
   - [Making Material Design (6 min video)](https://www.youtube.com/watch?v=rrT6v5sOwJg)
   - [How Google fixed its design process and started making beautiful apps (7 min video)](https://www.youtube.com/watch?v=VDNngQjN6o4)
 
+- **Thursday Readings**
+  - Optional: [Design Aesthetics for the Web (from Lynda.com)](https://www.lynda.com/Design-Techniques-tutorials/Design-Aesthetics-Web/506078-2.html?org=rit.edu)
+  
 - **[Tuesday/Thursday Exercise](weekly_materials/week4/designProcessExercise.md)**
   - In today's exercise, you'll create an initial design document for your personal portfolio site. 
+  
 
-- **Tuesday Lecture Links**
+- **Resource Links**
   - Flow Chart Tools
     - [Draw.io](http://draw.io/) - Free, web-based flowcharting tool
     - Google Drawings and Microsoft Word and PowerPoint have flowcharting symbols available
@@ -100,6 +104,12 @@ When we talk about "web design," we're actually talking about a much wider range
     - [Axure](https://www.axure.com/edu) - Available on IGM lab computers, free license for students
     - [Invision](https://www.invisionapp.com/) - Free web-based tool
     - [Design the Web: Layer Comps](https://www.lynda.com/Photoshop-tutorials/Using-Layer-Comps-Show-Interactive-States/114904-2.html?org=rit.edu) - Lynda.com tutorial on using Photoshop for comps
+    
+  - Visual Design Tools
+    - [A Simple Web Developer's Color Guide](https://www.smashingmagazine.com/2016/04/web-developer-guide-color/)
+    - [Adobe Color CC](https://color.adobe.com/create/color-wheel/) - Tool for creating harmonious color palettes
+    - [Introduction to Graphic Design (Lynda.com)](https://www.lynda.com/Graphic-Design-tutorials/Introduction-Graphic-Design/419419-2.html?org=rit.edu)
+    - [Design Aesthetics for the Web](https://www.lynda.com/Design-Techniques-tutorials/Design-Aesthetics-Web/506078-2.html?org=rit.edu)
 
 
 - **Thursday Exercise** : In class you'll get critiques from your peers (and in some cases, from the professor). Those critiques should be used to update your design document as needed before turning it in on Sunday.
