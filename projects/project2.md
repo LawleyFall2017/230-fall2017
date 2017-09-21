@@ -5,6 +5,8 @@ You will create a personal portfolio site to showcase your work to potential emp
 
   - [Breaking Into Game Design, Part 2: Build Your Portfolio](http://www.gamasutra.com/blogs/EthanLevy/20130621/194830/Breaking_into_game_design_Part_2__build_your_portfolio.php)
   - [Graphic Design Portfolios: The New Online Resume](http://www.howdesign.com/design-career/resume-portfolio/graphic-design-portfolios-new-online-resume-design/)
+  - [CIAS Creative Industry Day Portfolios](http://creativity.cias.rit.edu/)
+  
 
 ## Page and Content Requirements
 - Landing page named index.html, including your name and an image (could be a photo or an avatar)
