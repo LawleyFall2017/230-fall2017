@@ -119,15 +119,12 @@ Mobile devices now make up more than half of the traffic to major websites. And 
 - **Tuesday Readings**
 On Tuesday we'll look specifically at using CSS to create different versions of a page for different media types. This was covered in the CSS Fundamentals tutorial from week 2, but for review, you should look at the portion of that tutorial dealing with the topic. 
   - [Lynda.com CSS Fundamentals: Media Types & Queries](https://www.lynda.com/CSS-tutorials/Media-types-media-queries/417645/484795-4.html?org=rit.edu)
-
-- **[Tuesday Exercise](./weekly_materials/week5/cssPrintExercise.md)**
  
 
 - **Thursday Readings**
 On Thursday we'll dive more deeply into responsive design concepts.
   - [Lynda.com: Responsive Design Fundamentals](https://www.lynda.com/Web-Responsive-Design-tutorials/Responsive-Design-Fundamentals/104969-2.html?org=rit.edu) - Like the "CSS Fundamentals" tutorial from week 2, this is not a hands-on tutorial--instead, it is an overview of what responsive design is, why it's important, and how it's typically implemented. In class, we'll have a hands-on exercise applying these concepts. 
 
-- **[Thursday Exercise](weekly_materials/week5/responsiveExercise.md)**: In this exercise you'll be adding CSS to a simple web page to create a basic responsive version. 
  
 ## <a name="week6">Week 6</a> (Oct 3/5): CSS Flexbox, Complex Selectors, and Styling HTML Forms
 On Tuesday, we'll look at CSS Flexbox, a relatively new approach to creating flexible, responsive page layouts. While it's only supported by modern browsers, it's beginning to be more widely used in web design and development.  On Thursday, we'll talk about complex CSS selectors, and will cover the basics of creating and styling HTML forms (which you'll need when we start coding with JavaScript).  We'll also take time Thursday to do small group critiques of your personal portfolio project, which is due this weekend.  
