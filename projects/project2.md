@@ -32,10 +32,8 @@ You will create a personal portfolio site to showcase your work to potential emp
 ## Technology Requirements
 - Semantic, valid HTML
 - Well-structured, valid CSS
-- Passes WAVE accessibility evaluation without significant errors 
-- Semantic HTML
-- Drop-down menu for navigation available on all pages 
-- Images and other media are properly optimized for screen display
+- Drop-down menu for navigation used somewhere on site 
+- Images and other media properly optimized for screen display
 
 
 ## Grading
