@@ -117,8 +117,9 @@ When we talk about "web design," we're actually talking about a much wider range
 Mobile devices now make up more than half of the traffic to major websites. And it's still the case that people regularly print out web pages for a variety of reasons. That means web designers need to make sure their pages work on a variety of screens, and in print format--not just on high-resolution computer monitors. The process of creating HTML and CSS that will adapt to a variety of devices is called responsive design. CSS Media Queries allow responsive design to work more effectively by determining how/where the page will be displayed. 
 
 - **Tuesday Readings**
-On Tuesday we'll look specifically at using CSS to create different versions of a page for different media types. This was covered in the CSS Fundamentals tutorial from week 2, but for review, you should look at the portion of that tutorial dealing with the topic. 
-  - [Lynda.com CSS Fundamentals: Media Types & Queries](https://www.lynda.com/CSS-tutorials/Media-types-media-queries/417645/484795-4.html?org=rit.edu)
+On Tuesday we'll start looking at using CSS to create different versions of a page for different media types.  
+  - [Lynda.com CSS Fundamentals: Media Types & Queries](https://www.lynda.com/CSS-tutorials/Media-types-media-queries/417645/484795-4.html?org=rit.edu) - This was included in the CSS Fundamentals tutorial from week 2, but for review, you should look at the portion of that tutorial dealing with the topic.
+  - [A Comprehensive Introduction to Grids in Web Design](https://webdesign.tutsplus.com/articles/a-comprehensive-introduction-to-grids-in-web-design--cms-26521) - A good overview of the importance of grids in web design. 
  
 
 - **Thursday Readings**
@@ -127,7 +128,7 @@ On Thursday we'll dive more deeply into responsive design concepts.
 
  
 ## <a name="week6">Week 6</a> (Oct 3/5): CSS Flexbox, Complex Selectors, and Styling HTML Forms
-On Tuesday, we'll look at CSS Flexbox, a relatively new approach to creating flexible, responsive page layouts. While it's only supported by modern browsers, it's beginning to be more widely used in web design and development.  On Thursday, we'll talk about complex CSS selectors, and will cover the basics of creating and styling HTML forms (which you'll need when we start coding with JavaScript).  We'll also take time Thursday to do small group critiques of your personal portfolio project, which is due this weekend.  
+On Tuesday, we'll talk about complex CSS selectors, and will cover the basics of creating and styling HTML forms (which you'll need when we start coding with JavaScript). On Thursday, we'll look at CSS Flexbox, a relatively new approach to creating flexible, responsive page layouts. While it's only supported by modern browsers, it's beginning to be more widely used in web design and development. We'll also take time Thursday to do small group critiques of your personal portfolio project, which is due this weekend. 
 
 - **Tuesday Readings**
   - [MDN: Using CSS Flexible Boxes](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes)
