@@ -51,7 +51,7 @@ This week we'll take a deeper dive into aspects of CSS that aren't covered in th
 - **[Thursday Exercise](./weekly_materials/week2/cssPositioningExercise.md)**
   - We will use CSS positioning to modify the layout of an HTML file 
 
-[Project 1](projects/project1.md) (a landing page for your classwork) is due by midnight (11:59pm) on Thursday, September 14th)
+[Project 1](projects/project1.md) (a landing page for your classwork) is due by midnight (11:59pm) on Thursday, September 14th) 
   
 ## <a name="week3">Week 3</a> (Sep 12/14): Web Server Basics & Version Control 
 This week we'll talk about how web servers process the requests they receive from browsers, and how you can use .htaccess files to modify that behavior. We'll also talk about version control for websites, and you'll be introduced to Git and GitHub for tracking and maintaining files for your website(s). I highly recommend starting on Thursday's GitHub tutorials *early*, as they'll take some time to work through. 
@@ -78,10 +78,15 @@ When we talk about "web design," we're actually talking about a much wider range
   - [Making Material Design (6 min video)](https://www.youtube.com/watch?v=rrT6v5sOwJg)
   - [How Google fixed its design process and started making beautiful apps (7 min video)](https://www.youtube.com/watch?v=VDNngQjN6o4)
 
+- **Optional Thursday Readings**
+  - [Design Aesthetics for the Web (from Lynda.com)](https://www.lynda.com/Design-Techniques-tutorials/Design-Aesthetics-Web/506078-2.html?org=rit.edu)
+  - [Introduction to Graphic Design (Lynda.com)](https://www.lynda.com/Graphic-Design-tutorials/Introduction-Graphic-Design/419419-2.html?org=rit.edu)
+  
 - **[Tuesday/Thursday Exercise](weekly_materials/week4/designProcessExercise.md)**
   - In today's exercise, you'll create an initial design document for your personal portfolio site. 
+  
 
-- **Tuesday Lecture Links**
+- **Resource Links**
   - Flow Chart Tools
     - [Draw.io](http://draw.io/) - Free, web-based flowcharting tool
     - Google Drawings and Microsoft Word and PowerPoint have flowcharting symbols available
@@ -100,6 +105,10 @@ When we talk about "web design," we're actually talking about a much wider range
     - [Axure](https://www.axure.com/edu) - Available on IGM lab computers, free license for students
     - [Invision](https://www.invisionapp.com/) - Free web-based tool
     - [Design the Web: Layer Comps](https://www.lynda.com/Photoshop-tutorials/Using-Layer-Comps-Show-Interactive-States/114904-2.html?org=rit.edu) - Lynda.com tutorial on using Photoshop for comps
+    
+  - Visual Design Tools
+    - [A Simple Web Developer's Color Guide](https://www.smashingmagazine.com/2016/04/web-developer-guide-color/)
+    - [Adobe Color CC](https://color.adobe.com/create/color-wheel/) - Tool for creating harmonious color palettes
 
 
 - **Thursday Exercise** : In class you'll get critiques from your peers (and in some cases, from the professor). Those critiques should be used to update your design document as needed before turning it in on Sunday.
@@ -108,20 +117,18 @@ When we talk about "web design," we're actually talking about a much wider range
 Mobile devices now make up more than half of the traffic to major websites. And it's still the case that people regularly print out web pages for a variety of reasons. That means web designers need to make sure their pages work on a variety of screens, and in print format--not just on high-resolution computer monitors. The process of creating HTML and CSS that will adapt to a variety of devices is called responsive design. CSS Media Queries allow responsive design to work more effectively by determining how/where the page will be displayed. 
 
 - **Tuesday Readings**
-On Tuesday we'll look specifically at using CSS to create different versions of a page for different media types. This was covered in the CSS Fundamentals tutorial from week 2, but for review, you should look at the portion of that tutorial dealing with the topic. 
-  - [Lynda.com CSS Fundamentals: Media Types & Queries](https://www.lynda.com/CSS-tutorials/Media-types-media-queries/417645/484795-4.html?org=rit.edu)
-
-- **[Tuesday Exercise](./weekly_materials/week5/cssPrintExercise.md)**
+On Tuesday we'll start looking at using CSS to create different versions of a page for different media types.  
+  - [Lynda.com CSS Fundamentals: Media Types & Queries](https://www.lynda.com/CSS-tutorials/Media-types-media-queries/417645/484795-4.html?org=rit.edu) - This was included in the CSS Fundamentals tutorial from week 2, but for review, you should look at the portion of that tutorial dealing with the topic.
+  - [A Comprehensive Introduction to Grids in Web Design](https://webdesign.tutsplus.com/articles/a-comprehensive-introduction-to-grids-in-web-design--cms-26521) - A good overview of the importance of grids in web design. 
  
 
 - **Thursday Readings**
 On Thursday we'll dive more deeply into responsive design concepts.
   - [Lynda.com: Responsive Design Fundamentals](https://www.lynda.com/Web-Responsive-Design-tutorials/Responsive-Design-Fundamentals/104969-2.html?org=rit.edu) - Like the "CSS Fundamentals" tutorial from week 2, this is not a hands-on tutorial--instead, it is an overview of what responsive design is, why it's important, and how it's typically implemented. In class, we'll have a hands-on exercise applying these concepts. 
 
-- **[Thursday Exercise](weekly_materials/week5/responsiveExercise.md)**: In this exercise you'll be adding CSS to a simple web page to create a basic responsive version. 
  
 ## <a name="week6">Week 6</a> (Oct 3/5): CSS Flexbox, Complex Selectors, and Styling HTML Forms
-On Tuesday, we'll look at CSS Flexbox, a relatively new approach to creating flexible, responsive page layouts. While it's only supported by modern browsers, it's beginning to be more widely used in web design and development.  On Thursday, we'll talk about complex CSS selectors, and will cover the basics of creating and styling HTML forms (which you'll need when we start coding with JavaScript).  We'll also take time Thursday to do small group critiques of your personal portfolio project, which is due this weekend.  
+On Tuesday, we'll talk about complex CSS selectors, and will cover the basics of creating and styling HTML forms (which you'll need when we start coding with JavaScript). On Thursday, we'll look at CSS Flexbox, a relatively new approach to creating flexible, responsive page layouts. While it's only supported by modern browsers, it's beginning to be more widely used in web design and development. We'll also take time Thursday to do small group critiques of your personal portfolio project, which is due this weekend. 
 
 - **Tuesday Readings**
   - [MDN: Using CSS Flexible Boxes](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes)
