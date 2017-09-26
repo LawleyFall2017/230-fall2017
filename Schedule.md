@@ -121,6 +121,7 @@ On Tuesday we'll start looking at using CSS to create different versions of a pa
   - [Lynda.com CSS Fundamentals: Media Types & Queries](https://www.lynda.com/CSS-tutorials/Media-types-media-queries/417645/484795-4.html?org=rit.edu) - This was included in the CSS Fundamentals tutorial from week 2, but for review, you should look at the portion of that tutorial dealing with the topic.
   - [A Comprehensive Introduction to Grids in Web Design](https://webdesign.tutsplus.com/articles/a-comprehensive-introduction-to-grids-in-web-design--cms-26521) - A good overview of the importance of grids in web design. 
  
+ - **[Tuesday Exercise](./weekly_materials/week5/cssPrintExercise.md)**
 
 - **Thursday Readings**
 On Thursday we'll dive more deeply into responsive design concepts.
