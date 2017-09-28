@@ -62,7 +62,7 @@ When the browser window is large enough, however, the fact that we floated the n
 
 The content below the image still needs some work. Let's make the text a little bigger for readability, and separate the two blocks of text. 
 
-Set the font-size for `section` to `larger`.  Set the width of #main to 60%, and float it to the left. Set the width of #jobs to 35% and float it to the right. 
+Set the font-size for `section` to `larger`.  Set the width of #about to 60%, and float it to the left. Set the width of #jobs to 35% and float it to the right. 
 
 Now you have the two content sections in a two column layout underneath the nav Death Star image. But when you resize the window, the two columns stretch out a bit too far. 
 
