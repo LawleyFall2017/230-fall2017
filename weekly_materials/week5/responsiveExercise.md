@@ -33,7 +33,7 @@ You're going to start by styling the page for display in a browser. (Keep in min
 Add a style rule for the #logo id that does the following:   
 - Sets a height of 70px and a width of 160px
 - Floats it left
-- Sets a background image of darth.jpg (which is in the images directory) with no repeating of the image
+- Sets a background image of darth.png (which is in the images directory) with no repeating of the image
 
 Note that because the "Darth" image is a background image, it will not show up when printing unless background graphics are turned on. That's something to consider when you're deciding whether to include graphics via CSS vs HTML. But because that information is also in the h1 element, that can be be set to display on printing, but not on the screen. To hide the text on the screen, add this line to the #logo definition: `text-indent: -9999px;`
 
