@@ -9,7 +9,7 @@ Your finished form should look like this:
 ![form](form.png) 
 
 ## Setting Up
-Your HTML and CSS files for this exercise will go into a week8b directory in your igme230 directory. You'll be creating an index.html file for the form itself, and a form.css stylesheet for the formatting. 
+Your HTML and CSS files for this exercise will go into a week6 directory in your igme230 directory. You'll be creating an index.html file for the form itself, and a form.css stylesheet for the formatting. 
 
 ## HTML Form
 As usual, you need to start your page with basic html structure, including a link to the stylesheet you'll be creating. I also added a link to the Google font I used for my example form. Choose a sans-serif font to use for your form--if it's a system font like Helvetica or Arial, you won't need to add a CSS link, but if you're using a web-based font you should add it now. 
