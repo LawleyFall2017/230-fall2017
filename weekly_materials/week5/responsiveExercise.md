@@ -4,106 +4,71 @@
 Today's exercise will take you through the process of modifying the CSS for a simple website to make it responsive to varying screen size and resolution. 
 
 ## Setup
-Download the [week5b.zip](week5b.zip) zip file, and extract the week5b folder. Put the folder on your desktop, or in your igme230 directory. Open the directory using Visual Studio Code.
+Download the [responsive-exercise.zip](responsive-exercise.zip) file, and extract the responsive-exercise folder. Put the folder on your desktop, or in your igme230 directory. Open the directory using Visual Studio Code. You should see a darth.html file, an images directory with two images, and a styles directory with a main.css file.
 
 ## The HTML File
-Open the darth.html file in a web browser. It doesn't have any CSS styling yet, so it's pretty unimpressive. 
+Open the darth.html file in a web browser. It doesn't have any CSS styling yet, so it's pretty unimpressive. Now open the file in your editor. 
 
-Now open the file in your editor. Ignore the items in the head of the document for now, and look at the structure of the content. You’ll see that there are three main parts to the page: a `<header>` element, a `<section>` element with the id =”main”, and an `<aside>` element. All of these are wrapped in a div called "wrapper".  
+In the head of the document, you'll see this meta tag (which VS Code automatically places in any new HTML 5 document):
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+
+Defining the viewport is important in responsive pages. Here's a good explanation from <a href="https://www.w3schools.com/css/css_rwd_viewport.asp">W3Schools</a>:
+
+>A <meta> viewport element gives the browser instructions on how to control the page's dimensions and scaling.<br/><br />The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).<br/><br />The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.
+
+In the body of the document, there are three main parts to the page: a `<header>` element, a `<section>` element, and an `<aside>` element. All of these are wrapped in a div with an id of #wrapper.  
+
+You won't be 
 
 ## Styling the Page
-Open the main.css file from the styles directory. The only thing in it right now is a basic CSS reset, that will ensure that the default settings for display are consistent across different browsers. 
 
-Add the following to the Logo section of the stylesheet:
+Open the main.css file from the styles directory. The only thing in it right now is a <a href="http://cssreset.com/what-is-a-css-reset/">basic CSS reset</a>, that will ensure that the default settings for display are consistent across different browsers. I've also added a Google Fonts request for the Arimo font, and set that as the default font for content elements. 
 
-```css
-header h1 {
-	height: 70px;
-	width: 160px;
-	float: left;
-	display: block;
-	background: url(../images/darth.png) 0 0 no-repeat;
-	text-indent: -9999px;
-}
-```
+You're going to start by styling the page for display in a browser. (Keep in mind, however, this is often not the best approach. "Mobile first" design is increasingly the rule in web design and development; that's discussed in some detail in the video tutorial I assigned for today.)
 
-This gives the h1 element inside of the header element a background image, floats it on the left side of the page, and sets it to a narrow width so there is room for the nav system (and so the float works well).
+### Logo Section
+Add a style rule for the #logo id that does the following:   
+- Sets a height of 70px and a width of 160px
+- Floats it left
+- Sets a background image of darth.jpg (which is in the images directory) with no repeating of the image
 
-The negative text-indent hides the text from the user (so that the background image of “Darth” is visible). In addition to helping with accessibility, as we discussed last week, this makes it possible for search engines to see the text. (There's more discussion of this technique here: http://www.dennisplucinik.com/blog/2007/09/01/css-hack-text-indent-10000px/ )
+Note that because the "Darth" image is a background image, it will not show up when printing unless background graphics are turned on. That's something to consider when you're deciding whether to include graphics via CSS vs HTML. But because that information is also in the h1 element, that can be be set to display on printing, but not on the screen. To hide the text on the screen, add this line to the #logo definition: `text-indent: -9999px;`
 
-Now add this code to the Nav section of the stylesheet:
+The negative text-indent hides the text from the user (so that the background image of “Darth” is visible). Not only can this then be changed in a print media query, it also assists with accessibility (which we'll talk about more later this semester), and also makes the text visible to search engines. (There's more discussion of this technique here: http://www.dennisplucinik.com/blog/2007/09/01/css-hack-text-indent-10000px/ )
 
-```css
-header nav {
-	float: right;
-	margin-top: 40px; 
-}
-	
-header nav li {
-	display: inline;
-	margin-left: 15px;
-}
+### Nav Section
 
-#skipTo {
-	display: none;
-}
-	
-#skipTo li {
-	background: #b1fffc;
-}
-```
-These rules cause the navigation list to display all in one line, rather than in a separate rows.
+We want the navigation element lined up next to the logo, and for the items to be in one line rather than stacked.  
 
-We are also hiding the “skip to” navigation, and will only reveal it once we are in “mobile mode”
+First, float the nav element to the left. Then give `nav ul li` the following properties:
+- use inline rather than block display
+- set the font size to `x-large`
+- add a left margin of 15px so that there's appropriate spacing
 
-Save your work, and view the page in a browser again. It looks better, but if you resize the browser to a narrow width you will see that the content is fixed in size and not at all responsive.
+Finally, give the nav element a margin-top value of 35px so that it lines up better with the logo. 
 
-Now add the following code to the Banner section of main.css:
+(As you make changes to the CSS, make sure you watch how they change the appearance of the page!)
 
-```css			
-#banner {
-	float: left;
-	margin-bottom: 15px;
-	width: 100%;
-}
+### Death Star Section
 
-#banner img {
-	width: 100%;
-}
-```
+As you resize the window to make it smaller, you'll see that the image does not scale. Look at the CSS reset code--you'll see that the rules for images and other media are commented out. Remove the comment tags, so that the height:auto and max-width:100% are restored. Now the image should nicely when we change the size of the viewport. That's what we want. 
 
-Now try scaling the page - notice that the image scales down nicely - but also scales up as big as you want to grow the browser window.
-	
-You might have also noticed that our “main” div - “Facts about Darth Vader” is at the top of the screen. We need to fix that.
+When the browser window is large enough, however, the fact that we floated the navigation bar means that the death star jumps up next to it instead of sitting below it. Fix that by adding a `clear: left` instruction for the #deathStar element. 
 
-Add the following code to the Structure section of main.css:
+### Structure Section
 
-```css
-#main {
-	width: 60%;
-	margin-right: 5%;
-	float: left;
-}		
-	
-aside{
-	width: 35%;
-	float: right;
-}
-```
+The content below the image still needs some work. Let's make the text a little bigger for readability, and separate the two blocks of text. 
 
-Reload the page. Note that we now have #main and `<aside>` where we want them, with a nice two column layout underneath the nav Death Star image
+Set the font-size for `section` to `larger`.  Set the width of #main to 60%, and float it to the left. Set the width of #jobs to 35% and float it to the right. 
 
-To give our page a max-width so that the user can’t infinitely scale our image, and to add a little padding around the content, add the following to the Structure section:
+Now you have the two content sections in a two column layout underneath the nav Death Star image. But when you resize the window, the two columns stretch out a bit too far. 
 
-```css
-#wrapper {
-	width: 96%;	
-	max-width: 920px;
-	margin: auto;
-	padding: 2%;
-} 
-```
-The “non-mobile” version of this site is done, now let’s use a media query to give different CSS to a mobile device.
+Give the #wrapper element a max-width of 1000px so that the user can't infinitely stretch the content. Then center it by setting margin to `0 auto`. 
+
+The "non-mobile" version of this site is done. Now you need to add a media query to use different CSS on a mobile device.
 
 ## Creating the Mobile Styles
 
@@ -111,42 +76,26 @@ Add the following to Media Queries section of main.css:
 
 ```css
 @media screen and (max-width: 480px) {
-
-	#skipTo {
-		display: block;
-		}
 	
-	header nav, #main, aside {
+}
+```
+The styles you put inside this query will only take effect when the viewport size is below 480px. 
+
+To keep elements from wrapping improperly, add this instruction: 
+
+```css
+	nav, #about, #jobs {}
 		float: left;
 		clear: left;
 		margin: 0 0 10px; 
 		width: 100%;
 	}	
-	header nav li {
-		margin: 0;
-		background: #efefef;
-		display: block;
-		margin-bottom: 3px;
-	}
-	header nav a {
-		display: block;
-		padding: 10px;
-		text-align: center;
-	}			
-}
 ```
+To make the navigation links (`nav li`) work on mobile, you can either change the text size back to medium (which will fit on most mobile devices), or you can stack the list items by changing the display from inline back to block. 
 
-Here's what that code will do, *if* the viewport size is less than or equal to 480px:
-- Show the “Skip Nav” link
-- Shift the page to a single column layout - with nav, #main, and aside on top of one another
-- Display the navigation links in a row again, and give them a lot of padding so that they look like “table cells” from iOS or Android.
+You might also want to set the font-size in the section elements back to medium.  
 
-If you view the page in the browser again at a viewport size of >480px, it should look the same, since the media query won't be triggered. But if you resize the browser window to less than 480px, you'll see the layout change dramatically!
-
-Now, if you try this on a smartphone, depending on the model, you may notice that some text is smaller than you want or other issues pop up. This is because the smartphone scales everything on the page, which you can correct by adding the following in the <head> of your HTML:
-
-`<meta name="viewport" content="width=device-width, initial-scale=1.0" />`
-
+Assuming your browser window is currently set to more than 480px in width, you won't see any changes yet. If you resize the window to a viewport size  of less than 480px (or use dev tools to specify a mobile screen size) you should see the changes take effect!
 
 ## Submitting Your Work
-Upload your week5b folder with the updated main.css file to your igme230 folder, and link to it from your classword page, by 11:59pm tonight. Make sure you test the file on the server to make sure it displays properly.
+Upload your completed exercise to your igme230 directory on banjo, and link to it from your classwork page by 11:59pm tomorrow (Friday) night. Make sure you test the file on the server to make sure it displays properly.

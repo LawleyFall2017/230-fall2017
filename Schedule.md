@@ -121,28 +121,30 @@ On Tuesday we'll start looking at using CSS to create different versions of a pa
   - [Lynda.com CSS Fundamentals: Media Types & Queries](https://www.lynda.com/CSS-tutorials/Media-types-media-queries/417645/484795-4.html?org=rit.edu) - This was included in the CSS Fundamentals tutorial from week 2, but for review, you should look at the portion of that tutorial dealing with the topic.
   - [A Comprehensive Introduction to Grids in Web Design](https://webdesign.tutsplus.com/articles/a-comprehensive-introduction-to-grids-in-web-design--cms-26521) - A good overview of the importance of grids in web design. 
  
- - **[Tuesday Exercise](./weekly_materials/week5/cssPrintExercise.md)**
+ - **[Tuesday Exercise](./weekly_materials/week5/cssPrintExercise.md)** - In this exercise, you'll create a print media query for a web-optimized resume. 
 
 - **Thursday Readings**
 On Thursday we'll dive more deeply into responsive design concepts.
   - [Lynda.com: Responsive Design Fundamentals](https://www.lynda.com/Web-Responsive-Design-tutorials/Responsive-Design-Fundamentals/104969-2.html?org=rit.edu) - Like the "CSS Fundamentals" tutorial from week 2, this is not a hands-on tutorial--instead, it is an overview of what responsive design is, why it's important, and how it's typically implemented. In class, we'll have a hands-on exercise applying these concepts. 
+
+- **[Thursday Exercise](./weekly_materials/week5/responsiveExercise.md)** - In this exercise, you'll create two sets of styles for a web page--one optimized for full-size browsers, and the other optimized for mobile. 
 
  
 ## <a name="week6">Week 6</a> (Oct 3/5): CSS Flexbox, Complex Selectors, and Styling HTML Forms
 On Tuesday, we'll talk about complex CSS selectors, and will cover the basics of creating and styling HTML forms (which you'll need when we start coding with JavaScript). On Thursday, we'll look at CSS Flexbox, a relatively new approach to creating flexible, responsive page layouts. While it's only supported by modern browsers, it's beginning to be more widely used in web design and development. We'll also take time Thursday to do small group critiques of your personal portfolio project, which is due this weekend. 
 
 - **Tuesday Readings**
-  - [MDN: Using CSS Flexible Boxes](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes)
-  - [CSS Tricks: A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
- 
-
-- **[Tuesday Exercise](weekly_materials/week6/flexboxExercise.md)**: In this exercise you'll be creating a flexbox-based version of your classwork web page. 
-
-- **Thursday Readings**
    - [MDN: The native form widgets](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/The_native_form_widgets)
   - [Google Developers: Build Amazing Forms](https://developers.google.com/web/fundamentals/design-and-ui/input/forms/)
 
-- **[Thursday Exercise](weekly_materials/week6/formsExercise.md)**: You'll be creating and styling a complex HTML form. 
+- **[Tuesday Exercise](weekly_materials/week6/formsExercise.md)**: You'll be creating and styling a complex HTML form. 
+
+- **Thursday Readings**
+  - [MDN: Using CSS Flexible Boxes](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes)
+  - [CSS Tricks: A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
+- **[Thursday Exercise](weekly_materials/week6/flexboxExercise.md)**: In this exercise you'll be creating a flexbox-based version of the basic layout you worked on in week 2. 
+
 
 ## <a name="week7">Week 7</a> (Oct 12): Web Frameworks
 Many responsive websites are built using pre-existing frameworks of CSS and JavaScript that enable the developer to focus on content and design rather than the underlying code necessary for responsive functionality.  
