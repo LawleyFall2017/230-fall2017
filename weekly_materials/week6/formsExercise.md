@@ -248,7 +248,7 @@ And that's it! You're done!
 
 
 ## Submitting Your Work
-Upload the entire week8b folder to your igme230 folder on Banjo, and ***link to it from your main page.*** It should load properly at people.rit.edu/youruserid/igme230/week8b/ . It must be submitted by noon tomorrow (Friday, March 24).
+Upload the entire week6 folder to your igme230 folder on Banjo, and ***link to it from your main page.*** It should load properly at people.rit.edu/youruserid/igme230/week6/ . It must be submitted by noon tomorrow (Friday, March 24).
 
 
 
