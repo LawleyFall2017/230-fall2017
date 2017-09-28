@@ -84,7 +84,7 @@ The styles you put inside this query will only take effect when the viewport siz
 To keep elements from wrapping improperly, add this instruction: 
 
 ```css
-	nav, #about, #jobs {}
+	nav, #about, #jobs {
 		float: left;
 		clear: left;
 		margin: 0 0 10px; 
