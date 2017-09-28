@@ -21,7 +21,7 @@ Defining the viewport is important in responsive pages. Here's a good explanatio
 
 In the body of the document, there are three main parts to the page: a `<header>` element, a `<section>` element, and an `<aside>` element. All of these are wrapped in a div with an id of #wrapper.  
 
-You won't be 
+You won't be modifying the HTML at all for this assignment; you'll only be adding styles to main.css
 
 ## Styling the Page
 
