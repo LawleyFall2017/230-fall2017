@@ -21,7 +21,7 @@ Defining the viewport is important in responsive pages. Here's a good explanatio
 
 In the body of the document, there are three main parts to the page: a `<header>` element, a `<section>` element, and an `<aside>` element. All of these are wrapped in a div with an id of #wrapper.  
 
-You won't be 
+You won't be modifying the HTML at all for this assignment; you'll only be adding styles to main.css
 
 ## Styling the Page
 
@@ -33,7 +33,7 @@ You're going to start by styling the page for display in a browser. (Keep in min
 Add a style rule for the #logo id that does the following:   
 - Sets a height of 70px and a width of 160px
 - Floats it left
-- Sets a background image of darth.jpg (which is in the images directory) with no repeating of the image
+- Sets a background image of darth.png (which is in the images directory) with no repeating of the image
 
 Note that because the "Darth" image is a background image, it will not show up when printing unless background graphics are turned on. That's something to consider when you're deciding whether to include graphics via CSS vs HTML. But because that information is also in the h1 element, that can be be set to display on printing, but not on the screen. To hide the text on the screen, add this line to the #logo definition: `text-indent: -9999px;`
 
@@ -62,7 +62,7 @@ When the browser window is large enough, however, the fact that we floated the n
 
 The content below the image still needs some work. Let's make the text a little bigger for readability, and separate the two blocks of text. 
 
-Set the font-size for `section` to `larger`.  Set the width of #main to 60%, and float it to the left. Set the width of #jobs to 35% and float it to the right. 
+Set the font-size for `section` to `larger`.  Set the width of #about to 60%, and float it to the left. Set the width of #jobs to 35% and float it to the right. 
 
 Now you have the two content sections in a two column layout underneath the nav Death Star image. But when you resize the window, the two columns stretch out a bit too far. 
 
@@ -84,7 +84,7 @@ The styles you put inside this query will only take effect when the viewport siz
 To keep elements from wrapping improperly, add this instruction: 
 
 ```css
-	nav, #about, #jobs {}
+	nav, #about, #jobs {
 		float: left;
 		clear: left;
 		margin: 0 0 10px; 
