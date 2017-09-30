@@ -131,7 +131,7 @@ On Thursday we'll dive more deeply into responsive design concepts.
 
  
 ## <a name="week6">Week 6</a> (Oct 3/5): CSS Flexbox, Complex Selectors, and Styling HTML Forms
-On Tuesday, we'll talk about complex CSS selectors, and will cover the basics of creating and styling HTML forms (which you'll need when we start coding with JavaScript). On Thursday, we'll look at CSS Flexbox, a relatively new approach to creating flexible, responsive page layouts. While it's only supported by modern browsers, it's beginning to be more widely used in web design and development. We'll also take time Thursday to do small group critiques of your personal portfolio project, which is due this weekend. 
+On Tuesday, we'll talk about complex CSS selectors, and will cover the basics of creating and styling HTML forms (which you'll need when we start coding with JavaScript). On Thursday, we'll look at CSS Flexbox, a relatively new approach to creating flexible, responsive page layouts. While it's only supported by modern browsers, it's beginning to be more widely used in web design and development. 
 
 - **Tuesday Readings**
    - [MDN: The native form widgets](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/The_native_form_widgets)
@@ -148,6 +148,8 @@ On Tuesday, we'll talk about complex CSS selectors, and will cover the basics of
 
 ## <a name="week7">Week 7</a> (Oct 12): Web Frameworks
 Many responsive websites are built using pre-existing frameworks of CSS and JavaScript that enable the developer to focus on content and design rather than the underlying code necessary for responsive functionality.  
+
+Tuesday is a reading day, so we will not have class that day. I will be available for one-on-one meetings to provide feedback on your portfolio projects. 
 
 - **Thursday Readings**
   - [CSS Frameworks & Grids](https://www.lynda.com/CSS-tutorials/CSS-Frameworks-Grids-2016-Q3-REVISION/504266-2.html?org=rit.edu) - You don't need to do the exercises, just watch the vidoes. 
