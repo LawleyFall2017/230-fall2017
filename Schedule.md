@@ -179,7 +179,6 @@ This week we'll start using JavaScript to implement interactivity in websites. O
 
 - **[Tuesday Exercise](weekly_materials/week9/jsBasicExercise.md)**: You'll be creating two web pages, one that uses JavaScript to modifies properties of elements on the page, and one that displays calculations based on user input. 
 
-
 - **[Thursday Exercise 1](weekly_materials/week9/jsEventListenersExercise.md)**: You'll use some new JavaScript functions to create a currency calculator. 
 
 - **[Thursday Exercise 2](weekly_materials/week9/jsCookiesExercise.md)**: You'll change page content and then save those changes to cookies so that they can be applied when the page is reloaded.     
@@ -187,9 +186,9 @@ This week we'll start using JavaScript to implement interactivity in websites. O
 ## <a name="week10">Week 10</a> (Oct 31/Nov 2): JQuery & JQueryUI
 A great deal of the Javascript on the web uses a freely-available library of code called JQuery (which, in fact, was originally written by an RIT student!). This week we'll look at JQuery and how to use it in your pages. 
 
-- **[Tuesday Exercise](weekly_materials/week11/jqueryExercise.md)**: You'll implement some basic jQuery functionality on a page. 
+- **[Tuesday Exercise](weekly_materials/week10/jqueryExercise.md)**: You'll implement some basic jQuery functionality on a page. 
 
-- **[Thursday Exercise](weekly_materials/week11/jqueryuiExercise.md)**: You'll use the jQuery UI library to extend jQuery's functionality and add UI enhancements to page. 
+- **[Thursday Exercise](weekly_materials/week10/jqueryuiExercise.md)**: You'll use the jQuery UI library to extend jQuery's functionality and add UI enhancements to page. 
 
 ## <a name="week11">Week 11</a> (Nov 7/9): Web Applications I
 
@@ -206,8 +205,8 @@ On Thursday we'll talk about accessibility for the web, and I'll have you do som
 
 - **[Tuesday Exercise](weekly_materials/week13/accessibilityExercise.md)**: You'll assess several web pages for accessiblity problems. 
 
-## <a name="week14">Week 14</a> (Nov 28/30): Web Content Management
-While this course focuses primarily on front-end web development, almost all modern web development depends on server-side functionality as well. In some cases, that functionality is custom-designed and built--but in many other cases, it's provided by standard software packages that run on the server, like WordPress or Drupal. 
+## <a name="week14">Week 14</a> (Nov 28/30): Web Content Management & Hosting Environments
+While this course focuses primarily on front-end web development, almost all modern web development depends on server-side functionality as well. In some cases, that functionality is custom-designed and built--but in many other cases, it's provided by standard software packages that run on the server, like WordPress or Drupal. We'll also discuss the variety of hosting options available for web pages and applications. 
 
 ## <a name="week15">Week 15</a> (Dec 5/7): Server-Side Coding & Practical Exam
 On Tuesday we'll talk about server-side authentication and simple server-side programming using PHP. On Thursday, you'll take the practical exam. 
