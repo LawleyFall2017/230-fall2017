@@ -153,6 +153,8 @@ Many responsive websites are built using pre-existing frameworks of CSS and Java
 
 Tuesday is a reading day, so we will not have class that day. I will be available for one-on-one meetings to provide feedback on your portfolio projects. 
 
+Reminder: Your portfolio project is due on 10/15!
+
 - **Thursday Readings**
   - [CSS Frameworks & Grids](https://www.lynda.com/CSS-tutorials/CSS-Frameworks-Grids-2016-Q3-REVISION/504266-2.html?org=rit.edu) - You don't need to do the exercises, just watch the videos. 
   - [About Materialize](http://materializecss.com/about.html) - This is the framework you'll be using for this week's exercise
@@ -179,9 +181,9 @@ This week we'll start using JavaScript to implement interactivity in websites. O
 
 - **[Tuesday Exercise](weekly_materials/week9/jsBasicExercise.md)**: You'll be creating two web pages, one that uses JavaScript to modifies properties of elements on the page, and one that displays calculations based on user input. 
 
-- **[Thursday Exercise 1](weekly_materials/week9/jsEventListenersExercise.md)**: You'll use some new JavaScript functions to create a currency calculator. 
+- **[Thursday In-Class Exercise](weekly_materials/week9/jsEventListenersExercise.md)**: You'll use some new JavaScript functions to create a currency calculator. 
 
-- **[Thursday Exercise 2](weekly_materials/week9/jsCookiesExercise.md)**: You'll change page content and then save those changes to cookies so that they can be applied when the page is reloaded.     
+- **[Thursday Homework Exercise](weekly_materials/week9/jsCookiesExercise.md)**: You'll change page content and then save those changes to cookies so that they can be applied when the page is reloaded.     
 
 ## <a name="week10">Week 10</a> (Oct 31/Nov 2): JQuery & JQueryUI
 A great deal of the Javascript on the web uses a freely-available library of code called JQuery (which, in fact, was originally written by an RIT student!). This week we'll look at JQuery and how to use it in your pages. 
@@ -190,10 +192,10 @@ A great deal of the Javascript on the web uses a freely-available library of cod
 
 - **[Thursday Exercise](weekly_materials/week10/jqueryuiExercise.md)**: You'll use the jQuery UI library to extend jQuery's functionality and add UI enhancements to page. 
 
-## <a name="week11">Week 11</a> (Nov 7/9): Web Applications I
+## <a name="week11">Week 11</a> (Nov 7/9): Simple JavaScript Web Applications
 
 
-## <a name="week12">Week 12</a> (Nov 14/16): Web Applications II
+## <a name="week12">Week 12</a> (Nov 14/16): Specialized JavaScript Libraries
 
 
 ## <a name="week13">Week 13</a> (Nov 21): Web Accessibility
