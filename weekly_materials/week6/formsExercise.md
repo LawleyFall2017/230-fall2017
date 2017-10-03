@@ -140,14 +140,3 @@ Try clicking the submit button now. It should launch your default email client, 
 
 ## Submitting Your Work
 Upload the completed exercise to Banjo, and ***link to it from your main page.***  It must be submitted by noon tomorrow (Wednesday, October 3).
-
-
-
-
-
-
-
-
-
-
-
