@@ -140,13 +140,15 @@ On Tuesday, we'll talk about complex CSS selectors, and will cover the basics of
 - **[Tuesday Exercise](weekly_materials/week6/formsExercise.md)**: You'll be creating and styling a complex HTML form. 
 
 - **Thursday Readings**
-Start with the MDN and CSS Tricks readings (they're not very long) so that you get a good sense of what FlexBox is and how it works. Then I *highly* recommend that you also do the Lynda.com tutorial so that you get some hands-on experience with flexbox-based layouts. Keep in mind that the tutorial was created four years ago; <a href="http://caniuse.com/#feat=flexbox">browser support for Flexbox is much more established at this point</a>. However, it's still necessary to use <a href="http://shouldiprefix.com/">browser prefixes</a> if you need your page to work reliably in older browsers. 
+Start with the MDN and CSS Tricks readings (they're not very long) so that you get a good sense of what FlexBox is and how it works. Then take a look at the [Solved by Flexbox]() site to see some specific examples of Flexbox in action. 
+
+Note: While <a href="http://caniuse.com/#feat=flexbox">browser support for Flexbox</a> is pretty well established at this point, it's still necessary to use <a href="http://shouldiprefix.com/">browser prefixes</a> if you need your page to work reliably in older browsers. 
 
   - [MDN: Using CSS Flexible Boxes](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes)
   - [CSS Tricks: A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-  - [Lynda.com: CSS Flexbox: First Look](https://www.lynda.com/CSS-tutorials/CSS-Flexbox-First-Look/116352-2.html?org=rit.edu)
+  - [Solved by Flexbox](https://philipwalton.github.io/solved-by-flexbox/)
 
-- **[Thursday Exercise](weekly_materials/week6/flexboxExercise.md)**: In this exercise you'll be creating a simple flexbox-based version of the basic page layout you worked on in week 2. I will be out of town, but the TA will be avilable in our classroom to help with the exercise if you need it. 
+- **[Thursday Exercise](weekly_materials/week6/flexboxExercise.md)**: For today's exercise, you'll be using Flexbox to create a page using the 3-column "Holy Grail" layout model. I will be out of town, but the TA will be avilable in our classroom to help with the exercise if you need it. 
 
 ## <a name="week7">Week 7</a> (Oct 12): Web Frameworks
 Many responsive websites are built using pre-existing frameworks of CSS and JavaScript that enable the developer to focus on content and design rather than the underlying code necessary for responsive functionality.  
