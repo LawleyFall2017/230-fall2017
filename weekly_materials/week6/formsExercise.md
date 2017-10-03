@@ -1,7 +1,13 @@
 # HTML Forms 
 
 ## Overview & Goals
-In today's exercise, you'll build a basic HTML form with a variety of input types, and then style it using CSS.   
+In today's exercise, you'll build a basic HTML form with a variety of input types, and then style it using CSS. 
+
+## Resources
+In addition to the readings for today, you will probably find these resources helpful:
+- [W3Schools HTML Forms](https://www.w3schools.com/html/html_forms.asp)
+- [W3Schools CSS Selectors Reference](https://www.w3schools.com/cssref/css_selectors.asp)
+- [MDN CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
 
 ## Previewing What You're Going to Make
 Your finished form should look like this:
@@ -14,13 +20,13 @@ Create a folder for this exercise in your igme230 folder. (Since your completed 
 ## HTML Form
 As usual, you need to start your page with basic HTML 5 structure. (As a reminder, both VS Code and Brackets allow you to simply type HTML:5 and press tab in order to insert a full HTML 5 document structure.)
 
-In the body of the document, add a `<form> </form>` element to hold the form content.  
+In the body of the document, add a form element to hold the form content.  
 
-Inside the form, place an `<h1>` element with the title for the form, something like "Your Name's Example Form". 
+Inside the form, place an `h1` element with the title for the form, something like "Your Name's Example Form". 
 
-Below the heading add a <a href="https://www.w3schools.com/TAgs/tag_fieldset.asp">`<fieldset>` element with a `<legend>`</a> of "Contact Information".
+Below the heading add a <a href="https://www.w3schools.com/TAgs/tag_fieldset.asp">`<fieldset>` element, and within it include a <a href="https://www.w3schools.com/TAgs/tag_legend.asp">`<legend>`</a> of "Contact Information".
 
-Inside the fieldset, place three input fields--one for plain text entry of a username, one for email, and one for a password. The input fields require three attributes:
+Also inside the fieldset, place three input fields--one for plain text entry of a username, one for an email address, and one for a password. The input fields require three attributes:
 - <a href="https://www.w3schools.com/TAgs/att_input_type.asp">"type" specifies what type of input the field is used for</a>; for the user name field you want this to be text, for the email field you want it to be email, and for the password field you want it to be password
 - "id" allows us to access that element using Javascript (which is important when we start using form validation scripts)
 - "name" is used to collect the user data from the form; every input needs a unique name, which can be the same as the ID, but doesn't need to be
@@ -36,13 +42,9 @@ Each of the input fields also needs a label identifying it. Here's an example of
 
 Wrap each of the label/input combinations in `<div>` tags so that we can format them easily when we start changing styles. The divs do not need to have unique IDs. 
 
-Below the fieldset, add another div. This is you should put the Comments section. It also needs both a `<label>` and a method for inputting data, but this time instead of a single-line text `<input>` element, use the multi-line `<textarea>` element. 
+Below the fieldset, add another div for the comments section. It doesn't need a fieldset, but it does need  a `label` and a method for inputting data, but this time instead of a single-line text `input` element, use the multi-line `textarea` element. Give it both an ID (for CSS purposes) and a name (for data collection purposes) of "comments" 
 
-```html
-    <textarea id="comments" name="comments">by default this element is filled with this text</textarea>
-```
-
-The last input field to include is a pair of radio buttons. With radio buttons and checkboxes, you need to assign the same name attribute to each of the inputs, so that the browser knows to treat them as related options when reporting the user input. You also need to include a value for each radio button, since the user isn't providing text input. 
+The last input field to include is a pair of <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio">radio buttons</a>. With radio buttons and checkboxes, you need to assign the same name attribute to each of the inputs, so that the browser knows to treat them as related options when reporting the user input. You also need to include a value for each radio button, since the user isn't providing text input. 
 
 ```html
 <div>
@@ -73,7 +75,7 @@ Add a `text-align: center` rule for the h1 heading.
 
 Next you'll format the fieldset, specifying a dark gray (#999) border with the same rounded corners as on the form. Use margin-top to add some space above the fieldset. Make the text in the legend a bit bigger (I set font-size to 1.2em and font-weight to bolder), and add some padding to the left and right of the text to provide some visual relief between the text and the border.  
 
-The input items need to be spaced out a bit more vertically. Since they're each contained in a div, you change the margin for divs to add some extra space above and below (I used `margin: 1em 0;`). (I had this apply to all divs, but if you only want this to apply to the divs in the fieldset, you could use `fieldset>div`)
+The input items need to be spaced out a bit more vertically. Since they're each contained in a div, you change the margin for divs to add some extra space above and below (I used `margin: 1em 0;`). In my example, I had this apply to all divs, but if you only want this to apply to the divs in the fieldset you could use `fieldset>div`)
 
 Next, you need to change the alignment of the input items so that the labels are right-aligned, creating a clean line of inputs. Because the labels are inline items rather than block items, their text alignment can't be modified. However, there's a special display type of <a href="https://www.w3schools.com/css/css_inline-block.asp">"inline-block"</a> that keeps an item in the inline flow, but allows you to manipulate its properties as though it was a block-level item. If you use that, you can set the labels to a fixed width, and then give them a fixed width of 175px and right align the text without breaking the flow of the content.
 
@@ -85,6 +87,8 @@ You want the top, not the bottom, of the textarea input field to line up with th
 
 Now you need to tackle the radio buttons. Unlike the other input fields, they have a label for the group rather than for the indvidual items, and you want the text describing each option to come after the button rather than before it. As a result, you don't want the buttons to have the same 300px width as the other input fields, because that wouldn't leave room for the descriptive text. Using an <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors">attribute selector</a>, change the width of the button fields to `auto` by selecting only the input fields with a type of `radio`.  
 
+[Note: After creating this example, I discovered that there's a better way to include labels for each radio button; the next iteration of this exercise will use that!]
+
 The radio buttons are in an unordered list. Remove the bullets in front of each button by changing the list-style for the ul element to none. 
 
 To make the list of options line up vertically with its label, change the display type for the ul from its default of block (which pushes it to a new line) to the inline-block style we used for the labels. Then vertically align it in the same way you did for the `<textarea>` field. It's still not quite right, but you can fix that by setting margin and padding to 0. 
@@ -95,7 +99,7 @@ In my example, the button is white with large green text, but it changes to gree
 
 To accomplish this, I need both a button rule, and a button:hover rule. The first one sets the default state for the button (white background, green text, 1px solid dark gray border, 1.2em font size, and margins set to auto). The second one changes the background to green and the text to white, and also <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/cursor">changes the cursor to a pointer</a> so that it's obvious the button is clickable. 
 
-Only one last thing to do. The button needs to be centered on the page. You *could* add a CSS class or ID to the div containing the button so that you could change the text alignment, but there's a way to do this that doesn't involve modifying the HTML at all. For this project it's overkill, but it's important to know how to do this, since it's quite common in production environments for you to need to format elements on a page without having control over the HTML being generated. 
+Only one last thing to do. The button needs to be centered on the page. You *could* add a CSS class or ID to the div containing the button so that you could change the text alignment, but there's a way to do this that doesn't involve modifying the HTML at all. For this project it's overkill, but it's useful to know how to do this using complext CSS selectors, since it's non uncommon in production environments for you to need to format elements on a page without having control over the HTML being generated. 
 
 The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:last-child">`:last-child` pseudo class</a> allows you to select the last element among a group of "sibling" elements on a page. However, if we use that on the div element, that creates a small problem. Add this rule, and see what happens: 
 

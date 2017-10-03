@@ -137,7 +137,10 @@ On Tuesday, we'll talk about complex CSS selectors, and will cover the basics of
    - [MDN: The native form widgets](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/The_native_form_widgets)
   - [Google Developers: Build Amazing Forms](https://developers.google.com/web/fundamentals/design-and-ui/input/forms/)
 
-- **[Tuesday Exercise](weekly_materials/week6/formsExercise.md)**: You'll be creating and styling a complex HTML form. 
+- **[Tuesday Exercise](weekly_materials/week6/formsExercise.md)**: You'll be creating and styling a complex HTML form. In addition to the MDN "native form widgets" reading for today, these resources will be helpful:
+  - [W3Schools HTML Forms](https://www.w3schools.com/html/html_forms.asp)
+  - [W3Schools CSS Selectors Reference](https://www.w3schools.com/cssref/css_selectors.asp)
+  - [MDN CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
 
 - **Thursday Readings**
 Start with the MDN and CSS Tricks readings (they're not very long) so that you get a good sense of what FlexBox is and how it works. Then take a look at the [Solved by Flexbox]() site to see some specific examples of Flexbox in action. 
