@@ -8,13 +8,13 @@
 - [Week 5 (Sep 26/28): Responsive Design & CSS Media Queries](#week5)
 - [Week 6 (Oct 3/5): Advanced CSS Formatting: CSS Flexbox, Complex Selectors, and HTML Forms](#week6)
 - [Week 7 (Oct 12): Web Frameworks](#week7)
-- [Week 8 (Oct 17/19): CSS Transitions, Animations & Menus](#week8)
-- [Week 9 (Oct 24/26): Javascript Intro: Syntax, DOM, and Debuggers](#week9)
-- [Week 10 (Oct 31/Nov 2): JavaScript for Interactivity](#week10)
-- [Week 11 (Nov 7/9): SVG and Javascript Libraries](#week11)
-- [Week 12 (Nov 14/16): JQuery & JQueryUI](#week12)
+- [Week 8 (Oct 17/19): CSS Transitions, Animations & Menus; SVG](#week8)
+- [Week 9 (Oct 24/26): JavaScript for Web Interactivity](#week9)
+- [Week 10 (Oct 31/Nov 2): JQuery & JQueryUI](#week10)
+- [Week 11 (Nov 7/9): Simple JavaScript Web Applications](#week11)
+- [Week 12 (Nov 14/16): Specialized JavaScript Libraries](#week12)
 - [Week 13 (Nov 21): Web Accessibility](#week13)
-- [Week 14 (Nov 28/30): CSS Programming (SASS)](#week14)
+- [Week 14 (Nov 28/30): Web Content Management & Hosting Environments](#week14)
 - [Week 15 (Dec 5/7): Basic PHP & Practical Exam](#week15)
 - [Finals Week: Makeup Practical Exam](#finals)
 
@@ -131,74 +131,77 @@ On Thursday we'll dive more deeply into responsive design concepts.
 
  
 ## <a name="week6">Week 6</a> (Oct 3/5): CSS Flexbox, Complex Selectors, and Styling HTML Forms
-On Tuesday, we'll talk about complex CSS selectors, and will cover the basics of creating and styling HTML forms (which you'll need when we start coding with JavaScript). On Thursday, we'll look at CSS Flexbox, a relatively new approach to creating flexible, responsive page layouts. While it's only supported by modern browsers, it's beginning to be more widely used in web design and development. We'll also take time Thursday to do small group critiques of your personal portfolio project, which is due this weekend. 
+On Tuesday, we'll talk about complex CSS selectors, and will cover the basics of creating and styling HTML forms (which you'll need when we start coding with JavaScript). On Thursday, we'll look at CSS Flexbox, a better CSS-based approach to creating flexible, responsive page layouts.  
 
 - **Tuesday Readings**
    - [MDN: The native form widgets](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/The_native_form_widgets)
   - [Google Developers: Build Amazing Forms](https://developers.google.com/web/fundamentals/design-and-ui/input/forms/)
 
-- **[Tuesday Exercise](weekly_materials/week6/formsExercise.md)**: You'll be creating and styling a complex HTML form. 
+- **[Tuesday Exercise](weekly_materials/week6/formsExercise.md)**: You'll be creating and styling a complex HTML form. In addition to the MDN "native form widgets" reading for today, these resources will be helpful:
+  - [W3Schools HTML Forms](https://www.w3schools.com/html/html_forms.asp)
+  - [W3Schools CSS Selectors Reference](https://www.w3schools.com/cssref/css_selectors.asp)
+  - [MDN CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
 
 - **Thursday Readings**
+Start with the MDN and CSS Tricks readings (they're not very long) so that you get a good sense of what FlexBox is and how it works. Then take a look at the [Solved by Flexbox]() site to see some specific examples of Flexbox in action. 
+
+Note: While <a href="http://caniuse.com/#feat=flexbox">browser support for Flexbox</a> is pretty well established at this point, it's still necessary to use <a href="http://shouldiprefix.com/">browser prefixes</a> if you need your page to work reliably in older browsers. 
+
   - [MDN: Using CSS Flexible Boxes](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes)
   - [CSS Tricks: A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+  - [Solved by Flexbox](https://philipwalton.github.io/solved-by-flexbox/)
 
-- **[Thursday Exercise](weekly_materials/week6/flexboxExercise.md)**: In this exercise you'll be creating a flexbox-based version of the basic layout you worked on in week 2. 
-
+- **[Thursday Exercise](weekly_materials/week6/flexboxExercise.md)**: For today's exercise, you'll be using Flexbox to create a page using the 3-column "Holy Grail" layout model. I will be out of town, but the TA will be avilable in our classroom to help with the exercise if you need it. 
 
 ## <a name="week7">Week 7</a> (Oct 12): Web Frameworks
 Many responsive websites are built using pre-existing frameworks of CSS and JavaScript that enable the developer to focus on content and design rather than the underlying code necessary for responsive functionality.  
 
+Tuesday is a reading day, so we will not have class that day. I will be available for one-on-one meetings to provide feedback on your portfolio projects. 
+
+Reminder: Your portfolio project is due on 10/15!
+
 - **Thursday Readings**
-  - [CSS Frameworks & Grids](https://www.lynda.com/CSS-tutorials/CSS-Frameworks-Grids-2016-Q3-REVISION/504266-2.html?org=rit.edu) - You don't need to do the exercises, just watch the vidoes. 
-  - [About Materialize](http://materializecss.com/about.html)
+  - [CSS Frameworks & Grids](https://www.lynda.com/CSS-tutorials/CSS-Frameworks-Grids-2016-Q3-REVISION/504266-2.html?org=rit.edu) - You don't need to do the exercises, just watch the videos. 
+  - [About Materialize](http://materializecss.com/about.html) - This is the framework you'll be using for this week's exercise
  
 - **[Thursday Exercise](weekly_materials/week7/frameworkExercise.md)**: In this exercise you'll create a complex, responsive web page layout using a CSS Framework.
 
 
-## <a name="week8">Week 8</a> (Oct 17/19): CSS Transitions, Animations, & Menus
-This week we'll look at how CSS can be used to create transitions, animations, and interactive menus. 
+## <a name="week8">Week 8</a> (Oct 17/19): CSS Transitions, Animations, & Menus; Scalable Vector Graphics
+On Tuesday, we'll look at how CSS can be used to create transitions, animations, and interactive menus. On Thursday, we'll talk about Scalable Vector Graphics on the web. 
 
 - **Tuesday Readings**
   - [Lynda.com CSS:Animation](https://www.lynda.com/CSS-tutorials/CSS-Animation/439683-2.html?org=rit.edu)
 
-- **[Tuesday Exercise](weekly_materials/week8/cssAnimationExercise.md)**: You'll be applying what you learned in the CSS Animation tutorial. 
+- **[Tuesday Exercise](weekly_materials/week8/cssAnimationExercise.md)**: You'll be applying what you learned in the CSS Animation tutorial to the framework-based page you created with Materialize. 
+
+- **[Thursday Exercise](weekly_materials/week12/week12tuesday.md)**: Some basic practice with SVG graphics.
 
 
-## <a name="week9">Week 9</a> (Oct 24/26): Javascript Intro: Syntax, DOM, and Debuggers
-We'll begin looking at Javascript this week, and its importance in building interactivity into websites. This week will be the basics--syntax, the Document Object Model, and basic debugging using both HTML editors (VS Code and/or Brackets) and Chrome's developer tools. 
-
-On Tuesday, I'll also meet with each group to provide feedback on your website design. 
+## <a name="week9">Week 9</a> (Oct 24/26): JavaScript for Web Interactivity
+This week we'll start using JavaScript to implement interactivity in websites. On Tuesday we'll talk about underlying concepts, like the Document Object Model, and implement some basic JavaScript interactivity on a web page. On Thursday, we'll look at Event Listeners and Cookies. 
 
 - **Tuesday Readings**
   - [MDN: Introduction to the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
 
-- **Thursday Readings**
-  - [W3Schools Javascript Tutorial](https://www.w3schools.com/js/default.asp): Do the first 14 pages (JS HOME through JS Objects)
-  - [W3Schools Javascript HTML DOM Tutorial](https://www.w3schools.com/js/js_htmldom.asp): Do the first six pages (DOM Intro through DOM CSS)
+- **[Tuesday Exercise](weekly_materials/week9/jsBasicExercise.md)**: You'll be creating two web pages, one that uses JavaScript to modifies properties of elements on the page, and one that displays calculations based on user input. 
 
-- **[Thursday Exercise](weekly_materials/week9/jsBasicExercise.md)** : A basic Javascript exercise in which you'll provide interactive elements to change page appearance, and do basic mathematical calculations. 
+- **[Thursday In-Class Exercise](weekly_materials/week9/jsEventListenersExercise.md)**: You'll use some new JavaScript functions to create a currency calculator. 
 
+- **[Thursday Homework Exercise](weekly_materials/week9/jsCookiesExercise.md)**: You'll change page content and then save those changes to cookies so that they can be applied when the page is reloaded.     
 
-## <a name="week10">Week 10</a> (Oct 31/Nov 2): Javascript for Interactivity
-This week is a continuation of basic Javascript programming, with a focus on HTML events and event listeners, as well as the interaction between Javascript and CSS. 
-
-- **[Tuesday Exercise](weekly_materials/week10/jsEventListenersExercise.md)**: You'll use some new JavaScript functions to create a currency calculator. 
-
-- **[Thursday Exercise](weekly_materials/week10/jsCookiesExercise.md)**: You'll change page content and then save those changes to cookies so that they can be applied when the page is reloaded. 
- 
-
-## <a name="week11">Week 11</a> (Nov 7/9): JQuery & JQueryUI
+## <a name="week10">Week 10</a> (Oct 31/Nov 2): JQuery & JQueryUI
 A great deal of the Javascript on the web uses a freely-available library of code called JQuery (which, in fact, was originally written by an RIT student!). This week we'll look at JQuery and how to use it in your pages. 
 
-- **[Tuesday Exercise](weekly_materials/week11/jqueryExercise.md)**: You'll implement some basic jQuery functionality on a page. 
+- **[Tuesday Exercise](weekly_materials/week10/jqueryExercise.md)**: You'll implement some basic jQuery functionality on a page. 
 
-- **[Thursday Exercise](weekly_materials/week11/jqueryuiExercise.md)**: You'll use the jQuery UI library to extend jQuery's functionality and add UI enhancements to page. 
+- **[Thursday Exercise](weekly_materials/week10/jqueryuiExercise.md)**: You'll use the jQuery UI library to extend jQuery's functionality and add UI enhancements to page. 
 
-## <a name="week12">Week 12</a> (Nov 14/16): SVG & JavaScript Libraries
-On Tuesday we'll look at how to create vector graphics using SVG markup and embed them in your pages. On Thursday, we'll look at some JavaScript libraries for manipulating SVG graphics. 
+## <a name="week11">Week 11</a> (Nov 7/9): Simple JavaScript Web Applications
 
-- **[Tuesday Exercise](weekly_materials/week12/svgExercise.md)**: Some basic practice with SVG graphics.
+
+## <a name="week12">Week 12</a> (Nov 14/16): Specialized JavaScript Libraries
+
 
 ## <a name="week13">Week 13</a> (Nov 21): Web Accessibility
 On Thursday we'll talk about accessibility for the web, and I'll have you do some accessibility assessments of web pages. 
@@ -209,8 +212,8 @@ On Thursday we'll talk about accessibility for the web, and I'll have you do som
 
 - **[Tuesday Exercise](weekly_materials/week13/accessibilityExercise.md)**: You'll assess several web pages for accessiblity problems. 
 
-## <a name="week14">Week 14</a> (Nov 28/30): CSS Programming (SASS)
-
+## <a name="week14">Week 14</a> (Nov 28/30): Web Content Management & Hosting Environments
+While this course focuses primarily on front-end web development, almost all modern web development depends on server-side functionality as well. In some cases, that functionality is custom-designed and built--but in many other cases, it's provided by standard software packages that run on the server, like WordPress or Drupal. We'll also discuss the variety of hosting options available for web pages and applications. 
 
 ## <a name="week15">Week 15</a> (Dec 5/7): Server-Side Coding & Practical Exam
 On Tuesday we'll talk about server-side authentication and simple server-side programming using PHP. On Thursday, you'll take the practical exam. 
