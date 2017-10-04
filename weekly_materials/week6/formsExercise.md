@@ -15,11 +15,7 @@ Your finished form should look like this:
 ![form](form.png) 
 
 ## Setting Up
-<<<<<<< HEAD
-Your HTML and CSS files for this exercise will go into a week6 directory in your igme230 directory. You'll be creating an index.html file for the form itself, and a form.css stylesheet for the formatting. 
-=======
 Create a folder for this exercise in your igme230 folder. (Since your completed exercise will be linked from your main classwork page, you can name it whatever you'd like.) You'll be creating an HTML file for the form itself, and a CSS stylesheet for the formatting. 
->>>>>>> upstream/master
 
 ## HTML Form
 As usual, you need to start your page with basic HTML 5 structure. (As a reminder, both VS Code and Brackets allow you to simply type HTML:5 and press tab in order to insert a full HTML 5 document structure.)
@@ -123,17 +119,7 @@ form>div:last-child {
 }
 ```
 
-<<<<<<< HEAD
-And that's it! You're done!
-
-
-## Submitting Your Work
-Upload the entire week6 folder to your igme230 folder on Banjo, and ***link to it from your main page.*** It should load properly at people.rit.edu/youruserid/igme230/week6/ . It must be submitted by noon tomorrow (Friday, March 24).
-
-
-=======
 And that's it! The form has been properly styled. 
->>>>>>> upstream/master
 
 ## From Form to Function
 
