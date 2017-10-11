@@ -54,7 +54,7 @@ Finally, give the nav element a margin-top value of 35px so that it lines up bet
 
 ### Death Star Section
 
-As you resize the window to make it smaller, you'll see that the image does not scale. Look at the CSS reset code--you'll see that the rules for images and other media are commented out. Remove the comment tags, so that the height:auto and max-width:100% are restored. Now the image should nicely when we change the size of the viewport. That's what we want. 
+As you resize the window to make it smaller, you'll see that the image does not scale. Look at the CSS reset code--you'll see that the rules for images and other media are commented out. Remove the comment tags, so that the height:auto and max-width:100% are restored. Now the image should scale nicely when we change the size of the viewport. That's what we want. 
 
 When the browser window is large enough, however, the fact that we floated the navigation bar means that the death star jumps up next to it instead of sitting below it. Fix that by adding a `clear: left` instruction for the #deathStar element. 
 
