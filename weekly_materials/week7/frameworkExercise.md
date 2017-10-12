@@ -47,7 +47,7 @@ The last two fixes will require us to add some new styles for this document by e
 
 First we need to fix the spacing above the logo. In the CSS file, add some padding to the top of the logo image. (You can do this by adding an ID or a class to the img tag, or by using a CSS selector that identifies it based on its alt text or position in the document.)
 
-Second, we want the navigation menu links to be a little bit larger than they currently are. Add a rule to the CSSL file that changes the size of links inside of an unordered list within a nav element (`nav ul a`) to 1.2rem. (For more information on using "rem" as a size unit, see [this article](https://css-tricks.com/confused-rem-em/).)
+Second, we want the navigation menu links to be a little bit larger than they currently are. Add a rule to the CSS file that changes the size of links inside of an unordered list within a nav element (`nav ul a`) to 1.2rem. (For more information on using "rem" as a size unit, see [this article](https://css-tricks.com/confused-rem-em/).)
 
 On to the content!
 
