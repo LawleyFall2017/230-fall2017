@@ -12,6 +12,7 @@ You will create a personal portfolio site to showcase your work to potential emp
 - Landing page named index.html, including your name and an image (could be a photo or an avatar)
 - Gallery page with brief information about each of your work examples (examples can be projects or exercises from this class or other classes, or work you've done on your own)
 - Individual pages with more detail for each of your examples
+    - you must have at least three examples
     - each example needs a title, an image (could be a screenshot or photo), and a one-paragraph description that highlights the tools you used and the skills that it illustrates
     - if the example is from a group project, be sure to clearly indicate what your role was on the project
 - Contact information page
