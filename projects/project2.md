@@ -36,6 +36,8 @@ You will create a personal portfolio site to showcase your work to potential emp
 - Drop-down menu for navigation used somewhere on site 
 - Images and other media properly optimized for screen display
 
+***Note***: Because we did not cover drop-down menus before this assignment was due, everyone will get the 1 point for this component. If you do implement a drop-down menu, you can count that in your "above and beyond" documentation on the Notes page. 
+
 
 ## Grading
 If you complete all required components with no errors, you'll earn 16/20 points, or 80%. In order to go above that, 
