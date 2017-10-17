@@ -1,7 +1,9 @@
-# Project 3 
+# Project 3: Group Web Site
 
 ## Description
 Working as part of a group, you'll create a detailed design document and prototype of a faculty website. Use the content on my site--[lawley.rit.edu](http://lawley.rit.edu) for this. I will create a shared, private, GitHub repo and a private Slack channel for each group.
+
+The emphasis in this project is the design process, not just the final deliverable!
 
 ## Deliverables
 
