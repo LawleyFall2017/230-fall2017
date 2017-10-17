@@ -5,7 +5,7 @@ Working as part of a group, you'll create a detailed design document and prototy
 
 ## Deliverables
 
-### Roles and Responsibilities (Complete to GitHub doc by 11:59pm on Sunday, 10/22)
+### Roles and Responsibilities (Add to Roles-Responsibilities.md by 11:59pm on Sunday, 10/22)
 Begin by working as a group to determine who will have responsibility for various aspects of the project--who will be responsible for the documentation, the written content on the site, the wireframing, the visual design, the coding? Once you've determined individual responsibilities, **each person should update their own section** of the Roles-Responsibilities.md document in the group's GitHub repo with their own responsiblities. (Do not have one person enter this for everyone in the group; you will not get credit unless you were the one to commit the edit with your responsibilities.)
 
 ### Strategy, Scope, and Structure (Add to DesignDoc.md file by 11:59pm on Wednesday, 10/25)
