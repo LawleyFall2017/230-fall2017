@@ -53,7 +53,7 @@ a:hover .fa {
     }
 ```
 ## Submitting Your Work
-Upload the entire csseffects folder to your igme230 folder on Banjo, and link to it from your main page. It must be submitted by 11:59pm tomorrow (Wednesday, October 17).
+Upload the entire csseffects folder to your igme230 folder on Banjo, and link to it from your main page. It must be submitted by 11:59pm tomorrow (Wednesday, October 18).
 
 
 
