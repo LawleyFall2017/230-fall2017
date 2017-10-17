@@ -167,8 +167,8 @@ Reminder: Your portfolio project is due on 10/15!
 - **[Thursday Exercise](weekly_materials/week7/frameworkExercise.md)**: In this exercise you'll create a complex, responsive web page layout using a CSS Framework.
 
 
-## <a name="week8">Week 8</a> (Oct 17/19): CSS Transitions, Animations, & Menus; Scalable Vector Graphics
-On Tuesday, we'll look at how CSS can be used to create transitions, animations, and interactive menus. On Thursday, we'll talk about Scalable Vector Graphics on the web. 
+## <a name="week8">Week 8</a> (Oct 17/19): CSS Transitions & Animations; Scalable Vector Graphics
+On Tuesday, we'll look at how CSS can be used to create transitions and animations. On Thursday, we'll talk about Scalable Vector Graphics on the web. 
 
 - **Tuesday Readings**
   - [Lynda.com CSS:Animation](https://www.lynda.com/CSS-tutorials/CSS-Animation/439683-2.html?org=rit.edu)
