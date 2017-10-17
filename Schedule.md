@@ -175,7 +175,10 @@ On Tuesday, we'll look at how CSS can be used to create transitions, animations,
 
 - **[Tuesday Exercise](weekly_materials/week8/cssAnimationExercise.md)**: You'll be applying what you learned in the CSS Animation tutorial to the framework-based page you created with Materialize. 
 
-- **[Thursday Exercise](weekly_materials/week12/week12tuesday.md)**: Some basic practice with SVG graphics.
+- **Thursday Readings**
+  - [Lynda.com: Learning SVG](https://www.lynda.com/SVG-tutorials/Learning-SVG/622089-2.html?org=rit.edu) - Watch *only* Sections 1 and 2: Cre Principles, and Anatomy of an SVG. 
+
+- **[Thursday Exercise](weekly_materials/week8/svgExercise.md)**: Some basic practice with SVG graphics.
 
 
 ## <a name="week9">Week 9</a> (Oct 24/26): JavaScript for Web Interactivity
