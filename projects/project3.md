@@ -1,36 +1,34 @@
 # Project 3 
 
 ## Description
-Working as part of a group, you'll create a detailed design document for a website, as well as developing and publishing that site. I will create a shared, private, GitHub repo for each group. 
+Working as part of a group, you'll create a detailed design document and prototype of a faculty website. Use the content on my site--[lawley.rit.edu](http://lawley.rit.edu) for this. I will create a shared, private, GitHub repo and a private Slack channel for each group.
 
 ## Deliverables
 
-### Roles and Responsibilities (Add to GitHub doc by 11:59pm on Sunday, 10/15)
+### Roles and Responsibilities (Complete to GitHub doc by 11:59pm on Sunday, 10/22)
 Begin by working as a group to determine who will have responsibility for various aspects of the project--who will be responsible for the documentation, the written content on the site, the wireframing, the visual design, the coding? Once you've determined individual responsibilities, **each person should update their own section** of the Roles-Responsibilities.md document in the group's GitHub repo with their own responsiblities. (Do not have one person enter this for everyone in the group; you will not get credit unless you were the one to commit the edit with your responsibilities.)
 
-### Strategy, Scope, and Structure (Add to GitHub doc by 11:59pm on Sunday, 10/15)
+### Strategy, Scope, and Structure (Add to DesignDoc.md file by 11:59pm on Wednesday, 10/25)
 Determine what the goal of the site will be (what specific problem or user need will you be addressing?), and generate a strategy/scope description reflecting that. Working with the content list I provide, generate an information architecture diagram showing how that content will be grouped and organized on your site. Include all of that information in the appropriate section of the DesignDoc.md file in your GitHub repo.
 
-### Skeleton/Wireframes (Add to GitHub doc by 11:59pm on Wednesday, 10/18)
+### Skeleton/Wireframes (Add to DesignDoc.md by 11:59pm on Wednesday, 10/25)
 Create wireframes for each of your major page types (e.g. main/landing page, main category page, individual content page, about page, contact page), showing the basic grid and page layout you plan to use. We'll do a brief critique in class, and your group can start on design mockups and code once that's done. Add the wireframe images to your DesignDoc.md file in your group's GitHub repo. 
 
-### Surface (Add to GitHub doc by 11:59pm on Monday, 10/23)
+### Surface (Add to DesignDoc.md by 11:59pm on Monday, 10/30)
 Create mockups in Photoshop or another graphics program showing your intended design for the site. There should be one mockup for each wireframe you created. Once again, we'll do a brief critique in class before you turn them in to myCourses. Include all of the mockups in a single PDF document called Mockups.pdf that you upload to your group's GitHub repo.
 
-### Final Site (Add to GitHub doc and published/linked to on web by 11:59pm on Sunday, 11/5)
-All files for the site must be posted to your shared GitHub repository. One group member must also publish the site in their igme230 directory, and all other group members must link to that single published version from their class landing page. 
+### Final Site (Due by 11:59pm on Sunday, 11/12)
+All final versions of files for the site must be posted to your shared GitHub repository. One group member must also publish the site on an RIT server, and all group members must link to that published version from their class landing page. 
 
-### Self-Assessment (Add to GitHub doc by 11:59pm on Sunday, 11/5)
+### Self-Assessment (Add to GitHub doc by 11:59pm on Monday, 11/13)
 Once the site is complete, each person should update their section of the Roles-Responsibilities.md document to describe what their actual contributions to the project were. Did you do all of the things that were assigned to you? If not, why not? Did you do things that weren't assigned to you? If so, why? Do you feel that you did the best work that you could? I will draw heavily on this self-assessment, as well as the commit history for the website files, when assessing the participation component of your grade. 
 
 ## Page and Content Requirements
-- Landing page named index.html
-- Global navigation bar
-- At least three categories of information, with at least three content pages in each category
-- A page (or pages) containing the following:
+- Main page that makes the content of the site clear
+- Navigation bar with at a minimum three categories of information (keep in mind that while students are primarily interested in things like office hours and classes taught, external viewers are more interested in scholarship and projects).  
+- Pages or discrete content sections containing relevant content for each of the categories defined above. (You don't have to include everything on the current site, but you should have representative content.)
+- A clear indication on the page (in a footer or callout) indicating that this is a class project, and linking to a page with the containing the following:
   - Information about your team members (names and photos)
-  - Contact form using mailto: action (you can create a throwaway email account for this if you want)
-- A documentation page that includes the following:
   - Source information for any images, content, or code that you didn't create yourself (including CSS frameworks, typefaces, and any code libraries)
   - If you used a CSS framework, explain if/how you modified its default appearance settings 
   - How your group went above and beyond the base-level expectations for the project--what did you do that was particularly challenging? This could involve art/design, content, or code. 
@@ -44,10 +42,8 @@ Once the site is complete, each person should update their section of the Roles-
 ## Technology Requirements
 - Semantic, valid HTML
 - Well-structured, valid CSS
-- Semantic HTML
 - Navigation menu available on all pages 
 - Images and other media are properly optimized for screen display
-- Contact form uses Javascript to validate input; no blank fields, and valid format for sender's email address
 
 ## Grading
 Component | Percentage of Project Grade |
@@ -74,7 +70,6 @@ Visual Design | 2 |
 Typography | 1 |
 Sematic, valid HTML | 1 |
 Well-structured, valid CSS | 1 |
-No major accessibility errors | 1|
-Drop-down navigation menu | 1 |
+Effective navigation | 2 |
 Properly optimized media | 1 |
 "Above and Beyond" | 4 |
