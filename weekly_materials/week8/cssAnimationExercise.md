@@ -7,7 +7,7 @@ Today you're going to take the restaurant page you built for last week's exercis
 Because I can't give you the functioning animation without also revealing the code to accomplish it, I've uploaded a video clip to YouTube showing how the page behaves when it first loads, and when mousing over specific elements. Watch it here: https://youtu.be/h78Js94cJD4 (Note: after I uploaded this video I changed the technique for scaling the food images; the approach described below in the exercise uses transitions rather than keyframe animations, and allows for easing-out of the scaling.)
 
 ## Setting Up
-Make a copy of your completed week6 folder and call it week7. When you're done, you'll upload the week7 folder to your igme230 directory on banjo. All of the CSS you add will go into the styles.css page in the css subdirectory. 
+Make a copy of your completed week7 folder and call it week8. When you're done, you'll upload the week8 folder to your igme230 directory on banjo. All of the CSS you add will go into the styles.css page in the css subdirectory. 
 
 ## Page Load Animation
 As you can see in the video, when the page first loads, the four columns of content in the middle of the page fly in from the left side. You're going to combine animation techniques used in the "clouds" exercise in the tutorial (chapter 3, part 1). 
@@ -53,7 +53,7 @@ a:hover .fa {
     }
 ```
 ## Submitting Your Work
-Upload the entire week7 folder to your igme230 folder on Banjo, and link to it from your main page. It should load properly at people.rit.edu/youruserid/igme230/week7/ . It must be submitted by noon tomorrow (Wednesday, March 8).
+Upload the entire week8 folder to your igme230 folder on Banjo, and link to it from your main page. It should load properly at people.rit.edu/youruserid/igme230/week8/ . It must be submitted by noon tomorrow (Wednesday, October 18th).
 
 
 
