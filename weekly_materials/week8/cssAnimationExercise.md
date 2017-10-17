@@ -1,13 +1,13 @@
 # CSS Animation Exercise
 
 ## Overview & Goals
-Today you're going to take the restaurant page you built for last week's exercise and animate some elements on the page using the techniques shown in the CSS Animations tutorial. If you haven't done either, you should use today's class to first complete the exercise from last week, and then, if you have time, work on the tutorial. 
+Today you're going to take the restaurant page you built for last week's exercise and animate some elements on the page using the techniques shown in the CSS Animations tutorial. If you haven't done the framework exercise, and/or if you haven't completed that tutorial, you should use today's class to do that first, and then, if you have time, work on the tutorial. 
 
 ## Previewing What You're Going to Make
 Because I can't give you the functioning animation without also revealing the code to accomplish it, I've uploaded a video clip to YouTube showing how the page behaves when it first loads, and when mousing over specific elements. Watch it here: https://youtu.be/h78Js94cJD4 (Note: after I uploaded this video I changed the technique for scaling the food images; the approach described below in the exercise uses transitions rather than keyframe animations, and allows for easing-out of the scaling.)
 
 ## Setting Up
-Make a copy of your completed week6 folder and call it week7. When you're done, you'll upload the week7 folder to your igme230 directory on banjo. All of the CSS you add will go into the styles.css page in the css subdirectory. 
+Make a copy of your completed framework exercise folder and call it csseffects. All of the CSS you add will go into the styles.css page in the css subdirectory.  When you're done, you'll upload the folder to your igme230 directory on banjo, and point to it from your main class page.
 
 ## Page Load Animation
 As you can see in the video, when the page first loads, the four columns of content in the middle of the page fly in from the left side. You're going to combine animation techniques used in the "clouds" exercise in the tutorial (chapter 3, part 1). 
@@ -16,9 +16,9 @@ You can copy the "drift" keyframe animation code from the clouds example into yo
 
 Apply the resulting animation to the div.m3 element (all divs with a class of m3), with a duration of .5 seconds, a linear path, and "both" to use both forward and backwards fills, and then test the page. It should work, but all the elements will fly in at the same time. 
 
-To fix that problem, you can do one of two things. You can assign a unique class to each of the columns and then specify timings for each of them individually, or you can use the "nth-child" technique shown in the "up & over" example in the tutorial (chapter 3, section 4). 
+To fix that problem, you can do one of two things. You can assign a unique ID to each of the columns and then specify timings for each of them individually, or you can use the "nth-child" technique shown in the "up & over" example in the tutorial (chapter 3, section 4). 
 
-The disadvantage of adding a new class is that it requires you to also the edit the HTML file, while the "up & over" approach allows you do this completely in CSS using the "nth-child" attribute to set up four different timings for the four different columns, like this:
+The disadvantage of adding an ID to each item is that it requires you to also the edit the HTML file, while the "up & over" approach allows you do this completely in CSS using the "nth-child" attribute to set up four different timings for the four different columns, like this:
 
 ```css
 div.m3:nth-child(1) {
@@ -53,7 +53,7 @@ a:hover .fa {
     }
 ```
 ## Submitting Your Work
-Upload the entire week7 folder to your igme230 folder on Banjo, and link to it from your main page. It should load properly at people.rit.edu/youruserid/igme230/week7/ . It must be submitted by noon tomorrow (Wednesday, March 8).
+Upload the entire csseffects folder to your igme230 folder on Banjo, and link to it from your main page. It must be submitted by 11:59pm tomorrow (Wednesday, October 17).
 
 
 
