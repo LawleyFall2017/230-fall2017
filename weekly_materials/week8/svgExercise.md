@@ -45,7 +45,7 @@ While your browser can display SVG files directly, you typically will want to in
 
 There are three ways to include an SVG file in a page. The first is to treat it the same way you would a raster image, using the `<img>` tag to reference the external SVG file. The second is to embed the SVG directly in the HTML. And the third is to use JavaScript to load the external SVG file. In today's exercise, you'll be using both the first and the second approaches; on Thursday we'll add the third. 
 
-Create a new HTML file in your week12 folder, and call it svgdemo.html. In the body of the document, add an img tag that points to your simple.svg file. Save the new HTML document, and load it in a browser; you should see your SVG displayed. It's likely, however, that part of the image will be cropped. This is because your browser doesn't actually know how big the SVG image is. We can fix this in either of two ways--we can add a height and width to the image tag, or we can add a height and width inside the SVG itself. The latter is a better choice, so let's do that. 
+Create a new HTML file in your week8 folder, and call it svgdemo.html. In the body of the document, add an img tag that points to your simple.svg file. Save the new HTML document, and load it in a browser; you should see your SVG displayed. It's likely, however, that part of the image will be cropped. This is because your browser doesn't actually know how big the SVG image is. We can fix this in either of two ways--we can add a height and width to the image tag, or we can add a height and width inside the SVG itself. The latter is a better choice, so let's do that. 
 
 Your SVG needs to be at least 250px in both width and length, to account for the 50px x/y offset of the 200px square. Add height="250" and width="250" to the `<svg>` tag in your simple.svg document, and then reload the svgdemo.html page. You should be able to see the entire SVG now. 
 
@@ -59,7 +59,7 @@ Remove the `<img>` tag from your svgdemo.html file, and paste the contents of yo
 
 Creating your own SVGs by hand works reasonably well if you're only creating simple shapes. But if you need to work with more complex images, you'll want to use an illustration program (like Adobe Illustrator, Inkscape, or even Google Draw) to create your image and then export it as an SVG. 
 
-Download the [logo.ai](logo.ai), and open it in Adobe Illustator. You should see an image consisting of three arrows--one green, one blue, and and one purple. From the File menu, select Export As..., change the format to SVG, and select your week12 folder. After you click the Export button, you'll be presented with an "SVG Options" panel--most of the defaults are fine, but make sure you uncheck the "Minify" option, which removes whitespace from the SVG making it harder to read and edit. 
+Download the [logo.ai](logo.ai), and open it in Adobe Illustator. You should see an image consisting of three arrows--one green, one blue, and and one purple. From the File menu, select Export As..., change the format to SVG, and select your week8 folder. After you click the Export button, you'll be presented with an "SVG Options" panel--most of the defaults are fine, but make sure you uncheck the "Minify" option, which removes whitespace from the SVG making it harder to read and edit. 
 
 Open the resulting logo.svg file in a browser. The logo, which looked a lot smaller in Illustrator, should fill up your browser window. 
 
@@ -83,7 +83,7 @@ When you load svgdemo.html in a browser now, the logo will be even bigger. We ca
 
 Reload the page, and the logo should now take up a 200x200px box in the top left corner of the page. Try changing the width of #Layer_1 to 300px. Because it's the viewbox, not the viewport, that controls the aspect ratio, the logo should not change even though the box is wider. 
 
-Now download the [logo.png](logo.png) file to your week12 folder, and add this line to svgdemo.html, above the svg code:
+Now download the [logo.png](logo.png) file to your week8 folder, and add this line to svgdemo.html, above the svg code:
 
 ```html
 <img src="logo.png" style="float: left;" >
@@ -93,4 +93,4 @@ Reload the page, and you should see two versions of the logo; the one on the lef
 
 ## Part 4: Submitting Your Work 
 
-Upload your week12 folder (making sure it includes the svgdemo.html, logo.svg, and logo.png files) to your igme230 folder on Banjo, and create a link from your main igme230 page to the svdemo.html page. This assignment is due by the start of class on Thursday, 20 April. 
+Upload your week8 folder (making sure it includes the svgdemo.html, logo.svg, and logo.png files) to your igme230 folder on Banjo, and create a link from your main igme230 page to the svdemo.html page. This assignment is due by the start of class on Thursday, 19 October. 
