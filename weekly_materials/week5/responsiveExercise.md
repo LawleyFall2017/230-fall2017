@@ -91,7 +91,7 @@ To keep elements from wrapping improperly, add this instruction:
 		width: 100%;
 	}	
 ```
-To make the navigation links (`nav li`) work on mobile, you can either change the text size back to medium (which will fit on most mobile devices), or you can stack the list items by changing the display from inline back to block. 
+To make the navigation links (`nav ul li`) work on mobile, you can either change the text size back to medium (which will fit on most mobile devices), or you can stack the list items by changing the display from inline back to block. 
 
 You might also want to set the font-size in the section elements back to medium.  
 
