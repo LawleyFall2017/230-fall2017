@@ -17,7 +17,7 @@ Determine what the goal of the site will be (what specific problem or user need 
 Create wireframes for each of your major page types (e.g. main/landing page, main category page, individual content page, about page, contact page), showing the basic grid and page layout you plan to use. We'll do a brief critique in class, and your group can start on design mockups and code once that's done. Put the wireframe images in a wireframes folder in your GitHub repo, and link to it from the DesignDoc.md file.  
 
 ### Surface (Add to GitHub by 11:59pm on Monday, 10/30)
-Create mockups in Photoshop or another graphics program showing your intended design for the site. There should be one mockup for each wireframe you created. Once again, we'll do a brief critique in class before you turn them in to myCourses. Put mockup images into a folder called mockups in your.
+Create mockups in Photoshop or another graphics program showing your intended design for the site. There should be one mockup for each wireframe you created. Once again, we'll do a brief critique in class before you turn them in to myCourses. Put mockup images into a folder called mockups in your group's Github repo.
 
 ### Final Site (Due by 11:59pm on Sunday, 11/12)
 All final versions of files for the site must be posted to your shared GitHub repository. At least one group member must also publish the site on an RIT server, and all group members must link to a published version from their class landing page. The published version must be identical to the code in the GitHub rep. 
