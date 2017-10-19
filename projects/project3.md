@@ -10,13 +10,13 @@ The emphasis in this project is the design process, not just the final deliverab
 ### Roles and Responsibilities (Add to Roles-Responsibilities.md by 11:59pm on Sunday, 10/22)
 Begin by working as a group to determine who will have responsibility for various aspects of the project--who will be responsible for the documentation, the written content on the site, the wireframing, the visual design, the coding? Once you've determined individual responsibilities, **each person should update their own section** of the Roles-Responsibilities.md document in the group's GitHub repo with their own responsiblities. (Do not have one person enter this for everyone in the group; you will not get credit unless you were the one to commit the edit with your responsibilities.)
 
-### Strategy, Scope, and Structure (Add to StrategyScope.md file by 11:59pm on Wednesday, 10/25)
+### Strategy, Scope, and Structure (Add to DesignDoc.md file by 11:59pm on Wednesday, 10/25)
 Determine what the goal of the site will be (what specific problem or user need will you be addressing?), and generate a strategy/scope description reflecting that. Working with the content list I provide, generate an information architecture diagram showing how that content will be grouped and organized on your site. Include all of that information in the appropriate section of the DesignDoc.md file in your GitHub repo.
 
-### Skeleton/Wireframes (Add to GitHub by 11:59pm on Wednesday, 10/25)
+### Skeleton/Wireframes (Add to DesignDoc.md by 11:59pm on Wednesday, 10/25)
 Create wireframes for each of your major page types (e.g. main/landing page, main category page, individual content page, about page, contact page), showing the basic grid and page layout you plan to use. We'll do a brief critique in class, and your group can start on design mockups and code once that's done. Put the wireframe images in a wireframes folder in your GitHub repo, and link to it from the DesignDoc.md file.  
 
-### Surface (Add to GitHub by 11:59pm on Monday, 10/30)
+### Surface (Add to DesignDoc.md by 11:59pm on Monday, 10/30)
 Create mockups in Photoshop or another graphics program showing your intended design for the site. There should be one mockup for each wireframe you created. Once again, we'll do a brief critique in class before you turn them in to myCourses. Put mockup images into a folder called mockups in your group's Github repo.
 
 ### Final Site (Due by 11:59pm on Sunday, 11/12)
