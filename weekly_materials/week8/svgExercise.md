@@ -10,11 +10,11 @@ You may find these pages helpful:
 * [The Designer's Guide to Working With SVG](https://www.sitepoint.com/designers-guide-working-with-svg/)
 
 ## Part 1: Coding a Simple SVG
-In a code editor, create a new file called simple.svg. You're going to create a very simple vector image by hand using the SVG markup language. 
+Create a new folder for today's work. Using VS Code, create a new file called simple.svg and save it to the new folder. You're going to create a very simple vector image by hand using the SVG markup language. 
 
 SVG documents start and end with an `<svg>` tag, rather than an `<html>` tag. The SVG tag should indicate which specification it's using, via the xmlns (XML namespace) attribute, like this:
 
-```html
+```xml
 <svg xmlns="http://www.w3.org/2000/svg">
 
 </svg>
@@ -22,7 +22,7 @@ SVG documents start and end with an `<svg>` tag, rather than an `<html>` tag. Th
 
 Inside of the svg element, we can describe a vector graphic element, like this: 
 
-```html
+```xml
 <circle cx="50" cy="50" r="25" fill="red" stroke="black" stroke-width="2" />
 ```
 
@@ -32,7 +32,7 @@ That should result in a circle, with cx and cy defining the x and y coordinates 
 
 Now let's add a rectangle to the SVG. Place this after the circle definition: 
 
-```html
+```xml
 <rect width="200" height="200" x="50" y="50" fill="black" />
 ```
 
@@ -45,15 +45,15 @@ While your browser can display SVG files directly, you typically will want to in
 
 There are three ways to include an SVG file in a page. The first is to treat it the same way you would a raster image, using the `<img>` tag to reference the external SVG file. The second is to embed the SVG directly in the HTML. And the third is to use JavaScript to load the external SVG file. In today's exercise, you'll be using both the first and the second approaches; on Thursday we'll add the third. 
 
-Create a new HTML file in your week12 folder, and call it svgdemo.html. In the body of the document, add an img tag that points to your simple.svg file. Save the new HTML document, and load it in a browser; you should see your SVG displayed. It's likely, however, that part of the image will be cropped. This is because your browser doesn't actually know how big the SVG image is. We can fix this in either of two ways--we can add a height and width to the image tag, or we can add a height and width inside the SVG itself. The latter is a better choice, so let's do that. 
+Create a new HTML file called svgdemo.html and save it to the same folder as simple.svg. In the body of the document, add an img tag that points to your simple.svg file. Save the new HTML document, and load it in a browser; you should see your SVG displayed. It's likely, however, that part of the image will be cropped. This is because your browser doesn't actually know how big the SVG image is. We can fix this in either of two ways--we can add a height and width to the image tag, or we can add a height and width inside the SVG itself. The latter is a better choice, so let's do that. 
 
 Your SVG needs to be at least 250px in both width and length, to account for the 50px x/y offset of the 200px square. Add height="250" and width="250" to the `<svg>` tag in your simple.svg document, and then reload the svgdemo.html page. You should be able to see the entire SVG now. 
 
-The problem with adding an SVG with the img tag, however, is that it doesn't load the individual components of the SVG into the DOM--the SVG is treated as a single img element. Use the element inspector (in Chrome, right-click on the document and choose "Inspect") to view the DOM for the svgdemo.html page. You'll see that there's only one img element in the body of the document. 
+The problem with adding an SVG with the img tag, however, is that the browser can't control any of the individual components of the SVG--it's treated as a single img element in the browser's internal model of all the things that can be manipulated with CSS and/or JavaScript. (That model is called the Document Object Model, or DOM, and we'll be talking a lot more about it next week.) 
 
 Now we'll try embedding the SVG directly inside the HTML instead. 
 
-Remove the `<img>` tag from your svgdemo.html file, and paste the contents of your simple.svg file into the body of the document. Save the file, and display it. It should look exactly the same as it did when you used the img tag. However, when you use the document inspector, you should see that each element in the SVG is now part of the DOM, meaning we can independently manipulate them with CSS and/or JavaScript. 
+Remove the `<img>` element from your svgdemo.html file, and in its place paste the contents of your simple.svg. Save the file, and display it. It should look exactly the same as it did when you used the img tag. However, each element in the SVG is now part of the DOM, meaning we can independently manipulate them with CSS and/or JavaScript. 
 
 ## Part 3: Exporting and Scaling an SVG from Illustrator
 
@@ -93,4 +93,4 @@ Reload the page, and you should see two versions of the logo; the one on the lef
 
 ## Part 4: Submitting Your Work 
 
-Upload your week12 folder (making sure it includes the svgdemo.html, logo.svg, and logo.png files) to your igme230 folder on Banjo, and create a link from your main igme230 page to the svdemo.html page. This assignment is due by the start of class on Thursday, 20 April. 
+Upload your folder (making sure it includes the svgdemo.html, simple.svg, logo.svg, and logo.png files) to your igme230 folder on Banjo, and create a link from your main igme230 page to the svdemo.html page. This assignment is due by noon on Saturday, October 21. 
