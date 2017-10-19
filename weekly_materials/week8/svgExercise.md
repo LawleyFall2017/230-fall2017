@@ -59,7 +59,7 @@ Remove the `<img>` element from your svgdemo.html file, and in its place paste t
 
 Creating your own SVGs by hand works reasonably well if you're only creating simple shapes. But if you need to work with more complex images, you'll want to use an illustration program (like Adobe Illustrator, Inkscape, or even Google Draw) to create your image and then export it as an SVG. 
 
-Download the [logo.ai](logo.ai), and open it in Adobe Illustator. You should see an image consisting of three arrows--one green, one blue, and and one purple. From the File menu, select Export As..., change the format to SVG, and select your week12 folder. After you click the Export button, you'll be presented with an "SVG Options" panel--most of the defaults are fine, but make sure you uncheck the "Minify" option, which removes whitespace from the SVG making it harder to read and edit. 
+Download the [logo.ai](logo.ai), and open it in Adobe Illustator. You should see an image consisting of three arrows--one green, one blue, and and one purple. From the File menu, select Export As..., change the format to SVG, and select the folder for today's work. After you click the Export button, you'll be presented with an "SVG Options" panel--most of the defaults are fine, but make sure you uncheck the "Minify" option, which removes whitespace from the SVG making it harder to read and edit. 
 
 Open the resulting logo.svg file in a browser. The logo, which looked a lot smaller in Illustrator, should fill up your browser window. 
 
