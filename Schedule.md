@@ -182,23 +182,23 @@ On Tuesday, we'll look at how CSS can be used to create transitions and animatio
 
 
 ## <a name="week9">Week 9</a> (Oct 24/26): JavaScript for Web Interactivity
-This week we'll start using JavaScript to implement interactivity in websites. On Tuesday we'll talk about underlying concepts, like the Document Object Model, and implement some basic JavaScript interactivity on a web page. On Thursday, we'll look at Event Listeners and Cookies. 
+This week we'll start using JavaScript to implement interactivity in websites.  
 
 - **Tuesday Readings**
   - [MDN: Introduction to the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
+  - [Lynda.com Javascript Essential Training, sections 1-5](https://www.lynda.com/JavaScript-tutorials/JavaScript-Essential-Training/574716-2.html?org=rit.edu) - Budget ~2.5-3 hours for watching these. Those of you with stronger programming background may be able to skim through some of the more basic programming material.  
 
-- **[Tuesday Exercise](weekly_materials/week9/jsBasicExercise.md)**: You'll be creating two web pages, one that uses JavaScript to modifies properties of elements on the page, and one that displays calculations based on user input. 
+- **Tuesday Exercises**: coming soon!
 
-- **[Thursday In-Class Exercise](weekly_materials/week9/jsEventListenersExercise.md)**: You'll use some new JavaScript functions to create a currency calculator. 
-
-- **[Thursday Homework Exercise](weekly_materials/week9/jsCookiesExercise.md)**: You'll change page content and then save those changes to cookies so that they can be applied when the page is reloaded.     
+- **Thursday Exercises**: coming soon! 
+   
 
 ## <a name="week10">Week 10</a> (Oct 31/Nov 2): JQuery & JQueryUI
 A great deal of the Javascript on the web uses a freely-available library of code called JQuery (which, in fact, was originally written by an RIT student!). This week we'll look at JQuery and how to use it in your pages. 
 
-- **[Tuesday Exercise](weekly_materials/week10/jqueryExercise.md)**: You'll implement some basic jQuery functionality on a page. 
+- **Tuesday Exercise**: You'll implement some basic jQuery functionality on a page. 
 
-- **[Thursday Exercise](weekly_materials/week10/jqueryuiExercise.md)**: You'll use the jQuery UI library to extend jQuery's functionality and add UI enhancements to page. 
+- **Thursday Exercise: You'll use the jQuery UI library to extend jQuery's functionality and add UI enhancements to page. 
 
 ## <a name="week11">Week 11</a> (Nov 7/9): Simple JavaScript Web Applications
 
