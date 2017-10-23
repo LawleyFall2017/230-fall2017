@@ -135,7 +135,7 @@ JavaScript also contains a number of built-in objects that we can use. There is 
 Objects have methods and properties that you can access with your code. For instance:
 * [*obj*.toString()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString)- Returns a string representing the object.
 * [*obj*.toFixed()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed) - Formats a number using fixed-point notation.
-* * [*str*.length](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length) - Returns the length of a string.
+* [*str*.length](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length) - Returns the length of a string.
 
 
 Create another file called hello-4.html, and paste the following code into it:
@@ -176,40 +176,6 @@ Create another file called hello-4.html, and paste the following code into it:
 </html>
 ```
 Load the file in Chrome and view the console. You should see seven values output, and they should match the values in the code comments. Make sure you understand how each of those values is being generated! 
-
-## Outputting to the Page Rather Than the Console
-
-
-
-## Important Notes! 
-
-* The JavaScript `Number` can hold both a 64-bit number AND a 64-bit Integer - documentation on the finer points of this is here:
-    - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number
-    - https://medium.com/dailyjs/javascripts-number-type-8d59199db1b6
-
-* JavaScript has 2 zeros `+0` and `-0` -  you can read about that here: https://abdulapopoola.com/2016/12/19/why-javascript-has-two-zeros-0-and-0/
-
-* JavaScript has a large number of **truthy** and **falsy** values that are *coerced* to `true` or `false` in a boolean expression or context. Check out these links, and see the code sample below:
-    - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean
-    - https://developer.mozilla.org/en-US/docs/Glossary/Truthy
-    - https://developer.mozilla.org/en-US/docs/Glossary/Falsy
-
-```javascript
-// All of these are false values, except the last one - it turns out that "false" is true
-console.log(0 == false ? "0 is false" : "0 is true");
-console.log(-0 == false ? "-0 is false" : "-0 is true");
-console.log(false == false ? "false is false" : "false is true");
-console.log(null == false ? "null is false" : "null is true");
-console.log(undefined == false ? "NaN is false" : "NaN is true");
-console.log("" == false ? "\"\" is false" : "\"\" is true");
-console.log('' == false ? "\'\' is false" : "\'\' is true");
-console.log(new Boolean(false) == false ? "\"new Boolean(false)\" is false" : "\"new Boolean(false)\" is true");
-console.log("false" == false ? "\"false\" is false" : "\"false\" is true");
-
-/*
-Basically, the first 8 values above are all coerced to *false* in a Boolean content. Everything else - like the string "false" for example, is coerced to *true*.
-*/
-```
 
 ## Review Questions
 1. Which versions of JavaScript will we be covering in this course?
