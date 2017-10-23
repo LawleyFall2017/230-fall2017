@@ -1,13 +1,12 @@
-# 2 - Introduction to JavaScript
-
-
+# Introduction to JavaScript: Working with the Console
+We're going to start by running some JavaScript in a web page without ever actually displaying anything on the page. Instead, we'll look at the output of the code in the the JavaScript console window that the Chrome inspector tools provides.
 
 ## Hello, World!
-As you probably know, Federal law requires that every programming tutorial begin with a "Hello World" application. (Okay, maybe that's not entirely true, but we're still going to do it!)
+As you probably know, Federal law requires that every programming tutorial begin with a "Hello World" application. (Okay, maybe that's not entirely true. But we're still going to do it!)
 
-Create a new folder for today's exercise, and in it put a file called hello-1.html. Copy the following code into the document: 
+Create a new folder for today's work, and in it put a file called hello-1.html. Copy the following code into the document: 
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,7 +32,7 @@ The `console.log()` function allows you to output content to the console rather 
 ## Using the Console to Run Commands
 The console also contains an interactive interpreter where you can run JavaScript commands. At the prompt, type `Date()` to create and see a new date from the `Date` object, and `Math.random()` to get a random number from the `Math` object.
 
-![The JavaScript Console](_images/console-2.jpg)
+![The JavaScript Console](console-2.jpg)
 
 The general term for an interactive console like this is [REPL](https://en.wikipedia.org/wiki/Read–eval–print_loop) - "Read-Evaluate-Print-Loop".
 
@@ -139,7 +138,8 @@ Objects have methods and properties that you can access with your code. For inst
 * * [*str*.length](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length) - Returns the length of a string.
 
 
-Create another file called hello-4.html, and paste the following code into it: 
+Create another file called hello-4.html, and paste the following code into it:
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
