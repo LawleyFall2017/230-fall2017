@@ -1,65 +1,39 @@
-# 4 - More Web Browser DOM Methods
+# Introduction to JavaScript 3: More Web DOM Methods
 
-## Overview
-Today we are going to look at alternatives to `.innerHTML` that can be used to **"CRUD"** (i.e. Create, Read, Update, Delete) HTML elements in the web browser.
+In this exercise, we are going to look at alternatives to `.innerHTML` that can be used to **"CRUD"** (i.e. Create, Read, Update, Delete) HTML elements in the web browser and update elements on the page. 
 
-## Contents
-<!--- Local Navigation --->
-I. [Introduction](#section1)
+Although we can do quite a bit with the `.innerHTML` property, there are times that we might want to insert a new element somewhere on the page, or delete a specific element. To do these things, we need more control over the page than the `.innerHTML` property gives us.
 
-II. [Starter Page](#section2)
+## Understanding the DOM
+The [browser DOM is an inverted tree structure](https://www.w3schools.com/js/js_htmldom_navigation.asp) that consists of *nodes* - which are mostly HTML elements (software *objects*) that have properties and methods associated with them. These nodes have hierarchical relationships with one another - *parent*, *child*, and *sibling*. 
 
-III. [Creating and appending elements](#section3)
+In this exercise, we will learn how to create new DOM elements and insert them anywhere into the DOM tree.
 
-IV. [Inserting elements into the middle of a DOM tree](#section4)
+![Web Page](more-dom-0.jpg)
 
-V. [Modifying Existing DOM Elements](#section5)
+## New DOM Methods
+Here are some of the new DOM methods we will be working with in this exercise. These allow us to *create* DOM elements, *modify* them, *insert* them into the document, and *delete* them from the document (you can click on any of them to see the relevant MDN documentation):
 
-VI. [Removing Existing DOM Elements](#section6)
-
-VII. [Nota bene](#section7)
-
-VIII. [Review Questions](#section8)
-
-IX. [Review Exercise](#section9)
-
-
-<hr><hr>
-
-## I. <a id="section1"></a>Introduction
-Today we are going to look at other ways to use JavaScript to alter HTML elements on the page. 
-Although we can do quite a bit with the `.innerHTML` property, there are times that we might want to insert a new element somewhere on the page, for example a new list item into the middle of a list. Or to delete a single element, for example a list item that is currently inside (a child of) an unordered list. To do these things, we are going to need more fine grained control.
-
-### A. The DOM is an inverted tree
-The browser DOM is an inverted tree structure that consists of *nodes* - which are mostly HTML elements (software *objects*) that have properties and methods associated with them. These nodes have hierarchical relationships with one another - *parent*, *child*, and *sibling*.  Read about this here: https://www.w3schools.com/js/js_htmldom_navigation.asp
-
-Today we will learn how to create new DOM elements and insert them anywhere into the DOM tree that we want to.
-
-![Web Page](_images/more-dom-0.jpg)
-
-### B. New DOM Methods
-Here are some of the new DOM methods we will be working with today. These allow us to *create* DOM elements, *modify* them, *insert* them into the document, and *delete* them from the document:
-
-- `document.createElement(elementName)` -- <sub><sup>https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement</sup></sub>
-- `document.createTextNode(text)` -- <sub><sup>https://developer.mozilla.org/en-US/docs/Web/API/Document/createTextNode</sup></sub>
-- `element.getAttribute(attributeName)` -- <sub><sup>https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttribute</sup></sub>
-- `element.setAttribute(attributeName,attributeValue)` -- <sub><sup>https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute</sup></sub>
-- `element.appendChild(anotherElement)` -- <sub><sup>https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild</sup></sub>
-- `element.insertBefore(referenceElement,anotherElement)` -- <sub><sup>https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore</sup></sub>
-- `element.removeChild(anotherElement)` -- <sub><sup>https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild</sup></sub>
-- `element.replaceChild(oldElement,newElement)` -- <sub><sup>https://developer.mozilla.org/en-US/docs/Web/API/Node/replaceChild</sup></sub>
-- `element.hasChildNodes()` -- <sub><sup>https://developer.mozilla.org/en-US/docs/Web/API/Node/hasChildNodes</sup></sub>
+- [`document.createElement(elementName)`](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement)
+- [`document.createTextNode(text)`](https://developer.mozilla.org/en-US/docs/Web/API/Document/createTextNode)
+- [`element.getAttribute(attributeName)`](https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttribute)
+- [`element.setAttribute(attributeName,attributeValue)`](https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute)
+- [`element.appendChild(anotherElement)`](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild)
+- [`element.insertBefore(referenceElement,anotherElement)`](https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore)
+- [`element.removeChild(anotherElement)`](https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild)
+- [`element.replaceChild(oldElement,newElement)`](https://developer.mozilla.org/en-US/docs/Web/API/Node/replaceChild)
+- [`element.hasChildNodes()`](https://developer.mozilla.org/en-US/docs/Web/API/Node/hasChildNodes)
 
 And some properties:
 
-- `document.body` -- <sub><sup>https://developer.mozilla.org/en-US/docs/Web/API/Document/body</sup></sub>
-- `element.parentNode` -- <sub><sup>https://developer.mozilla.org/en-US/docs/Web/API/ParentNode</sup></sub>
-- `element.children` -- <sub><sup>https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/children</sup></sub>
+- [`document.body`](https://developer.mozilla.org/en-US/docs/Web/API/Document/body)
+- [`element.parentNode`](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode)
+- [`element.children`](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/children)
 
-## II. <a id="section2"></a>Starter Page
+## Starter Page
 
-### more-dom-1.html
-```
+Create a new document called more-dom-1.html, and paste the following code into it: 
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -86,35 +60,14 @@ And some properties:
 </html>
 ```
 
-**Looks like this in the browser:**
+It should look like this in the browser: 
 
-![Web Page](_images/more-dom-1.jpg)
+![Web Page](more-dom-1.jpg)
 
-## III. <a id="section3"></a>Creating and appending elements
-Our page is missing a &lt;footer>, so let's create one and insert it into the &lt;body>, at the very end of the page. 
+## Creating and Appending Elements
+Our page is missing a &lt;footer>, so let's create one and insert it into the page. Add the script shown below to the HTML document, just above the closing &lt;/body> tag:
 
-### more-dom-2.html
-
-```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8" />
-	<title>More DOM 2</title>
-	<style>
-		body{border:1px solid gray;}
-	</style>
-</head>
-<body>
-<h1>My Page</h1>
-<h2>Info</h2>
-<p>Blah <b>Blah</b> Blah</p>
-<h2>Links</h2>
-<ul>
-	<li><a href="http://www.apple.com">Apple</a></li>
-	<li><a href="http://www.google.com">Google</a></li>
-</ul>
-
+```html
 <script>
 	// 1 - Create a <footer> element
 	let footer = document.createElement("footer");
@@ -131,26 +84,22 @@ Our page is missing a &lt;footer>, so let's create one and insert it into the &l
 	// 5 - insert the <footer> at the end of the <body>
 	document.body.appendChild(footer);
 </script>
-</body>
-</html>
 ```
 
-**Load the page into a browser, you should now see the new &lt;footer> at the bottom of the page, and the tooltip effect!:**
+**Load the page into a browser; you should now see the new &lt;footer> at the bottom of the page, and the tooltip effect!:**
 
-![Web Page](_images/more-dom-2.jpg)
+![Web Page](more-dom-2.jpg)
 
-## III. Creating and appending elements, with a little less code
+## Creating and Appending Elements (with a little less code)
 
-We can simplify this code though, by using `.innerHTML` instead of `document.createTextNode()`, and other changes. See below:
+We can simplify this code though, by using `.innerHTML` instead of `document.createTextNode()`, and other changes. Create a new file called more-dom-2.html and paste the following code into it (or, if you prefer, edit your existing more-dom-1.html file to include the revised script). 
 
-### more-dom-3.html
-
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<title>More DOM 3</title>
+	<title>More DOM 2</title>
 	<style>
 		body{border:1px solid gray;}
 	</style>
@@ -197,20 +146,20 @@ We can simplify this code though, by using `.innerHTML` instead of `document.cre
 
 **Load the page into a browser, you should now see the second &lt;footer>:**
 
-![Web Page](_images/more-dom-3.jpg)
+![Web Page](more-dom-3.jpg)
 
 
 ## IV. <a id="section4"></a>Inserting elements into the middle of a DOM tree
-Rather than just append everything to the bottom of the &lt;body>, let's see how to add elements to both the end and the middle of an unordered list.
+Rather than just append everything to the bottom of the page, let's try adding elements to both the end and the middle of an unordered list.
 
-### more-dom-4.html
+Create a new file called more-dom-3.html, and paste the following code into it:
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<title>More DOM 4</title>
+	<title>More DOM 3</title>
 	<style>
 		body{border:1px solid gray;}
 	</style>
@@ -277,46 +226,46 @@ Rather than just append everything to the bottom of the &lt;body>, let's see how
 
 ```
 
-### The new code here is in #7 and #8. 
+### Understanding the New Code in Items 7 and 8 
 
-- #7 creates a new &lt;li> with the text "GeoCities" and appends it to the end of the list.
-- #8A creates a new  &lt;li> and a new "Facebook" &lt;a>, and appends the &lt;a> to the &lt;li>
-- #8B gets a reference to the "Google" &lt;li> (note the cool CSS selector and the `.parentNode` property), and then inserts the "Facebook" &lt;li> *before* it.
+- Item 7 creates a new &lt;li> with the text "GeoCities" and appends it to the end of the list.
+- Item 8A creates a new  &lt;li> and a new "Facebook" &lt;a>, and appends the &lt;a> to the &lt;li>
+- Item 8B gets a reference to the "Google" &lt;li> (note the use of the CSS attribute selector and the `.parentNode` property)
+- Item 8C inserts the "Facebook" &lt;li> *before* the "Google" element
 
 
 **Load the page into a browser, you should now see the 2 new list items, one of which is a functioning link to Facebook:**
 
-![Web Page](_images/more-dom-4.jpg)
+![Web Page](more-dom-3.jpg)
 
 
-## V. <a id="section5"></a>Modifying Existing DOM Elements
+## Modifying Existing DOM Elements
 
-Modifying the properties and styles of existing DOM elements is easy. Add the following to the end of **more-dom-4.html**:
+Modifying the properties and styles of existing DOM elements is also easy. Add the following code to the end of the more-dom-3.html script:
 
-```
+```javascript
 // 9 - Modify the google link's href
 let googleLink = document.querySelector("ul li a[href*='google.com']");
 googleLink.href = "http://www.bing.com";
 ```
 
-- Reload the page and click the Google link - it should now send you to www.bing.com - don't tell Google about this as they might come after you!
+Reload the page and click the Google link - it should now send you to www.bing.com (please don't tell Google about this, as they might come after us!)
 
-- You can also open up the web inspector to verify that the value of the Google link's href is now `http://www.bing.com`
+You can also open up the web inspector to verify that the value of the Google link's href is now `http://www.bing.com`
 
 
+## Removing Existing DOM Elements
 
-## VI. <a id="section6"></a>Removing Existing DOM Elements
+Removing DOM elements is also easy. Add the following to the end of the script in more-dom-3.html:
 
-Removing DOM elements is trivial. Add the following to the end of **more-dom-4.html**:
-
-```
+```javascript
 // 10 - Delete the paragraph
 document.body.removeChild(document.querySelector("p"));
 ```
 
-- Reload the page - the paragraph is now gone. You can also see this in the Web Inspector. 
+Reload the page - the paragraph is now gone. You can also see this in the Web Inspector. 
 
-## VII. <a id="section7"></a>Nota bene
+## Important Notes
 In the previous document we used `.innerHTML` to create new HTML elements, while in this document we were more *methodical* (literally) and used methods such as `document.createElement()`, `document.createTextNode()`, `element.appendChild()`
 
 Which approach should you use in your code? Our recommendation is to use whichever approach works for you. Consider:
@@ -324,31 +273,29 @@ Which approach should you use in your code? Our recommendation is to use whichev
 - the "DOM element creation" approach we used here can result in **more code** to write, to debug, and to maintain. 
 
 
-## VIII. <a id="section8"></a>Review Questions
+## VIII. Review Questions
 
 Be sure to read the HTML DOM page linked near the top of this document.
 
 1. Exactly how many *parent* elements can an element on a web page have?
-1. What are the *child* elements of the &lt;ul> tag in **more-dom-4.html**?
-1. What is the *first-child* of the &lt;ul> tag in **more-dom-4.html**?
-1. What is the *last-child* of the &lt;ul> tag in **more-dom-4.html**?
-1. What is the *next-sibling* of the "Google" &lt;li> tag in **more-dom-4.html**?
-1. What is the *previous-sibling* of the "Google" &lt;li> tag in **more-dom-4.html**?
-1. What is the *first-child* of the "Google" &lt;li> tag in **more-dom-4.html**?
-1. What is the *parent* of the "Google" &lt;li> tag in **more-dom-4.html**?
+1. What are the *child* elements of the &lt;ul> tag in **more-dom-3.html**?
+1. What is the *first-child* of the &lt;ul> tag in **more-dom-3.html**?
+1. What is the *last-child* of the &lt;ul> tag in **more-dom-3.html**?
+1. What is the *next-sibling* of the "Google" &lt;li> tag in **more-dom-3.html**?
+1. What is the *previous-sibling* of the "Google" &lt;li> tag in **more-dom-3.html**?
+1. What is the *first-child* of the "Google" &lt;li> tag in **more-dom-3.html**?
+1. What is the *parent* of the "Google" &lt;li> tag in **more-dom-3.html**?
 
-## IX. <a id="section9"></a>Review Exercise
+## Review Exercise
 
 Here is your starter code:
 
-### web-apps-4.html
-
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<title>Web Apps-4</title>
+	<title>JavaScript Exercise 3</title>
 	<style>
 		body{border:1px solid gray;}
 	</style>
@@ -377,7 +324,7 @@ Here is your starter code:
 let colors = ["red","green","blue","purple","pink"];
 let foods = []; // add some foods
 
-// Optional (worth an extra 5 points) - can you figure out how to pull the key
+// Optional - can you figure out how to pull the key
 // and value from the links object literal?
 let links = {
 		"RIT": "http://www.rit.edu",
@@ -390,22 +337,15 @@ let links = {
 </html>
 ```
 
-### Instructions
-1. Create the **web-apps-4.html** file
-1. Add you favorite colors and foods to the arrays. If you would rather change the theme of the page to movies, music, books or similar, feel free.
+1. Create a new file called javascript3.html, using the code shown above.
+1. Add your favorite colors and foods to the arrays. If you would rather change the theme of the page to movies, music, books or similar, feel free.
 1. Write code that loops through the `colors` array, generates list items, and appends them to the appropriate list element. For this array use a classic `for` loop.
 1. Write code that loops through the `foods` array, generates list items, and appends them to the appropriate list element. For this array use an ES6 `for...of` loop.
 1. Be sure that your code uses `document.createElement()` to create each element.
-1. Optional: add your favorite web sites to the `links` object literal, and then loop through the object, pulling out both the *key* and the *value*, generate functioning links, and add them to the last &lt;ol> on the page. This is worth an extra 5 points on the HW assignment. The JavaScript `for...in` loop will probably get the job done.
+1. Optional (to challenge yourself): add your favorite web sites to the `links` object literal, and then loop through the object, pulling out both the *key* and the *value*, and using them to generate functioning links that are added to the last &lt;ol> on the page. The JavaScript `for...in` loop will probably get the job done.
 
-### Final Result
+**Your final version should look like this, except with your favorites (whatever they are):**
 
-**It should look like this, except with your favorites (whatever they are):**
+![Web Page](more-dom-5.jpg)
 
-![Web Page](_images/more-dom-5.jpg)
-
-<hr>
-
-**[Previous Section <- Introduction to the Web Browser DOM (part 3)](web-apps-3.md)**
-
-**[Next Section -> JavaScript Functions (part 5)](web-apps-5.md)**
+When you're done, upload the javascript3.html file to banjo.rit.edu, and link to it from your 230 page. It should be completed by 11:59pm on Saturday, October 28.

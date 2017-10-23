@@ -1,10 +1,10 @@
-# Introduction to the Web Browser DOM
+# Introduction to JavaScript 2: Working with the Web DOM
+
+In this exercise we are going to look at how to use JavaScript to alter HTML elements on the page. To do this we will need to utilize the DOM (Document Object Model). The DOM API defines methods and properties need to access and manipulate a web page.
 
 When developers discuss database records and operations, there's a concept known as **C.R.U.D.** - "Create", "Read", "Update" and "Delete". Every database needs to be able to let the developer perform these operations in code.
 
 Similarly, if we are going to create web applications, we will have to do the same things to our web pages: **create** new elements, select (**read**) existing elements, **update** elements, and **delete** elements.
-
-In this exercise we are going to look at how to use JavaScript to alter HTML elements on the page. To do this we will need to utilize the DOM (Document Object Model). The DOM API defines methods and properties need to access and manipulate a web page.
 
 ## Selecting and Modifying Elements on the Page
 If you want to modify an HTML element, you first need to:
@@ -276,7 +276,7 @@ If we view the HTML source of our page in Chrome (right-click and choose View Pa
 
 ![Web Page](dom-7.jpg)
 
-### B. Web Inspector in Chrome
+### Web Inspector in Chrome
 But if we utilize the Web Inspector, we WILL see all of those changes reflected in the DOM tree under the **Elements** tab:
 
 ![Web Page](/dom-8.jpg)
@@ -363,11 +363,9 @@ Make a copy of **dom-3.html** and name it **javascript2.html**. Delete all of th
 
 **Here is a completed example:**
 
-![Web Page](_images/dom-9.jpg)
+![Web Page](dom-9.jpg)
 
-<hr>
-    
-**[Previous Section <- Introduction to JavaScript (part 2)](web-apps-2.md)**
-  
-**[Next Section -> More Web Browser DOM Methods (part 4)](web-apps-4.md)**
+When you're done, upload the file to banjo.rit.edu, and link to it from your main 230 page. It should be completed by 11:59pm on Thursday, October 26. 
+
+
   
