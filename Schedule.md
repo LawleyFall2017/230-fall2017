@@ -188,10 +188,12 @@ This week we'll start using JavaScript to implement interactivity in websites.
   - [MDN: Introduction to the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
   - [Lynda.com Javascript Essential Training, sections 1-5](https://www.lynda.com/JavaScript-tutorials/JavaScript-Essential-Training/574716-2.html?org=rit.edu) - Budget ~2.5-3 hours for watching these. Those of you with stronger programming background may be able to skim through some of the more basic programming material.  
 
-- **Tuesday Exercises**: coming soon!
-
-- **Thursday Exercises**: coming soon! 
-   
+- **Tuesday and Thursday Exercises**
+  - [Introduction to JavaScript 1: Working with the Console](weekly_materials/week9/js1-console.md)
+  - [Introduction to JavaScript 2: Working with the Web DOM](weekly_materials/week9/js2-DOM.md)
+  - [Introduction to JavaScript 3: More Web DOM Methods](weekly_materials/week9/js3-DOM2.md)
+  - JavaScript Functions (coming soon)
+  - Javascript Events (coming soon)
 
 ## <a name="week10">Week 10</a> (Oct 31/Nov 2): JavaScript Web Applications
 

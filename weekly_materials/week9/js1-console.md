@@ -205,4 +205,4 @@ Make a copy of **hello-4.html** and name it **javascript1.html**. Delete all of 
 1. Print out the absolute value of -999 - use the `Math` object.
 1. Print out an "all caps" version of the string "Hello" - use a method of the `String` object.
 
-When you're done, upload the file to banjo.rit.edu and link it from your main 230 page. It should be uploaded no later than 11:59pm on Wednesday, October 25. 
+When you're done, upload the file to banjo.rit.edu and link it from your main 230 page. It should be uploaded no later than the end of class on Thursday, October 26. 
