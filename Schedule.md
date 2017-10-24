@@ -180,7 +180,6 @@ On Tuesday, we'll look at how CSS can be used to create transitions and animatio
 
 - **[Thursday Exercise](weekly_materials/week8/svgExercise.md)**: Some basic practice with SVG graphics.
 
-
 ## <a name="week9">Week 9</a> (Oct 24/26): JavaScript for Web Interactivity
 This week we'll start using JavaScript to implement interactivity in websites.  
 
@@ -192,15 +191,15 @@ This week we'll start using JavaScript to implement interactivity in websites.
   - [Introduction to JavaScript 1: Working with the Console](weekly_materials/week9/js1-console.md)
   - [Introduction to JavaScript 2: Working with the Web DOM](weekly_materials/week9/js2-DOM.md)
   - [Introduction to JavaScript 3: More Web DOM Methods](weekly_materials/week9/js3-DOM2.md)
-  - JavaScript Functions (coming soon)
-  - Javascript Events (coming soon)
+  - [JavaScript Functions](weekly_materials/week9/js4-functions.md)
+  - [Javascript Events](weekly_materials/week9/js5-events.md)
 
 ## <a name="week10">Week 10</a> (Oct 31/Nov 2): JavaScript Web Applications
 
 ## <a name="week11">Week 11</a> (Nov 7/9): JQuery & JQueryUI
 A great deal of the Javascript on the web uses a freely-available library of code called JQuery (which, in fact, was originally written by an RIT student!). This week we'll look at JQuery and how to use it in your pages. 
 
-- **Tuesday Exercise**: You'll implement some basic jQuery functionality on a page. 
+- **Tuesday Exercise**: You'll implement some basic jQuery and JQuery UI zzzfunctionality on a page. 
 
 - **Thursday Exercise: You'll use the jQuery UI library to extend jQuery's functionality and add UI enhancements to page. 
 

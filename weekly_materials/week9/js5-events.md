@@ -467,9 +467,9 @@ You should see another message about the color you selected, and the &lt;legend>
 1. In the submit button code, you can check to see which radio button is selected by checking its `.checked` property
 1. The `value` of these radio buttons happens to be a CSS color keyword, so it will be pretty easy to assign the value to the color property of the &lt;legend> element (and CSS color values are not case sensitive, so don't worry about the capitalization).
 
-When you're done, upload it to banjo.rit.edu, and point to it from your main 230 page.  
+When you're done, upload it to banjo.rit.edu, and point to it from your main 230 page.  It should be completed by 11:59pm on Monday, October 30.
 
-### Extra Credit (worth 1 full HW)
+### Challenge Yourself!
 Can you do a version of this web app, but with checkboxes? 
 
 Hint: Checkboxes have a `.checked` property.
@@ -485,5 +485,3 @@ Checkboxes allow the user to make multiple selections. Yours should work like th
 **Click Submit button:**
 
 ![Web Page](events-14.jpg)
-
-**Submission: Upload it to banjo.rit.edu and point to it from your main 230 page, indicating that it's the extra credit version. **
