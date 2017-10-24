@@ -63,7 +63,7 @@ Bring up the console in the Inspector to get an idea why.
 The error is: `Uncaught TypeError: Cannot set property 'innerHTML' of null`. 
 The JavaScript engine is complaining about our second line of code.
 
-### B. Check the JavaScript debugger
+### Check the JavaScript debugger
 So what has a value of `null`? It turns out that our variable `h1` does - which we can see if we select the **Sources** tab, then select **dom-1.html** on the left, check the **Pause on caught exceptions** checkbox, and reload the page.
 
 ![The JavaScript Console](dom-3.jpg)
@@ -259,7 +259,7 @@ Create a new file called dom-3.html, and add the following code:
 
 **Load the page into a browser to see the changes our JavaScript brought about:**
 
-![Web Page](_images/dom-6.jpg)
+![Web Page](dom-6.jpg)
 
 ### Explanations
 In **instruction 1** we used `querySelectorAll("h2")` to get all of the &lt;h2> elements in an array (actually a DomNodeList). 
@@ -279,7 +279,7 @@ If we view the HTML source of our page in Chrome (right-click and choose View Pa
 ### Web Inspector in Chrome
 But if we utilize the Web Inspector, we WILL see all of those changes reflected in the DOM tree under the **Elements** tab:
 
-![Web Page](/dom-8.jpg)
+![Web Page](dom-8.jpg)
 
 ## Important Notes
 1. In this document we have been using `document.querySelector()` and `document.querySelectorAll()` to select elements on the page. Out on the web you will also see the older methods `document.getElementsByTagName()` and `document.getElementById()` in use - we recommend that you NOT use these methods as they are much less flexible and powerful than the `querySelector()` and `querySelectorAll()` methods.
