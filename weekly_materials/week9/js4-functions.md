@@ -1,57 +1,27 @@
-# 5 - JavaScript Functions
+# JavaScript Functions
 
-## Overview
-In computer programming, a *function* is a named section of a program that perform a specific task; they are basically "mini programs" within a larger program. Today we are going to learn about how to write functions in JavaScript.
+In computer programming, a *function* is a named section of a program that perform a specific task; they are basically "mini programs" within a larger program. In this exercise, we are going to learn about how to write functions in JavaScript.
 
-## Contents
-<!--- Local Navigation --->
-I. [Introduction](#section1)
-
-II. [Function *Declarations*](#section2)
-
-III. [Function *Expressions*](#section3)
-
-IV. [Default function parameters](#section4)
-
-V. [Variable Scope (`let` & `const`)](#section5)
-
-VI. [Variable Scope with the `var` keyword](#section6)
-
-VII. [Nested variable declarations](#section7)
-
-VIII. [Nested functions](#section8)
-
-IX. [ES6 Arrow Functions](#section9)
-
-X. [Nota bene](#section10)
-
-XI. [Review Questions](#section11)
-
-XII. [Review Exercise](#section12)
-
-
-<hr><hr>
-
-## I. <a id="section1"></a>Introduction
+## Introduction
 Functions contain a sequence of statements called the *function body*. There are two advantages to using functions:
 1. Reusability
 1. Procedural Abstraction
 
-Here is a short,  well-written page that explains what and why these two concepts are important - please take the time to read it: https://www.cs.utah.edu/~zachary/computing/lessons/uces-10/uces-10/node11.html
+Here is a short, well-written page that explains what and why these two concepts are important - please take the time to read it: https://www.cs.utah.edu/~zachary/computing/lessons/uces-10/uces-10/node11.html
+
+## Creating and Running the Example Files
+For each of the examples below, you should create a new HTML file and run it in Chrome so you can see the output. (Make sure you have the console open so you can see console output, not just HTML output.)
 
 
-## II. <a id="section2"></a>Function *Declarations*
+## Function *Declarations*
+Here are some examples of JavaScript function declarations. Note that when we declare a JavaScript function, we do not declare the *type* of the arguments, or the *type* of the return value. 
 
-Here are some examples of JavaScript function declarations. Note that when we declare a JavaScript function, we do not declare the *type* of the arguments, or the *type* of the return value.
-
-### functions-1.html
-
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<title>Functions-1</title>
+	<title>Function Declarations</title>
 </head>
 <body>
 
@@ -91,18 +61,16 @@ console.log(greeting); 	// HELLO MARY!
 
 ```
 
-## III. <a id="section3"></a>Function *Expressions*
+## Function *Expressions*
 In JavaScript functions are *first-class* values - they are objects actually. 
 This means that like any other JavaScript type (e.g. numbers or strings) they can be referenced by a variable, passed as an argument to a function, and returned as a value by a function.
 
-### functions-2.html
-
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<title>Functions-2</title>
+	<title>Function Expressions</title>
 </head>
 <body>
 
@@ -151,23 +119,19 @@ console.log(greetings2); // ["Greetings and felicitations, kind Gary.", "Greetin
 </script>
 </body>
 </html>
-
 ```
 
-### A. Explanation
+### Explanation
 - in #1 above, we declared two function expressions
 - in #1A above, we see that we can call these functions normally, the same way as we would call a declared function.
 - in #2 above, we have declared a function that takes another function as an argument
 - as we loop through the array, we call the passed in function repeatedly
 - in #2A & #2B above we call `createGreetings()` with 2 different functions passed in
 
-## IV. <a id="section4"></a>Default function parameters
-In JavaScript, parameters of functions default to `undefined`. However, in some situations 
-it might be useful to set a different default value. This is where **default parameters** can help.
+## Default Function Parameters
+In JavaScript, parameters of functions default to `undefined`. However, in some situations it might be useful to set a different default value. This is where **default parameters** can help.
 
-### functions-3.html
-
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -210,12 +174,12 @@ console.log(multiply3(2)); 	// 2, because b has a default value of 1
 </body>
 </html>
 ```
-### A. Explanation
+### Explanation
 - note the behavior in #1 when the second parameter is left out. We get a result of `NaN` (Not a Number) because when `undefined` is multiplied by anything, the result is always `NaN`
 - note in #2 that we are using the *ternary operator*, which is a shortcut if/then/else. This also illustates one way to check to see if a value is undefined.
 - note in #3 that default function parameters are an ES6 feature
 
-## V. <a id="section5"></a>Variable Scope (`let` & `const`)
+## Variable Scope (`let` & `const`)
 When functions are declared, and when variables are declared using either `let` or `var`, they are *scoped* to the current *block* they were declared in.
 
 - A **Block** is delimited by a pair of curly braces `{}` and is used to group zero or more statements.
@@ -223,9 +187,7 @@ When functions are declared, and when variables are declared using either `let` 
 - Functions and variables declared by `let` and `const` have as their scope the block in which they are defined, as well as in any contained sub-blocks. 
 - If a variable is declared with `let` and `const` **outside** of a block (at the top-level of the &lt;script> element) it has **script** scope. Script scope means that the variable is available throughout the current script, and in other &lt;script> tags.
 
-### functions-4.html
-
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -264,7 +226,8 @@ debugger; // debugger breakpoint
 </body>
 </html>
 ```
-### A. Explanation
+
+### Explanation
 Be sure to run this example in Chrome with the web inspector open (see screenshot below). The `debugger;` statement will suspend execution of the program and allow us to inspect both the value of the variables,  and their *scope*. 
 Note that we have 3 scopes here: "Local", "Script", and "Global".
 - `func1()` has 2 "locally" scoped variables (i.e. to the function *block*) - `A` and `C`.
@@ -273,9 +236,9 @@ Note that we have 3 scopes here: "Local", "Script", and "Global".
 - **Try this**: Remove the `debugger;` statements and uncomment the final `console.log()` that tries to print out `C`. Of course it fails because we can't access local variables from outside the block in which they were declared in.
 
 
-![Web Page](_images/functions-1.jpg)
+![Web Page](functions-1.jpg)
 
-## VI. <a id="section6"></a>Variable Scope with the `var` keyword
+## Variable Scope with the `var` keyword
 - Variables declared with the `var` keyword (which we have NOT been using in this course) are scoped to the nearest enclosing *function* in which they were declared, they are NOT *block scoped*.
 - If a variable is declared with the `var` keyword *outside* of a function, that variable is now in the *global scope*.
 
@@ -474,8 +437,6 @@ The HTML produced should be identical to what was produced in the previous versi
 
 <hr>
 
- **[Previous Section <- More Web Browser DOM Methods (part 4)](web-apps-4.md)**
- 
- **[Next Section -> JavaScript Events (part 6)](web-apps-6.md)**
 
 
+When you're done, upload the javascript3.html file to banjo.rit.edu, and link to it from your 230 page. It should be completed by 11:59pm on Sunday, October 29.
