@@ -365,7 +365,7 @@ Make a copy of **dom-3.html** and name it **javascript2.html**. Delete all of th
 
 ![Web Page](dom-9.jpg)
 
-When you're done, upload the file to banjo.rit.edu, and link to it from your main 230 page. It should be completed no later than the end of class on Thursday, October 26. 
+When you're done, upload the file to banjo.rit.edu, and link to it from your main 230 page. It should be completed no later than the end of class on Friday, October 27. 
 
 
   
