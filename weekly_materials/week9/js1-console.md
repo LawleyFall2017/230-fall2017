@@ -63,7 +63,7 @@ Create a new HTML file called hello-2.html, and paste the following code into it
      let x = 1;
      let y = 1;
      let sum = x + y;
-     // string templating (ES6 only)
+     // this string templating is an ES6-only alternative to normal concatenation
      console.log(`${x} + ${y} is ${sum}`); 
    </script>
 </head>
@@ -150,12 +150,12 @@ Create another file called hello-4.html, and paste the following code into it:
      // Common JS Objects
      let colors = ["red","green","blue"]; // Array literal
      let person = {name:"Fred",age:20};   // Object literal
-     let month = new Date().getMonth(); 
+     let month = new Date().getMonth();
      let age = Math.round(20.999);
 
      console.log(colors[0]);
      console.log(person.name);
-     console.log(month);
+     console.log(month);  // Note: Uses JS array position, starting from 0
      console.log(age);
 
      // Treat "primitives" like objects
@@ -200,7 +200,7 @@ Make a copy of **hello-4.html** and name it **javascript1.html**. Delete all of 
 1. Print out the last element in the `colors` array.
 1. Loop through the `colors` array using a `for` loop and print out each value to the console.
 1. Add a new property named `school` to the `person` object and give it a value of "RIT". Then print this value to the console.
-1. Print out the number of seconds that have passed since 1970 - use the `Date` object.
+1. Print out the number of seconds that have passed since 1970 - use the [`Date` object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date). (hint: date objects are stored as millisecond value)
 1. Print out the value of pi - use the `Math` object.
 1. Print out the absolute value of -999 - use the `Math` object.
 1. Print out an "all caps" version of the string "Hello" - use a method of the `String` object.
