@@ -338,7 +338,7 @@ if (element){ // element will be considered true if it is not one of the falsy v
 1. How can we add breakpoints to our code in the debugger, and inspect the values of variables?
 1. What does the `debugger;` statement do? (We did not talk about this one at all, so google it!)
 
-## Review Exercise
+## Deliverable
 Make a copy of **dom-3.html** and name it **javascript2.html**. Delete all of the existing JavaScript code, and add JavaScript that does the following (search the web for documentation if you don't know how to do these). Make sure that you DO NOT modify the HTML source of the page in ANY way (by adding `class` or `id` attributes to the paragraphs, for example.
 
 1. Change the `.innerHTML` of the first &lt;h1> to "My UFO Page"

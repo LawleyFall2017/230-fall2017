@@ -12,9 +12,8 @@ Here is a short, well-written page that explains what and why these two concepts
 ## Creating and Running the Example Files
 For each of the examples below, you should create a new HTML file and run it in Chrome so you can see the output. (Make sure you have the console open so you can see console output, not just HTML output.)
 
-
 ## Function *Declarations*
-Here are some examples of JavaScript function declarations. Note that when we declare a JavaScript function, we do not declare the *type* of the arguments, or the *type* of the return value. 
+Here are some examples of JavaScript function declarations. Note that when we declare a JavaScript function, we do not declare the *type* of the arguments it will accept, nor the *type* of the value it returns.
 
 ```html
 <!DOCTYPE html>
@@ -29,18 +28,18 @@ Here are some examples of JavaScript function declarations. Note that when we de
 
 // 1 - These first 2 examples do not have a return value, and instead rely on "side effects"
 
-// 1A - no arguments, no return value
+// 1A - No arguments provided, no return value
 function sayHello(){
 	console.log("Hello!");
 }
 
-// 1B - String argument, no return value
+// 1B - String argument provided, no return value
 function sayHelloTo(name){
 	console.log("Hello " + name + "!");
 }
 
-sayHello(); 			// "Hello!"
-sayHelloTo("Bob"); 		// "Hello Bob!"
+sayHello(); 			// outputs the string "Hello!"
+sayHelloTo("Bob"); 		// outputs the concatenated string "Hello Bob!"
 
 
 // 2 - these functions DO return values
@@ -50,7 +49,7 @@ function formatGreeting(name){
 	return "Hello " + name + "!";
 }
 
-// 2B - here we store the returned value in a variable
+// 2B - takes the returned value from the function above and stores it in a variable
 let greeting = formatGreeting("Mary");
 greeting = greeting.toUpperCase();
 console.log(greeting); 	// HELLO MARY!
@@ -62,7 +61,7 @@ console.log(greeting); 	// HELLO MARY!
 ```
 
 ## Function *Expressions*
-In JavaScript functions are *first-class* values - they are objects actually. 
+In JavaScript, functions are *first-class* values - they are actually objects. 
 This means that like any other JavaScript type (e.g. numbers or strings) they can be referenced by a variable, passed as an argument to a function, and returned as a value by a function.
 
 ```html
@@ -98,7 +97,7 @@ console.log(greeting2); 	// Greetings and felicitations, kind Mary.
 // 2 - A function that takes another function as an argument, and then calls it
 function createGreetings(myData,myFunc){
 	let greetings = []; // empty array
-	for (let n of names){
+	for (let n of myData){
 		let g = myFunc(n); // call the passed in function and pass in a name
 		//let g = myFunc.call(this,n); // does the same thing
 		greetings.push(g); // add greeting to array
@@ -179,7 +178,7 @@ console.log(multiply3(2)); 	// 2, because b has a default value of 1
 - note in #2 that we are using the *ternary operator*, which is a shortcut if/then/else. This also illustates one way to check to see if a value is undefined.
 - note in #3 that default function parameters are an ES6 feature
 
-## Variable Scope (`let` & `const`)
+## Variable Scope (`let` & `const`) & Debugging
 When functions are declared, and when variables are declared using either `let` or `var`, they are *scoped* to the current *block* they were declared in.
 
 - A **Block** is delimited by a pair of curly braces `{}` and is used to group zero or more statements.
@@ -246,10 +245,9 @@ You can read about this behavior of `var` and other behaviors such as variable d
 
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var
 
-## VII. <a id="section7"></a>Nested variable declarations
-### functions-5.html
+## Example of Nested Variable Declarations
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -283,12 +281,11 @@ doStuff();
 - z above is scoped to the inner "if" block, and is not visible outside of that block.
 
 
-## VIII. <a id="section8"></a>Nested functions
+## Nested functions
 We can declare a function *within* a function. The nested (inner) function is private to its containing (outer) function. 
 Below we have given the `addSquares()` function a "helper" function that is not visible from the outside of `addSquares()`.
 
-### functions-6.html
-```
+```html 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -324,12 +321,10 @@ Closures are an important topic in JavaScript - you can learn more about them:
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions#Nested_functions_and_closures
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
 
-## IX. <a id="section9"></a>ES6 Arrow Functions
+## ES6 Arrow Functions
 Arrow functions are an ES6 addition.  They have two advantages: they have a shorter syntax than regular functions, and they do not bind their own `this` keyword. This second advantage might not mean anything to you now, but we will revisit it in a future chapter of this tutorial.
 
-### functions-7.html
-
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -371,16 +366,15 @@ console.log(doubleIt(5));
 </body>
 </html>
 ```
-### A. Explanation
+### Explanation
 - 4 of the 5 function definitions above do the same thing, but the syntax is increasingly concise. 
 - Arrow functions really come in handy with arrays, when you can to pass them as arguments to functions such as `.sort()` or `.filter()` or `.forEach()`, which we will work with soon.
 - Arrow function docs: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions.
 
 
+## Important Notes
 
-## X. <a id="section10"></a>Nota bene
-
-A. We have not yet talked about the `this` keyword - `this` has a special value within functions based on how it is called - we will take a closer look at `this` in the next section, JavaScript Events & `this`.
+A. We have not yet talked about the `this` keyword - `this` has a special value within functions based on how it is called - we will take a closer look at `this` in the [JavaScript Events exercise](js5-events.html). 
 
 B. A new kind of function for ES6 is called a **Generator Function** - which is a function that can be paused and later resumed. We will not be covering them in this course. If you are interested, here is some information about them:
 
@@ -388,8 +382,7 @@ B. A new kind of function for ES6 is called a **Generator Function** - which is 
 - https://davidwalsh.name/es6-generators
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators
 
-C. Function declarations and function expressions are very similar, but there are subtle differences.
-One of these is that within the same scope, function declarations are immediately available to all the code, but `let` function expressions are not available until the variable  has been *declared* and *initialized*.
+C. Function declarations and function expressions are very similar, but there are subtle differences. One of these is that within the same scope, function declarations are immediately available to all the code, but `let` function expressions are not available until the variable  has been *declared* and *initialized*.
 
 To see this in action:
 
@@ -406,7 +399,7 @@ http://2ality.com/2012/08/ids-are-global.html
 
 This "auto creation" of global properties is a feature you probably don't want to use in your code, but you need to be aware of it because it can cause quirky behavior in your programs depending on how you "id" your elements.
 
-## XI. <a id="section11"></a>Review Questions
+## Review Questions
 1. What is a *block*?
 1. Define *scope*
 1. Declaring a variable with `let` or `const` at the top level of the &lt;script> tag (outside of any other blocks or functions) gives it what kind of *scope*?
@@ -415,15 +408,16 @@ This "auto creation" of global properties is a feature you probably don't want t
 1. What does D.R.Y. stand for and *mean*? (see next section below)
 
 
-## XII. <a id="section12"></a>Review Exercise
+## Deliverable
 
-Duplicate your **web-apps-4.html** file and name the copy **web-apps-5.html**
+Make a copy of your javascript3.html file and save it as javascript4.html.
+
 Notice how the `colors` and `foods` (or whatever categories you chose) list generating code is almost the same - this violates a software development best practice known as D.R.Y. - "**D**on't **R**epeat **Y**ourself".
 What you need to do is to factor out that duplicated code and put it into a function.
 
 1. Hint: The function declaration looks something like this:
 
-```
+```javascript
 function createList(listElement,array){
   // you write the rest
 }
@@ -435,8 +429,4 @@ function createList(listElement,array){
 
 The HTML produced should be identical to what was produced in the previous version.
 
-<hr>
-
-
-
-When you're done, upload the javascript3.html file to banjo.rit.edu, and link to it from your 230 page. It should be completed by 11:59pm on Sunday, October 29.
+When you're done, upload your javascript4.html file to banjo.rit.edu, and link to it from your 230 page. It should be completed by 11:59pm on Sunday, October 29.

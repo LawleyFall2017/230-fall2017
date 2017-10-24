@@ -286,7 +286,7 @@ Be sure to read the HTML DOM page linked near the top of this document.
 1. What is the *first-child* of the "Google" &lt;li> tag in **more-dom-3.html**?
 1. What is the *parent* of the "Google" &lt;li> tag in **more-dom-3.html**?
 
-## Review Exercise
+## Deliverable
 
 Here is your starter code:
 
