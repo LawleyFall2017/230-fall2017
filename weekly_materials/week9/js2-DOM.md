@@ -6,6 +6,16 @@ When developers discuss database records and operations, there's a concept known
 
 Similarly, if we are going to create web applications, we will have to do the same things to our web pages: **create** new elements, select (**read**) existing elements, **update** elements, and **delete** elements.
 
+**Table of Contents**
+* [Selecting and Modifying Elements on the Page](#selecting-and-modifying-elements-on-the-page)
+* [Order of Operations](order-of-operations)
+* [Experimenting with CSS Selectors](#experimenting-with-css-selectors)
+* [Selecting Multiple Elements with document.querySelectorAll()](#selecting-multiple-elements-with-documentqueryselectorall)
+* [Page Source vs Web Inspector](#page-source-vs-web-inspector)
+* [Important Notes](#important-notes)
+* [Review Questions](#review-questions)
+* [Deliverable](#deliverable)
+
 ## Selecting and Modifying Elements on the Page
 If you want to modify an HTML element, you first need to:
 
@@ -52,7 +62,7 @@ Create a new HTML file called dom-1.html, save it, and open it in Chrome. It is 
 ```
 Load it up in Chrome. 
 
-## It  didn't work!
+### It  didn't work!
 When you load this into Chrome, the &lt;h1> text doesn't change. What went wrong?
 
 ### Check the JavaScript console
@@ -171,7 +181,7 @@ Load the page in Chrome to see the results:
 
 ![Web Page](dom-5.jpg)
 
-### A. Explanations
+### Explanations
 There was quite a bit going in that last example. Let's break it down:
 
 In the third instruction, we used a **pseudo selector** of `p:nth-of-type(2)` to select the 2nd paragraph.
