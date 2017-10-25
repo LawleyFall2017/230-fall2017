@@ -1,7 +1,19 @@
+
 # Introduction to JavaScript 1: Working with the Console
 We're going to start by running some JavaScript in a web page without ever actually displaying anything on the page. Instead, we'll look at the output of the code in the the JavaScript console window that the Chrome inspector tools provides.
 
-## Hello, World!
+**Table of Contents**
+
+* [Hello, World!](#hello-world)
+* [Using the Console to Run Commands](#using-the-console-to-run-commands)
+* [Declaring Variables and Constants](#declaring-variables-and-constants)
+* [Console Error Messages](#console-error-messages)
+* [JavaScript "Primitive" Data Types](#javascript-primitive-data-types)
+* [JavaScript "Built-in" Objects](#javascript-built-in-objects)
+* [Review Questions](#review-questions)
+* [Deliverable](#deliverable)
+
+##  Hello, World!
 As you probably know, Federal law requires that every programming tutorial begin with a "Hello World" application. (Okay, maybe that's not entirely true. But we're still going to do it!)
 
 Create a new folder for today's work, and in it put a file called hello-1.html. Copy the following code into the document: 
@@ -38,7 +50,7 @@ The general term for an interactive console like this is [REPL](https://en.wikip
 
 *Note: Just as when we modify the CSS in the inspector, we're not really changing the file; we're just testing out what our code would do.*
 
-## Declaring Variables and Constants
+##  Declaring Variables and Constants
 In pre-ES6 versions of JavaScript, variables were defined with the `var` keyword. In ES6, we can use the `const` keyword to declare constant values (that do not change), and the `let` keyword to declare variables. 
 
 **We recommend that you NOT use the pre-ES6 approach of `var` to declare variables, as the variables that `var` declares are *scoped to functions*, rather than the *block scoping* of `let` and `const`, which introduces odd behavior. Read more here: https://hackernoon.com/why-you-shouldnt-use-var-anymore-f109a58b9b70**
@@ -81,7 +93,7 @@ Some things to note about that code:
 - ES6 also allows [*String Templating*](https://developers.google.com/web/updates/2015/01/ES6-Template-Strings), which is more powerful than simple string concatenation. Note the backtick (\`)  symbol is used to denote the string, and `${}` encloses the variable names.
 
 
-## Console Error Messages
+##  Console Error Messages
 The console will display error messages that will help you debug your code. Let's produce an error by attempting to change the value of the `answer` constant above.
 Add this line of code - `answer = 43;` - right before the closing &lt;script&gt; tag, and then reload the page. You should see an error in the console:
 
@@ -89,7 +101,7 @@ Add this line of code - `answer = 43;` - right before the closing &lt;script&gt;
 
 That's because we defined `answer` as a constant rather than a variable. Fix this error by changing the declaration for `answer` to a variable rather than a constant.
 
-## JavaScript "Primitive" Data Types
+##  JavaScript "Primitive" Data Types
 The five common built-in "primitive" data types in JavaScript are: `Number`, `String`, `Boolean`, `Undefined` (a value has never been defined) and `Null` (the intentional absence of a value).
 
 ES6 has also added the `Symbol` type, which we probably won't need to use in this course.
@@ -124,7 +136,7 @@ Create a new file called hello-3.html, and paste the following code into it.
 ```
 Save the file, open it in Chrome, and use the Inspector to view the console. You should see the string "Joe" output to the console. Make sure you understand why!
 
-## JavaScript "Built-in" Objects
+##  JavaScript "Built-in" Objects
 JavaScript also contains a number of built-in objects that we can use. There is `Object`, which is a starting point for our own customized objects, as well as `Array`, `Date`, `Math`, and others. The "primitive" types above also can be treated like objects and have properties and methods that can be called on them.
 
 * [Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) - A list of values
@@ -177,7 +189,7 @@ Create another file called hello-4.html, and paste the following code into it:
 ```
 Load the file in Chrome and view the console. You should see seven values output, and they should match the values in the code comments. Make sure you understand how each of those values is being generated! 
 
-## Review Questions
+##  Review Questions
 1. Which versions of JavaScript will we be covering in this course?
 1. How can you get the interactive JavaScript [REPL](https://en.wikipedia.org/wiki/Read–eval–print_loop) to appear in Chrome?
 1. Which JavaScript keyword declares *variables*?
