@@ -4,6 +4,20 @@ In this exercise, we are going to look at alternatives to `.innerHTML` that can 
 
 Although we can do quite a bit with the `.innerHTML` property, there are times that we might want to insert a new element somewhere on the page, or delete a specific element. To do these things, we need more control over the page than the `.innerHTML` property gives us.
 
+**Table of Contents**
+* [Understanding the DOM](#understanding-the-dom)
+* [New DOM Methods](#new-dom-methods)
+* [Starter Page](#starter-page)
+* [Creating and Appending Elements](#creating-and-appending-elements)
+* [Creating and Appending Elements (with a little less code)](#creating-and-appending-elements-with-a-little-less-code)
+* [Inserting Elements Into the Middle of a DOM Tree](#inserting-elements-into-the-middle-of-a-dom-tree)
+* [Modifying Existing DOM Elements](#modifying-existing-dom-elements)
+* [Removing Existing DOM Elements](#removing-existing-dom-elements)
+* [Important Notes](#important-notes)
+* [Review Questions](#review-questions)
+* [Deliverable](#deliverable)
+
+
 ## Understanding the DOM
 The [browser DOM is an inverted tree structure](https://www.w3schools.com/js/js_htmldom_navigation.asp) that consists of *nodes* - which are mostly HTML elements (software *objects*) that have properties and methods associated with them. These nodes have hierarchical relationships with one another - *parent*, *child*, and *sibling*. 
 
@@ -149,7 +163,7 @@ We can simplify this code though, by using `.innerHTML` instead of `document.cre
 ![Web Page](more-dom-3.jpg)
 
 
-## IV. <a id="section4"></a>Inserting elements into the middle of a DOM tree
+## Inserting elements into the middle of a DOM tree
 Rather than just append everything to the bottom of the page, let's try adding elements to both the end and the middle of an unordered list.
 
 Create a new file called more-dom-3.html, and paste the following code into it:
@@ -273,9 +287,9 @@ Which approach should you use in your code? Our recommendation is to use whichev
 - the "DOM element creation" approach we used here can result in **more code** to write, to debug, and to maintain. 
 
 
-## VIII. Review Questions
+## Review Questions
 
-Be sure to read the HTML DOM page linked near the top of this document.
+You may want to refer back to the [W3 HTML DOM page](https://www.w3schools.com/js/js_htmldom_navigation.asp) discussed at the beginning of this tutorial.
 
 1. Exactly how many *parent* elements can an element on a web page have?
 1. What are the *child* elements of the &lt;ul> tag in **more-dom-3.html**?
