@@ -66,7 +66,7 @@ The JavaScript engine is complaining about our second line of code.
 ### Check the JavaScript debugger
 So what has a value of `null`? It turns out that our variable `h1` does - which we can see if we select the **Sources** tab, then select **dom-1.html** on the left, check the **Pause on caught exceptions** checkbox, and reload the page.
 
-![The JavaScript Console](dom-3.jpg)
+![The JavaScript Console](dom-3.png)
 
 **(Fun fact - if you click on the line numbers next to the code listing, you can add and remove breakpoints that will interrupt code execution whenever the debugger is open. You will then be able to inspect the values of variables, and step through your code)**
 
