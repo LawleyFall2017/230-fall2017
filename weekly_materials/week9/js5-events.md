@@ -6,6 +6,18 @@ You can see a complete list of DOM events here:  https://developer.mozilla.org/e
 
 And you can learn more about events here: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events
 
+**Table of Contents**
+* [Event Handlers](#event-handlers)
+* [Event Handlers and Function References](#event-handlers-and-function-references)
+* [Breaking Our Code](#breaking-our-code)
+* [Events and Arrow Functions](#events-and-arrow-functions)
+* [Event Listeners - `addEventListener()`](#event-listeners---addeventlistener)
+* [Event Listeners - `removeEventListener()`](#event-listeners---removeeventlistener)
+* [Adding Properties to Elements with `element.dataset`](#adding-properties-to-elements-with-elementdataset)
+* [Important Notes](#important-notes)
+* [Review Questions](#review-questions)
+* [Deliverable](#deliverable)
+
 
 ## Event Handlers
 Browser "on-event" handlers have been around since the early days of the Internet, and are the easiest way to hook into events like `onload`, `onclick`, `onmousedown`,`onkeyup` and so on.
@@ -46,7 +58,7 @@ Browser "on-event" handlers have been around since the early days of the Interne
 
 Copy and paste the above code into a new HTML document and load it in a browser. Clicking the paragraph should cause its text contents to change.
 
-### A. Explanation
+### Explanation
 1. In #1 above, we give the `onclick` event handler a *function expression* as its value. This function will be called once a click event has been triggered by the paragraph. 
 1. In #2 above, we used the `this` keyword. In JavaScript the value of `this` varies depending how it it used. In a function that is triggered by an event, this is a reference to the object that called the method - in this case the paragraph. 
 1. In #3 above, the `e` parameter is the default `Event` object that is sent along by the event handler. It has a number of properties and methods, and in this case `e.target` is the object that recieved the event (once again, the paragraph).
