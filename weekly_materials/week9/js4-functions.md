@@ -2,15 +2,27 @@
 
 In computer programming, a *function* is a named section of a program that perform a specific task; they are basically "mini programs" within a larger program. In this exercise, we are going to learn about how to write functions in JavaScript.
 
-## Introduction
 Functions contain a sequence of statements called the *function body*. There are two advantages to using functions:
 1. Reusability
 1. Procedural Abstraction
 
 Here is a short, well-written page that explains what and why these two concepts are important - please take the time to read it: https://www.cs.utah.edu/~zachary/computing/lessons/uces-10/uces-10/node11.html
 
-## Creating and Running the Example Files
-For each of the examples below, you should create a new HTML file and run it in Chrome so you can see the output. (Make sure you have the console open so you can see console output, not just HTML output.)
+For each of the example files provided below, you should create a new HTML file and run it in Chrome so you can see the output. (Make sure you have the console open so you can see console output, not just HTML output.)
+
+**Table of Contents**
+* [Function Declarations](#function-declarations)
+* [Function Expressions](#function-expressions)
+* [Default Function Parameters](#default-function-parameters)
+* [Variable Scope (let & const) & Debugging](#variable-scope-let--const--debugging)
+* [Variable Scope with the `var` Keyword](#variable-scope-with-the-var-keyword)
+* [Example of Nested Variable Declarations](#example-of-nested-variable-declarations)
+* [Nested Functions](#nested-functions)
+* [ES6 Arrow Functions](#es6-arrow-functions)
+* [Important Notes](#important-notes)
+* [Review Questions](#review-questions)
+* [Deliverable](#deliverable)
+
 
 ## Function *Declarations*
 Here are some examples of JavaScript function declarations. Note that when we declare a JavaScript function, we do not declare the *type* of the arguments it will accept, nor the *type* of the value it returns.
@@ -277,11 +289,11 @@ doStuff();
 </body>
 </html>
 ```
-### A. Explanation
+### Explanation
 - z above is scoped to the inner "if" block, and is not visible outside of that block.
 
 
-## Nested functions
+## Nested Functions
 We can declare a function *within* a function. The nested (inner) function is private to its containing (outer) function. 
 Below we have given the `addSquares()` function a "helper" function that is not visible from the outside of `addSquares()`.
 
