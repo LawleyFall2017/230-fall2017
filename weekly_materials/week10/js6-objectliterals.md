@@ -440,8 +440,8 @@ var ship={
 }
 ```
 
-## Deliverables
-Easy - make a copy of your javascript3.html file (from [Introduction to JavaScript 3: More Web DOM Methods](../week9/js3-DOM2.md)), and name it javascript6.html.
+## Test Yourself!
+This should be pretty easy - make a copy of your javascript3.html file (from [Introduction to JavaScript 3: More Web DOM Methods](../week9/js3-DOM2.md)), and name it javascript6.html.
 
 In that page, you should have this code:
 
@@ -455,4 +455,4 @@ let links = {
  // Can you figure out how to pull the key and value from the "links" object literal?
  // and put them in list with clickable links?
 
-When you're done, upload the javascript6.html file to banjo.rit.edu, and link to it from your 230 page. It should be completed by 11:59pm on Wednesday, Nov 1.
+You do NOT need to upload this file to banjo; the only two deliverables this week are the Pixel Artist and GIF Finder exercises.
