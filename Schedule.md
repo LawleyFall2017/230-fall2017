@@ -201,14 +201,14 @@ This week we'll start using JavaScript to implement interactivity in websites.
   - [JavaScript Arrays](weekly_materials/week10/js7-arrays.md)
 
 - **Tuesday Homework**
-  - [Pixel Artist Application](js7hw-pixel-artist.md)
+  - [Pixel Artist Application](weekly_materials/week10/js7hw-pixel-artist.md)
 
 - **Thursday Tutorials**
   - [JavaScript Web Storage](weekly_materials/week10/js8-webstorage.md)
   - [JavaScript Web Services](weekly_materials/week10/js9-webservices.md)
 
 - **Thursday Homework**
-  - [GIF Finder Application](js9hw-gif-finder.md)
+  - [GIF Finder Application](weekly_materials/week10/js9hw-gif-finder.md)
 
 ## <a name="week11">Week 11</a> (Nov 7/9): JQuery & JQueryUI
 A great deal of the Javascript on the web uses a freely-available library of code called JQuery (which, in fact, was originally written by an RIT student!). This week we'll look at JQuery and how to use it in your pages. 
