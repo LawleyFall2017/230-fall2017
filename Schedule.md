@@ -194,17 +194,29 @@ This week we'll start using JavaScript to implement interactivity in websites.
   - [JavaScript Functions](weekly_materials/week9/js4-functions.md)
   - [Javascript Events](weekly_materials/week9/js5-events.md)
 
-## <a name="week10">Week 10</a> (Oct 31/Nov 2): JavaScript Web Applications
+## <a name="week10">Week 10</a> (Oct 31/Nov 2): JavaScript: Beyond the Basics
+
+- **Tuesday Tutorials**
+  - [JavaScript Object Literals](weekly_materials/week10/js6-objectliterals.md)
+  - [JavaScript Arrays](weekly_materials/week10/js7-arrays.md)
+
+- **Tuesday Homework**
+  - [Pixel Artist Application](js7hw-pixel-artist.md)
+
+- **Thursday Tutorials**
+  - [JavaScript Web Storage](weekly_materials/week10/js8-webstorage.md)
+  - [JavaScript Web Services](weekly_materials/week10/js9-webservices.md)
+
+- **Thursday Homework**
+  - [GIF Finder Application](js9hw-gif-finder.md)
 
 ## <a name="week11">Week 11</a> (Nov 7/9): JQuery & JQueryUI
 A great deal of the Javascript on the web uses a freely-available library of code called JQuery (which, in fact, was originally written by an RIT student!). This week we'll look at JQuery and how to use it in your pages. 
 
-- **Tuesday Exercise**: You'll implement some basic jQuery and JQuery UI zzzfunctionality on a page. 
-
-- **Thursday Exercise: You'll use the jQuery UI library to extend jQuery's functionality and add UI enhancements to page. 
-
+- **Tuesday/Thursday Exercise**: You'll implement two JavaScript web apps, and then recreate them using JQuery and JQueryUI. 
 
 ## <a name="week12">Week 12</a> (Nov 14/16): Specialized JavaScript Libraries
+This week we'll talk about a number of specialized JS libraries, including some used for games, and some used 
 
 
 ## <a name="week13">Week 13</a> (Nov 21): Web Accessibility

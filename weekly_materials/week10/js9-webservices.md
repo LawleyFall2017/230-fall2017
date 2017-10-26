@@ -1,11 +1,18 @@
-# 10 - Web Services
+# Web Services
 
-## I. Overview
 Reading and writing data to and from the Internet, whether to/from your own server, or by working with a cloud service like Firebase, is a BIG topic.
 
 In this course, we are just going to scratch the surface and work with the "read only" web, in this case, by utilizing a web service to search for and display animated GIFs.
 
-## II. What is a Web Service?
+**Table of Contents**
+* [What is a Web Service?](#what-is-a-web-service)
+* [Retrieving Data from Web Services?](#retrieving-data-from-web-services)
+* [Web Service Data Formats](#web-service-data-formats)
+* [Important Notes](#important-notes)
+* [Review Questions](#review-questions)
+
+
+## What is a Web Service?
 
 - A *Web Service* (http://en.wikipedia.org/wiki/Web_service) is a method of communication between two electronic devices over World Wide Web. A Web service is a software function provided at a network address over the web or the cloud; it is a service that is "always on" ...
 
@@ -14,7 +21,7 @@ In this course, we are just going to scratch the surface and work with the "read
 - Some examples of web services can be found on this page: [sample-web-services.md](../projects/_supporting-files/sample-web-services.md)
 
 
-## III. How do we download the data?
+## Retrieving Data From Web Services
 
 - As developers, what we want to do is this **--->** to take a user request, and update part of the HTML page (asynchronously) by exchanging small amounts of data with a server behind the scenes, without having to reload the whole page.
 - The above concept is known in the web world by this term - *Ajax* - https://en.wikipedia.org/wiki/Ajax_(programming)
@@ -30,7 +37,7 @@ Behind the scenes, the actual browser APIs that are being used for Ajax by jQuer
 - Cross-site scripting (XSS) can be used to generate &lt;script> tags and download JSON data on the fly - https://en.wikipedia.org/wiki/Cross-site_scripting
 
 
-## IV. What are the data formats?
+## Web Service Data Formats
 - In the early days of Ajax, XML formats such as SOAP and RSS were popular.
 - More recently, JSON (**J**ava**S**cript **O**bject **N**otation) has become the format of choice because it gives smaller file sizes than equivalent XML, and is easier for web browsers to parse because it maps directly to core JavaScript data types. JSON is also easier to send to web browser "cross domain", but we won't get into the details of that in this course.
 - You can read about JSON here: http://www.json.org and here: 
@@ -43,18 +50,15 @@ Behind the scenes, the actual browser APIs that are being used for Ajax by jQuer
     - `null`
 
 
-## V. Review Questions!
+## Review Questions
 - What does AJAX stand for?
 - What is the difference between AJAX (the acronym) and Ajax (the noun)?
 - What are some of the advantages of using JSON as a web service format instead of XML?
 
-## VI. Do the exercise!
-The best way to see how Ajax and Web APIs work is to build a fully functioning example - if you haven't done so yet, go ahead and build *GIF Finder*, which utilizes the Giphy Web Service:
+## Deliverable
+The best way to see how Ajax and Web APIs work is to build a fully functioning example. You're going to build an application that utilizes the Giphy Web Service, using this tutorial:
 
+- [GIF Finder](js9hw-gif-finder.md)
 
-- [HW-gif-finder.md](./HW-gif-finder.md)
+When it's done, upload your completed gif-finder.html file to your igme230 folder on banjo.rit.edu, and link to it from your main class page as "GIF Finder Exercise" It must be completed by 11:59pm on Sunday, November 5. 
 
-
-<hr>
-
-**[Previous Section <- WebStorage (part 9)](web-apps-9.md)**

@@ -1,24 +1,20 @@
-# 9 - WebStorage API
+# WebStorage API
 
-## I. Overview
-The HTML5 WebStorage API allows us to store **key:value** data in the user's browser, and that information can be retrieved at a later date by your JavaScript (when the user returns to your page).
+## Overview
+HTML pages are generally "stateless"--even if you change elements on the page based on user interaction, reloading the page sets it back to its original state. 
 
-## Contents
-<!--- Local Navigation --->
-I. [WebStorage Reference](#section1)
+You can save state information about a page (and a site) by storing data on the user's computer using one of two methods: "cookies" or the WebStorage API. Cookies are name/value pairs typically used for things like session management, personalization, and user tracking. The WebStorage API introduced with HTML5 also allows us to use JavaScript to store **key:value** data in the user's browser, and retrieve that information when the user returns to the site. This API allows more data storage, and is more secure, than cookies. 
 
-II. [An Example](#section2)
+**Table of Contents**
+* [WebStorage Reference](#webstorage-reference)
+* [An Example](#an-example)
+* [Storing Objects with WebStorage](#storing-objects-with-webstorage)
+* [Important Notes](#important-notes)
+* [Review Questions](#review-questions)
+<hr>
 
-III. [Storing Objects with WebStorage](#section3)
-
-IV. [Nota Bene](#section4)
-
-V. [Review Questions](#section5)
-
-<hr><hr>
-
-## I. <a id="section1">WebStorage Reference
-There are some WebStorage examples on the Internet that we can point you to:
+## WebStorage Reference
+These are useful documentation pages and examples:
 
 - https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API
 - https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API
@@ -26,7 +22,7 @@ There are some WebStorage examples on the Internet that we can point you to:
 - https://mdn.github.io/dom-examples/web-storage/
 
 
-## II. <a id="section2">An Example
+## An Example
 
 - Go ahead and try out this example, whenever you `onchange` the values of the textbox or the &lt;select>, their values are written to `localStorage`. 
 - If you close the window and reopen it, your changes will be preserved.  
@@ -34,7 +30,7 @@ There are some WebStorage examples on the Internet that we can point you to:
 - One thing worth mentioning is the `prefix` variable (see below). Because Web Storage uses the same set of keys for *each domain*, this means on servers like banjo that all of the students are sharing the same set of keys, so that if someone uses `highscores`as a key, another student's `highscores` key could wipe out and replace their data. One solution is to prefix your key names with something unique, like your RIT web account id. Therefore `highScores` would become `abc1234highScores` for one student, and `xyz9876highScores` for someone else, and the keys would never conflict.
 
 ### webstorage-1.html
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -97,44 +93,40 @@ colorSelect.onchange = e=>{ localStorage.setItem(colorKey, e.target.value); };
 </html>
 ```
 
-### A. And here is what it looks like:
+### And here is what it looks like:
 
-![Web Page](_images/web-storage-1.jpg)
+![Web Page](web-storage-1.jpg)
 
 
-## III. <a id="section3">Storing Objects with Web Storage
+## Storing Objects with Web Storage
 - A major limitation of Web storage is that it doesn't allow us to store arrays and other objects directly. But there's an easy workaround - you can easily convert built-in JavaScript objects (Object, Array, Date, etc) to and from a string respresentation, and then save them to localStorage. This is known as *serialization* - https://en.wikipedia.org/wiki/Serialization
 
-### A. Save an array to localStorage with `JSON.stringify()`
+### Save an Array to localStorage with `JSON.stringify()`
 
-```
+```javascript
 let listID = "abc1234-action-list";
 let items = ["Direct Movie","Deliver Baby","Cure Cancer"];
 items = JSON.stringify(items); // now it's a String
 localStorage.setItem(listID, JSON.stringify(items));
 ```
 
-### B. Retrieve an array from localStorage with `JSON.parse()`
+### Retrieve an array from localStorage with `JSON.parse()`
 
-```
+```javascript
 let listID = "abc1234-action-list";
 let items = localStorage.getItem(listID); // returns a String
 items = JSON.parse(items);  // now it's an Array
 ```
 
-## IV. <a id="section4">Nota Bene
+## Important Notes
 - The process by which the browser works out how much space to allocate to web data storage and what to delete when that limit is reached is not simple, and differs between browsers - read about it here: https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Browser_storage_limits_and_eviction_criteria
 
 
-## V. <a id="section5">Review Questions
+## Review Questions
 1. What is a limitation of using localStorage on a shared domain like people.rit.edu? What is a workaround that will mitigate this issue?
 1. What is the difference between local and session storage?
 1. If the user opens up the demo page in a different web browser, will their answers still be visible? Why or why not?
 1. Define *serialization*
-1. One big issue with the applications we have written this semester is that reloading the page will wipe out all of the user's work (for example the poem they created in *Magnetic Poetry*, or their pixel art creation in *Pixel Artist*). Think about the various HW assignments that we have worked on for this Web Apps unit - pick two of them - how could they be improved by utilizing web storage?
+1. One big issue with the applications we have written this semester is that reloading the page will wipe out all of the user's work (for example the pixel art creations in *Pixel Artist*). How could web storage be used to improve any of the other JavaScript exercises you've done?
 
-<hr>
 
-**[Previous Section <- JavaScript Arrays (part 8)](web-apps-8.md)**
-
-**[Next Section -> Web Services (part 10)](web-apps-10.md)**

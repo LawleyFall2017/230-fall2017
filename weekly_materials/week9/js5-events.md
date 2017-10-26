@@ -469,7 +469,7 @@ You should see another message about the color you selected, and the &lt;legend>
 
 ![Web Page](events-12.jpg)
 
-### B) Hints
+### Hints
 1. You can use event handlers OR event listeners, it's your choice
 1. You can use standard funtions OR arrow functions, it's you choice
 1. The **Submit button** code should be triggered by the `click` event

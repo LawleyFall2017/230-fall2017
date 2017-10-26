@@ -1,6 +1,5 @@
-# 7 - JavaScript Object Literals
+# JavaScript Object Literals
 
-##  Overview
 JavaScript is an *Object-Oriented* language, but traditional classes have not been supported until recently (ES6). 
 
 Today we will look at doing object-oriented programming *without* using classes, by utilizing the **JavaScript Object Literal**, and see how powerful and flexible it is.
@@ -9,38 +8,27 @@ If you want to create an object in most computer languages, you first need to cr
 
 Creating objects in JavaScript can be much easier, you can skip step #1 (creating a template), and move directly to step #2 (creating an instance).
 
-## Contents
-<!--- Local Navigation --->
-I. [What is a *literal value*?](#section1)
+**Table of Contents**
 
-II. [Creating Object Literals](#section2)
+* [What is a *Literal Value*?](#what-is-a-literal-value)
+* [Creating Object Literals](#creating-object-literals)
+* [Iterating Over Object Properties](#iterating-over-object-properties)
+* [Adding Behaviors to Objects](#adding-behaviors-to-objects)
+* [Creating "Object Factories"](#creating-object-factories)
+* [ES6 Object Literal Syntax](#es6-object-literal-syntax)
+* [Value Types & Reference Types](#value-types-reference-types)
+* [Another Look at `const`](#another-look-at-const)
+* [Important Notes](#important-notes)
+* [Review Questions](#review-questions)
+* [Deliverable](#deliverable)
 
-III. [Iterating over object properties](#section3)
 
-IV. [Adding behavior to our objects](#section4)
-
-V. [Creating "object factories"](#section5)
-
-VI. [ES6 Object Literal syntax](#section6)
-
-VII. [Value Types & Reference Types](#section7)
-
-VIII. [Another look at `const`](#section8)
-
-VIII. [Nota bene](#section9)
-
-IX. [Review Questions](#section10)
-
-X. [Review Exercise](#section11)
-
-<hr><hr>
-
-## I. <a id="section1">What is a *literal value*?
+## What is a *Literal Value*?
 In programming, a literal value is *a notation for representing a fixed value in source code*, or *a value written exactly as it's meant to be interpreted*.
 
 Here are some literals in the JavaScript Language:
 
-```
+```javascript
 let a = "abcd";                         // a String literal 
 let b = 1234;                           // a Number literal 
 let c = true;                           // a Boolean literal 
@@ -51,7 +39,7 @@ let f = {};                             // an Object literal!
 
 NOT literals:
 
-```
+```javascript
 let g = Array();
 let h = Date();
 let i = Math.random();
@@ -59,12 +47,12 @@ let h = b * 10; // 10 is a literal but 'b' is not
 ```
 
 
-## II. <a id="section2">Creating Object Literals
+## Creating Object Literals
 Here we are going to create an object literal named `car1`, and attach a few properties to it. The way we do this is to specify a *key* and a *value* (in this form - `key:value`)
 
 ### objects-1.html
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -98,11 +86,11 @@ console.log(car1["model"]); // Pinto
 </html>
 ```
 
-### A. Explanation
+### Explanation
 - note that we can easily add a property to an existing object. This can lead to odd errors.
 Imagine this:
 
-```
+```javascript
 // 1- below we misspell cylinders, so 'a' is now 'undefined'
 let a = car1.clyinders; 
 
@@ -119,12 +107,12 @@ console.log(car1.newproperty); // undefined
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/seal
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze
 
-## III. <a id="section3">Iterating over object properties
+## Iterating Over Object Properties
 The `for...in` loop is commonly used to iterate over object properties.
 
 Add the following to **objects-1.html**:
 
-```
+```javascript
 // 5 - iterate over keys of object with for...in
 for (key in car1){
   console.log(`key=${key}`); // make,model,cylinders
@@ -150,7 +138,7 @@ key=cylinders  value=4
 
 ```
 
-## IV. <a id="section4">Adding behavior to our objects
+## Adding Behavior to Our Objects
 
 Objects usually have *state* (properties or instance variables) AND *behavior* (methods).
 
@@ -160,7 +148,7 @@ In JavaScript objects, *methods are properties whose values are functions*.
 
 ### objects-2.html
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -200,16 +188,17 @@ car1.stop(); 			// car1.speed is now 0
 </html>
 ```
 
-### A. Explanation
+### Explanation
 - Here we are adding functions as the values of properties - which makes them *methods* of the object they are attached to.
 - Note that we have to use the `this` keyword when we refer to a property of the current object. 
 
-## V. <a id="section5">Creating "object factories"
+## Creating "Object Factories"
 What if we had a game that needed to have 50 cars driving around? Creating 50 object literals - `car1 = {...} ,car2 = {...}, car3 = {...}` would be both tedious and error prone.
+
 Instead, we can write a function to create these cars for us.
 
 ### objects-3.html
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -272,17 +261,17 @@ for (car of cars){
 </html>
 ```
 
-### A. Explanation
+### Explanation
 - In #1 above, we create two functions that we will later add to our cars as methods. We are creating these functions *outside* of our factory function because we want the cars to *share* a single copy of each function, rather than for each instance of car to have their own copy of the function. This will reduce the overall memory footprint of our car instances - which is a good thing!
 - In #2 above we declare `makeCar()` and give it 5 parameters, 3 of which are optional in that we have provided default values.
 - In #3 we use `Object.seal()` to prevent new properties from being added to an object.
 - In #4 and #5 we test our factory factory methods, and see how we can loop through an array of cars and call methods on them.
 
-## VI. <a id="section6">ES6 Object Literal syntax
+## ES6 Object Literal Syntax
 In ES6, the Object literal syntax gives the developer more concise ways to declare properties and values with *property value shortcuts*, and a more compact way of defining object methods. See below:
 
 ### objects-4.html
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -347,15 +336,15 @@ let car2 = {
 </html>
 ```
 
-## VII. <a id="section7">Value types & Reference types
+## Value Types & Reference Types
 
 - Javascript has 5 data types that are passed by *value*: Boolean, Number, String, null, and undefined. We could also call these *primitive* types.
 - Javascript has 3 data types that are passed by *reference*: Array, Function, and Object. In actuality, all of these are Objects. DOM Elements are Objects and are thus also *reference* types.
 
-### A. Value types
+### Value types
 How are value types like String and Number copied between variables? Here is an example:
 
-```
+```javascript
 let a = 100;
 let b = a;
 a = 50;
@@ -367,11 +356,11 @@ console.log(b); // 100
 - The line `let b = a;` copies the value of 100 into the `b` variable. When we later change `a` to `50`, we are only effecting `a`, not `b`.
 - The above behavior is how value types work: variable assignment *copies* the actual value from the old variable to the new variable, and later changes to one variable's value have no effect upon the other variable's value.
 
-### B. Reference types
+### Reference types
 
 How are reference types "copied" between variables? Here is an example:
 
-```
+```javascript
 let car1 = {make:"Toyota"};
 let car2 = car1; // car1 and car2 are now pointing at the same object!
 car1.make = "Jeep"; // changes made to car1 effect both variables
@@ -388,14 +377,14 @@ console.log(car3.make); // Yugo
 ```
 - Reference types (Objects, Arrays Functions, Elements, ...) are different in that variable assignment *points* at an independent object existing in memory, and assigning another variable to point at the first variable copies the *reference to the object*, not the value itself. Changes made to the referenced object are seen by all of the variables that point at that object.
 
-## VIII. <a id="section8">Another look at `const`
+## Another Look at `const`
 Now that we have had a chance to look at Objects, let's look at the description of [`const`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const) from the Mozilla site: 
 
 "The const declaration creates a read-only reference to a value. It does not mean the value it holds is immutable, just that the variable identifier cannot be reassigned. For instance, in the case where the content is an object, this means the object's contents (e.g., its parameters) can be altered."
 
 Let's look at an example:
 	
-```
+```javascript
 // A. For primitives, const means we CAN NOT change the value
 const PI = 3.14;
 const FIRST_PRESIDENT  = "Washington";
@@ -427,10 +416,10 @@ console.log(colors);			// ["red","green","blue"]
 
 **So with `const`, what is immutable is the *binding* of the variable to the value, and with `const` the compiler guarantees that a *re-binding* will not occur.**
 
-## IX. <a id="section9">Nota bene
+## Important Notes
 For more information on object literals, head here: http://exploringjs.com/es6/ch_oop-besides-classes.html
 
-## X. <a id="section10">Review Questions
+## Review Questions
 1. In programming, what is a *literal* value?
 1. How do you iterate over the keys and values of an object?
 1. What is the difference between `for...in` and `for...of`? (You don't want to get these 2 mixed up!)
@@ -439,7 +428,7 @@ For more information on object literals, head here: http://exploringjs.com/es6/c
 1. What does `Object.seal()` do?
 1. What does `Object.freeze()` do?
 1. What is wrong with the following code?
-```
+```javascript
 var ship={
   x: 0,
   y: 0,
@@ -451,21 +440,19 @@ var ship={
 }
 ```
 
-## XI. <a id="section11">Review Exercise
-Easy - just head back to the exercise for [4 - More Web Browser DOM Methods](web-apps-4.md) - make a copy of the file and name it **web-apps-7.html**, and do the challenge:
+## Deliverables
+Easy - make a copy of your javascript3.html file (from [Introduction to JavaScript 3: More Web DOM Methods](../week9/js3-DOM2.md)), and name it javascript6.html.
 
-```
- // Can you figure out how to pull the key and value from the "links" object literal?
- // and put them in list with clickable links?
+In that page, you should have this code:
+
+```javascript
 let links = {
 		"RIT": "http://www.rit.edu",
 		"RWAG" : "https://www.facebook.com/RWAGclub",
 		"New Media Club" : "http://newmediaclub.cias.rit.edu"
 	}
 ```
+ // Can you figure out how to pull the key and value from the "links" object literal?
+ // and put them in list with clickable links?
 
-<hr>
-
-**[Previous Section <- JavaScript Events (part 6)](web-apps-6.md)**
-
-**[Next Section -> JavaScript Arrays (part 8)](web-apps-8.md)**
+When you're done, upload the javascript6.html file to banjo.rit.edu, and link to it from your 230 page. It should be completed by 11:59pm on Wednesday, Nov 1.
