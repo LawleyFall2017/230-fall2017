@@ -54,7 +54,7 @@ I give only three possible final grades in this class. You'll receive a grade of
 
 - **[Project 2](./projects/project2.md)**: Personal Portfolio (20% of final grade, due 15 October 2017)
 
-- **[Project 3](./projects/project3.md)**: Group Project (20% of final grade, due 5 November 2017)
+- **[Project 3](./projects/project3.md)**: Group Project (20% of final grade, due 12 November 2017)
 
 - **[Project 4](./projects/project4.md)**: Final Personal Project (20% of final grade, due 10 December 2017)
 
