@@ -1,25 +1,17 @@
 # "GIF Finder" JavaScript Application
 
-*GIF Finder* will utilize the Giphy **web service** to search for GIFs based on keywords, and then display the results to the user. (Make sure you've completed the [Web Services exercise](js9-webservices.md) before attempting this application.)
+*GIF Finder* will utilize the [Giphy web service](https://developers.giphy.com/docs/) to search for GIFs based on keywords, and then display the results to the user. (Make sure you've completed the [Web Services exercise](js9-webservices.md) before attempting this application.)
 
-The documentation for the Giphy Web Service is here: https://developers.giphy.com/docs/
-
-Here's a summary of what this app will do:
-  1. The user will type in a search term and hit return.
-  1. The app will create a properly formatted URL (that includes the search term) that points at the web service.
-  1. The app will send a request to download the file located at that URL.
-  1. A few seconds later the response (a file) will be downloaded by the web browser.
-  1. The downloaded file is in the JSON (JavaScript Object Notation) format - it's basically an object literal with just data, no methods.
-  1. The app will parse the JSON data and display the results to the user.
-
-Like the pixel artist exercise, this assignment could be a great "starter" for Project 4.
+Here's how the app will work:
+  1. The user types in a search term and hits return.
+  1. The app createsa properly formatted request URL, including the search term(s), and sends it via http to the web service.
+  1. The web service responds by sending back the requested data as a JSON (JavaScript Object Notation) formatted file (this is essentially an object literal containing just data, no methods). 
+  1. The app parses the JSON data and displays the results to the user.
 
 ## Screen Shots
 
 ### Starting State:
 ![Web Page](gif-finder-1.jpg)
-
-<hr><hr>
 
 ### And after the user has made a search:
 ![Web Page](gif-finder-2.jpg)
@@ -36,167 +28,17 @@ Like the pixel artist exercise, this assignment could be a great "starter" for P
 
 ### II. Get Started
 
-- Below is your starting file with the HTML and CSS all done for you. 
-- Copy the code and save in a file called **gif-finder.html**
-- You will also need these images: [gif-finder-start-files.zip](gif-finder-start-files.zip)
-
-#### gif-finder.html
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8" />
- 	<title>Giphy Finder</title>
- 	<style>
-		*{
-			font-family:verdana,tahoma,sans-serif;
-		}
-	
- 		header{
- 			background: url(images/cats.jpg);
- 			height:195px;
- 		}
- 		
- 		header h1{
- 			margin:0;
- 			color:blue;
- 			text-align:center;
- 			font-size:100px;
- 			padding-top: 35px;
- 		}
- 		
- 		.result {
-			position: relative;
-			height: 175px;
-			width: 100px;
-			float:left;
-			border:1px solid gray;
-			padding:5px;
-			margin-left:10px;
-			margin-bottom:10px;
-		}
-
-		.result img {
-			position: absolute;
-			left: 5px;
-			bottom: 5px;
-			display:block;
-			
-		}
-		
-		.result span{
-			font-size:12px;
-			font-weight:bold;
-			display:block;
-		}
-		
-		.result audio{
-			width: 130px;
-		}
-		
-		button{
-		  display : inline-block;
-		  cursor : pointer;
-  
-		  border-style : solid;
-		  border-width : 1px;
-		  border-radius : 50px;
-		  padding : 10px 18px;
-		  box-shadow : 0 1px 4px rgba(0,0,0,.6);
-		  font-size : 9.5pt;
-		  font-weight : bold;
-		  color : #fff;
-		  text-shadow : 0 1px 3px rgba(0,0,0,.4);
-		  font-family : sans-serif;
-		  text-decoration : none;
-		}
-		
-		button.green{
-			border-color: #8fc800;
-	  		background: #8fc800;
-	  		background: linear-gradient(top, #8fc800 0%,#438c00 100%);
-		}
-		
-		button:hover{
-			background: #8fDD00;
-		}
-		
-		button:active{
-			background: #8fFF00;
-			box-shadow : 0 0 6px rgba(0,0,0,.6);
-		}
-		
-		button:focus {outline:0;}
-		
-		.widgets{
-			margin-top: 1em;
-			margin-bottom:1em;
-		}
-		
- 	</style>
-
-  <script>
-    // 1
-  	window.onload = (e) => {document.querySelector("#search").onclick = getData};
-	
-	// 2
-	let displayTerm = "";
-	
-	// 3
-	function getData(){
-		console.log("getData() called");
-	}
-	
-  </script>
-
-  
-</head>
-<body>
-<header>
-	<h1>Giphy Finder</h1>
-</header>
-
-<div class="widgets">
-	Search Term -> 
-	<input id="searchterm" type="text" size="20" maxlength="20" autofocus value="cats" />
-</div>
-
-<div class="widgets">
-	Max # results -> 
-	<select id="limit">
-		<option value="5">5</option>
-		<option value="10" selected>10</option>
-		<option value="25">25</option>
-		<option value="50">50</option>
-		<option value="100">100</option>
-	</select>
-</div>
-
-<div class="widgets">
-	<button type="button" id="search" class="green">Find some GIFs!<br />:-)</button>
-</div>
-
-<hr>
-
-<h2>Results</h2>
-<div id="content">
-	<p>No data yet!</p>
-</div>
- 
-
-</body>
-</html>
-```
-
+Download the [gif-finder-files.zip](gif-finder-files.zip) archive. It contains the starting HTML, CSS, and image files for this project. 
 
 #### A. Explanation
-- In #1 above - we are hooking up a button event handler in the `window.onload` event. Note we have wrapped the code in an arrow function - we also could have used a regular function - it doesn't matter either way.
-- In #2 above - this will store what the user searched for, we need it to be in script scope so that we can access it from outside of our  `getData()` function.
-- In #3 above - `getData()` will be called when the button is clicked.
+
+Open the gif-finder.html file and look for the numbered comments:
+
+- In #1 we are hooking up a button event handler in the `window.onload` event. Note we have wrapped the code in an arrow function - we also could have used a regular function - it doesn't matter either way.
+- In #2 we will store what the user searched for. It must be in the script scope so that we can access it from outside of our `getData()` function.
+- In #3, `getData()` will be called when the button is clicked.
 
 Test the code by clicking the button - and then check the console for the log.
-
 
 ### III. Capture the user intent and format a URL
 We need to write code to build a URL to the web service. This URL will contain the users search preferences (search term and number of results).
@@ -248,12 +90,11 @@ If you do that, oops, you will probably get an error message (unless it is a val
 ### V. Importing jQuery
 To download the data, we are going to use the jQuery library and the `jQuery.ajax()` method. *Ajax* in this context means to asynchronously download data from the Internet.
 
-- You can read about the jQuery library here: http://jquery.com
-- You can ready about the `.ajax()` method here: https://api.jquery.com/jQuery.Ajax/
+We will be talking about jQuery and jQueryUI in more detail next week. For now, we'll simply use it as a tool to accomplish this task.  
 
-A. To import the jQuery library, you will add a separate &lt;script> tag, right before our existing &lt;script> tag. 
+A. To import the jQuery library, we will reference it through the <a href="https://developers.google.com/speed/libraries/">Google Hosted Libraries CDN</a>.  Add this script to the head of your document: 
 
-`<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>`
+`<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>`
 
 B. Now add this code to the bottom of `getData()`:
 
@@ -262,17 +103,25 @@ console.log(jQuery);
 console.log($); // $ is an alias to the jQuery object
 ```
 
-C. Reload the app and click the search button - you should see logs something like this, which will confirm that jQuery is loaded:
+C. Reload the app and click the search buttonin the console log you should see something like this, which will confirm that jQuery is loaded:
 
 ![Web Page](gif-finder-8.jpg)
 
 
 ### VI. Downloading the data with `jQuery.ajax()`
 
-#### A. Now we are going to tell jQuery to download the data from that URL.
+#### A. Using jQuery's AJAX object to download the data from that URL.
 
-**Add this code to the bottom of `getData()`:**
+Add this code to the bottom of `getData()`, 
 
+```javascript
+$.ajax({
+	dataType: "json",
+	url: url,
+	data: null,
+	success: jsonLoaded 
+})
+```
 ![Web Page](gif-finder-9.jpg)
 
 
