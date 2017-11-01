@@ -136,7 +136,7 @@ One common mistake that is easy to make is to write this line:
 
 - Now check out the value of `div.onclick` in the debugger - you will see that it is `null` - which is why the click code no longer works.
 
-![Web Page](vents-4.jpg)
+![Web Page](events-4.jpg)
 
 - What happened is that when we added the `()` to the end of `onclick = divClicked()`, the function was called immediately, and the *return value* of the function (`null`) was stored in the `onclick` property instead of the function *reference* it was expecting.
 - Make sure you change the code back so that it works again.

@@ -250,7 +250,7 @@ Create a new file called more-dom-3.html, and paste the following code into it:
 
 **Load the page into a browser, you should now see the 2 new list items, one of which is a functioning link to Facebook:**
 
-![Web Page](more-dom-3.jpg)
+![Web Page](more-dom-4.jpg)
 
 
 ## Modifying Existing DOM Elements

@@ -83,7 +83,7 @@ When you load svgdemo.html in a browser now, the logo will be even bigger. We ca
 
 Reload the page, and the logo should now take up a 200x200px box in the top left corner of the page. Try changing the width of #Layer_1 to 300px. Because it's the viewbox, not the viewport, that controls the aspect ratio, the logo should not change even though the box is wider. 
 
-Now download the [logo.png](logo.png) file to your week12 folder, and add this line to svgdemo.html, above the svg code:
+Now download the [logo.png](logo.png) file to your week8 folder, and add this line to svgdemo.html, above the svg code:
 
 ```html
 <img src="logo.png" style="float: left;" >
