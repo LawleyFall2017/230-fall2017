@@ -17,6 +17,10 @@ Unlike primitive (Int, Float etc) arrays in languages like C, JavaScript arrays 
 
 ### Create an Array
 ```javascript
+// empty arrays
+let emptyArray1 = []; 			// array literal syntax
+let emptyArray2 = new Array(); 		// this second method is not commonly used
+
 // An array of strings
 let colors = ["red","green","blue"];
 console.log(`colors.length = ${colors.length}`); // 3
@@ -24,8 +28,29 @@ console.log(`colors.length = ${colors.length}`); // 3
 // an array of numbers
 let numbers = [7.9, 5.9, 100.3];
 
-// mixed typed
+// mixed types in the same array
 let collection = ["Jaberwocky", 42, 98.6, false, Date(), Math.sin, null];
+```
+
+#### 2-Dimensional Arrays
+This example of an 8x8 2-D array is from: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+The following creates a chess board as a two dimensional array of strings. The first move is made by copying the 'p' in (6,4) to (4,4). The old position (6,4) is made blank.
+
+```javascript
+var board = [ 
++  ['R','N','B','Q','K','B','N','R'],
++  ['P','P','P','P','P','P','P','P'],
++  [' ',' ',' ',' ',' ',' ',' ',' '],
++  [' ',' ',' ',' ',' ',' ',' ',' '],
++  [' ',' ',' ',' ',' ',' ',' ',' '],
++  [' ',' ',' ',' ',' ',' ',' ',' '],
++  ['p','p','p','p','p','p','p','p'],
++  ['r','n','b','q','k','b','n','r'] ];
+ 
+// Move King's Pawn forward 2
+board[4][4] = board[6][4];
+board[6][4] = ' ';
 ```
 
 ### Access an Array item
@@ -221,7 +246,7 @@ for (let color of colors){
 ### `Array.forEach()`
 
 `.forEach()` is a method of Array - we pass it a function that will be called on every member of the array.
-One disadvantage of `.forEach()` is that you can not break out of the loop early.
+One disadvantage of `.forEach()` is that you cannot break out of the loop early.
 
 ```javascript
 colors.forEach(function(item, index, array) {
@@ -318,7 +343,7 @@ When we use `document.querySelectorAll()`, we get back a `NodeList`.
 
 - https://developer.mozilla.org/en-US/docs/Web/API/NodeList
 
-NodeLists are NOT arrays. Although they have a `.length` property and can use `for...of` and `.forEach()`, they CAN not use other array methods like `.filter()` or `.map()`.
+NodeLists are NOT arrays. Although they have a `.length` property and can use `for...of` and `.forEach()`, they CANNOT use other array methods like `.filter()` or `.map()`.
 
 ```javascript
 let allNodes = document.querySelectorAll("*"); // returns a NodeList object
@@ -335,7 +360,7 @@ allNodes.forEach(function(item, index, array) {
   console.log(item, index); // works fine on newer browsers
 });
 
-// NodeList does not have the .filter() method
+// NodeList does NOT have the .filter() method
 let filteredArray = allNodes.filter(node => node.tagName == "BODY"); //FAIL!
 ```
 
