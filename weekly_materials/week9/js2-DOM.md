@@ -263,8 +263,6 @@ Create a new file called dom-3.html, and add the following code:
 </body>
 
 </html>
-</body>
-</html>
 ```
 
 **Load the page into a browser to see the changes our JavaScript brought about:**
