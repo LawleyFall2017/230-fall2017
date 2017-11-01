@@ -52,7 +52,7 @@ What is your favorite color ->
 	<option value="magenta">Magenta</option>
 	<option value="cyan">Cyan</option>
 	<option value="white">White</option>
-	<option value="black">Black</option>
+	<option value="gray">Gray</option>
 </select>
 </div>
 
@@ -99,7 +99,7 @@ colorSelect.onchange = e=>{ localStorage.setItem(colorKey, e.target.value); };
 
 
 ## Storing Objects with Web Storage
-- A major limitation of Web storage is that it doesn't allow us to store arrays and other objects directly. But there's an easy workaround - you can easily convert built-in JavaScript objects (Object, Array, Date, etc) to and from a string respresentation, and then save them to localStorage. This is known as *serialization* - https://en.wikipedia.org/wiki/Serialization
+- A major limitation of Web storage is that it doesn't allow us to store arrays and other objects directly. But there's an easy workaround - you can easily convert built-in JavaScript objects (Object, Array, Date, etc) to and from a string representation, and then save them to `localStorage`. This is known as *serialization* - https://en.wikipedia.org/wiki/Serialization
 
 ### Save an Array to localStorage with `JSON.stringify()`
 
@@ -107,7 +107,7 @@ colorSelect.onchange = e=>{ localStorage.setItem(colorKey, e.target.value); };
 let listID = "abc1234-action-list";
 let items = ["Direct Movie","Deliver Baby","Cure Cancer"];
 items = JSON.stringify(items); // now it's a String
-localStorage.setItem(listID, JSON.stringify(items));
+localStorage.setItem(listID, items);
 ```
 
 ### Retrieve an array from localStorage with `JSON.parse()`
@@ -125,8 +125,10 @@ items = JSON.parse(items);  // now it's an Array
 ## Review Questions
 1. What is a limitation of using localStorage on a shared domain like people.rit.edu? What is a workaround that will mitigate this issue?
 1. What is the difference between local and session storage?
-1. If the user opens up the demo page in a different web browser, will their answers still be visible? Why or why not?
+1. If the user opens up the demo page in a different web browser on the same machine, will their stored preferences still be visible? Why or why not?
 1. Define *serialization*
+1. What does `JSON.stringify()` do?
+1. What does `JSON.parse()` do?
 1. One big issue with the applications we have written this semester is that reloading the page will wipe out all of the user's work (for example the pixel art creations in *Pixel Artist*). How could web storage be used to improve any of the other JavaScript exercises you've done?
 
 
