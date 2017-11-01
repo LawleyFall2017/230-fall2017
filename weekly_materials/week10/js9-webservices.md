@@ -23,7 +23,10 @@ In this course, we are just going to scratch the surface and work with the "read
 
 ## Retrieving Data From Web Services
 
-- As developers, what we want to do is this **--->** to take a user request, and update part of the HTML page (asynchronously) by exchanging small amounts of data with a server behind the scenes, without having to reload the whole page.
+- As developers, what we want to do is this:
+  - capture a user's intent (for example, *what's the weather in Rochester going to be today?*)
+  - behind the scenes, exchange data with a remote server
+  - update just a small part of the HTML page (asynchronously), without having to reload the entire page
 - The above concept is known in the web world by this term - *Ajax* - https://en.wikipedia.org/wiki/Ajax_(programming)
 - **Ajax** was derived from an earlier acronym *AJAX*, which stood for **A**synchronous **J**avaScript **A**nd **X**ML. The acronym fell out of favor because we now commonly retrieve other data formats besides XML.  
 
@@ -54,6 +57,7 @@ Behind the scenes, the actual browser APIs that are being used for Ajax by jQuer
 - What does AJAX stand for?
 - What is the difference between AJAX (the acronym) and Ajax (the noun)?
 - What are some of the advantages of using JSON as a web service format instead of XML?
+- Why do you think that object methods (functions) are not allowed in JSON?
 
 ## Deliverable
 The best way to see how Ajax and Web APIs work is to build a fully functioning example. You're going to build an application that utilizes the Giphy Web Service, using this tutorial:
