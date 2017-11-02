@@ -4,91 +4,94 @@
 
 Here's how the app will work:
   1. The user types in a search term and hits return.
-  1. The app createsa properly formatted request URL, including the search term(s), and sends it via http to the web service.
+  1. The app creates a properly formatted request URL, including the search term(s), and sends it via http to the web service.
   1. The web service responds by sending back the requested data as a JSON (JavaScript Object Notation) formatted file (this is essentially an object literal containing just data, no methods). 
   1. The app parses the JSON data and displays the results to the user.
 
 ## Screen Shots
 
 ### Starting State:
-![Web Page](gif-finder-1.jpg)
+![GIPHY Finder on load](gif-finder-1.png)
 
 ### And after the user has made a search:
-![Web Page](gif-finder-2.jpg)
+![GIPHY finder search results](gif-finder-2.png)
 
 ## Instructions
 
-### I. Review of Web Service Terms
+### Review of Web Service Terms
 
 1. Web Service - http://en.wikipedia.org/wiki/Web_service - A Web service is a method of communication between two electronic devices over World Wide Web. A Web service is a software function provided at a network address over the web or the cloud; it is a service that is "always on" ...
-2. API - http://en.wikipedia.org/wiki/Api - An application programming interface (API) specifies how some software components should interact with each other.
-3. Query String - http://en.wikipedia.org/wiki/Query_string - In the World Wide Web, a query string is the part of a uniform resource locator (URL) that contains data to be passed to web applications such as CGI programs.
-4. Arguments (or parameters) - http://en.wikipedia.org/wiki/Parameters_(computer_science) - In computer programming, a parameter is a special kind of variable, used in a subroutine to refer to one of the pieces of data provided as input to the subroutine.
-5. API Key - http://en.wikipedia.org/wiki/API_key - An application programming interface key (API key) is a code passed in by computer programs calling an API (application programming interface) to identify the calling program, its developer, or its user to the Web site. API keys are used to track and control how the API is being used, for example to prevent malicious use or abuse of the API (as defined perhaps by terms of service).
+1.  API - http://en.wikipedia.org/wiki/Api - An application programming interface (API) specifies how some software components should interact with each other.
+1. Query String - http://en.wikipedia.org/wiki/Query_string - In the World Wide Web, a query string is the part of a uniform resource locator (URL) that contains data to be passed to web applications such as CGI programs.
+1. Arguments (or parameters) - http://en.wikipedia.org/wiki/Parameters_(computer_science) - In computer programming, a parameter is a special kind of variable, used in a subroutine to refer to one of the pieces of data provided as input to the subroutine.
+1. API Key - http://en.wikipedia.org/wiki/API_key - An application programming interface key (API key) is a code passed in by computer programs calling an API (application programming interface) to identify the calling program, its developer, or its user to the Web site. API keys are used to track and control how the API is being used, for example to prevent malicious use or abuse of the API (as defined perhaps by terms of service).
 
-### II. Get Started
+### Getting Started
 
-Download the [gif-finder-files.zip](gif-finder-files.zip) archive. It contains the starting HTML, CSS, and image files for this project. 
+Download the [gif-finder-files.zip](gif-finder-files.zip) zip archive. It contains the starting HTML, CSS, and image files for this project. 
 
-#### A. Explanation
+You'll also need an API key from https://developers.giphy.com/docs/ -- you need to have a (free) account to set up an application and get a key. You can also try using my API key, `BVPf1N4FwsXGSi2K8gFjlIRscncQb55f`, but there are sometimes problems when multiple people use it from different URLS. 
 
-Open the gif-finder.html file and look for the numbered comments:
+#### Explanation
 
-- In #1 we are hooking up a button event handler in the `window.onload` event. Note we have wrapped the code in an arrow function - we also could have used a regular function - it doesn't matter either way.
-- In #2 we will store what the user searched for. It must be in the script scope so that we can access it from outside of our `getData()` function.
-- In #3, `getData()` will be called when the button is clicked.
+The gif-finder.js file is called at the end of the gif-finder.html file. 
+Open the gif-finder.js file and look for the numbered comments:
+
+- In #1 we will store the user's search term. It must be in the script scope so that we can access it from outside of our `getData()` function.
+- In #2 we create the main `getData` function.
+- In #3, we call the function when the button is clicked.
 
 Test the code by clicking the button - and then check the console for the log.
 
-### III. Capture the user intent and format a URL
-We need to write code to build a URL to the web service. This URL will contain the users search preferences (search term and number of results).
+### Capturing User Request and Creating Query URL 
+We are going to write a script to create a request URL for the web service. This URL will contain the user's search parameters (search term and number of results).
 
-**Type this code in:**
+Add the following instructions to the getData function:
 
-![Web Page](gif-finder-3.jpg)
+1. Create const values for the base URL and API key. `GIPHY_URL` should be set to `"https://api.giphy.com/v1/gifs/search?"`  `GIPHY_KEY` should be set to the API key. (See instructions above for that.)
 
-#### A. Explanation
-- #1 above - this URL is the Giphy *Search endpoint*. Here's an example of another endpoint, the Giphy "Trending" endpoint: `https://api.giphy.com/v1/gifs/trending`
-- #2 above - this API key identifies you to the owner of the service. API keys are used to track and control how the API is being used - so if the user of this key is abusing the service it can be "turned off". This particular key is a public key and may no longer work when you do the exercise. If it does not, head here to get your own key (it's free!): https://developers.giphy.com/docs/
-- #3 above - we specify a parameter - `api_key` - and then give it a value
-- #4 above - get the `.value` of the text input field
-- #5 above - get rid of leading an trailing spaces. URLs do not work with spaces!
-- #6 above - `encodeURIComponent()` will escape characters like spaces (in the middle of the search term), ampersands, $ signs, + symbols and so on so that they are properly represented for a URL. You can read the docs here: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent
-- #7 above - bail out if we have nothing to search for
-- #8 above - add the search term to the url - the web service requires this parameter name to be `q`
-- #9 above - grab the value of the &lt;select>, and then add the `limit` parameter to the url. Note that parameters are formated as `name=value` and separated by ampersands.
-- #10 above - update the UI with the user's search term
-- #11 above - finally! log out the URL.
+2. Create a `url` variable that concatenates `GIPHY_URL`, the string `"api_key="`, and `GIPHY_KEY` to create a string that looks like this: `https://api.giphy.com/v1/gifs/search?api_key=BVPf1N4FwsXGSi2K8gFjlIRscncQb55f` The API identifies you to the server; free keys are limited in the number of queries they can make per day. 
+
+3. Create a variable called `displayTerm` and populate it by using a query selector to find the value of the user-entered search term in the #searchterm input field. 
+
+4. Create another variable called `term`, populate it by using  the `trim` method associated with string objects to get rid of any leading and trailing spaces on displayTerm. 
+
+5. Use the [encodeURIComponent](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent) function to create a URL-friendly version of the URL without spaces or special characters: `term = encodeURIComponent(term);`
+
+6. If there's no term to search, then bail out of the function with `if(term.length < 1) return;`
+
+7. Concatenate the new `term` variable to the end of the `url` string, preceded by `"&q="`. You can do this in either of two ways:
+  - `url = url + "&q=" term;`
+  - `url += "&q=" term;`
+
+8. Create a new `limit` variable by retrieving the value of the `#limit` element, and add it to the end of the url string preceded by `"&limit="` using either of the approaches shown above. 
+
+9. Update the page to show the search term, by replacing the innerHTML property of the #content element with this string: `"<strong>Searching for " + displayTerm + "</strong>"`
+
+10. Write the resulting URL to the console with `console.log(url);`.
+
 
 ### IV. Testing the URL
 
-- Run the code and click the button. Now head to the console and click on the completed URL, it should open a new browser window that will show you the results of the API request. (If nothing happens, check that your code is correct, and/or copy/paste the URL to a browser location box)
+Load the gif-finder.html page and click the button. In the console, you should see the newly-constructed URL. 
 
-#### A. After clicking the search button, you should see the URL in the console
+![Console with GIPHY URL](gif-finder-4.jpg)
 
-![Web Page](gif-finder-4.jpg)
+Clicking on that should open a new browser window that will show you a results page similar to this: 
 
-#### B. Clicking on the link opens a web page that shows the JSON response to your search. 
+![GIPHY results page](gif-finder-5.jpg)
 
-- You can see that you are getting back a JS Object literal, and there is a top-level property named `data` that contains an array of objects. Each of these objects represents a animated GIF on Giphy - note some of the properties that will come in handy: `url`, `rating`, `width`, `height` and so on.
+What you're getting back as a response is a JS Object literal, with a top-level property named `data` that contains an array of objects. Each of these objects represents a animated GIF on Giphy - note some of the properties that will come in handy: `url`, `rating`, `width`, `height` and so on.
 
-- If your JSON isn't as nicely formatted as mine, it's because I am using the Chrome JSON Viewer extension which you can get here: https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh
+### Modify the URL in the location box
 
-![Web Page](gif-finder-5.jpg)
-
-#### C. Modify the URL in the location box
-
-Below we changed the `q` parameter to `dogs` and the `limit` parameter to `2`
+In the location bar of the browser, try changing the value of the `q` parameter from `cats` to `dogs` and the `limit` parameter to `2`
 
 ![Web Page](gif-finder-6.jpg)
 
-#### D. Modify the API key value
-If you do that, oops, you will probably get an error message (unless it is a valid API key)
 
-![Web Page](gif-finder-7.jpg)
-
-### V. Importing jQuery
-To download the data, we are going to use the jQuery library and the `jQuery.ajax()` method. *Ajax* in this context means to asynchronously download data from the Internet.
+### Using jQuery to Parse the Results
+To process the data received from the GIPHY server, we are going to use the jQuery library and the `jQuery.ajax()` method.  The AJAX acronym stands for "Asynchronous JavaScript And XML", and is refers to a method for retrieving and parsing XML formatted data using JavaScript. 
 
 We will be talking about jQuery and jQueryUI in more detail next week. For now, we'll simply use it as a tool to accomplish this task.  
 
@@ -96,14 +99,14 @@ A. To import the jQuery library, we will reference it through the <a href="https
 
 `<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>`
 
-B. Now add this code to the bottom of `getData()`:
+B. In your gif-finder.js file, add this code to the bottom of `getData()`:
 
 ```javascript
 console.log(jQuery);
 console.log($); // $ is an alias to the jQuery object
 ```
 
-C. Reload the app and click the search buttonin the console log you should see something like this, which will confirm that jQuery is loaded:
+C. Reload the page and click the search button. In the console log you should see something like this, which will confirm that jQuery is loaded:
 
 ![Web Page](gif-finder-8.jpg)
 
@@ -111,63 +114,74 @@ C. Reload the app and click the search buttonin the console log you should see s
 ### VI. Downloading the data with `jQuery.ajax()`
 
 #### A. Using jQuery's AJAX object to download the data from that URL.
-
-Add this code to the bottom of `getData()`, 
-
+We'll use the `jQuery.ajax()` method to pass in a *configuration object* that contains method parameters--most importantly, the URL we want to download, the datatype (JSON) we're using, and the function will be called once the data is loaded (the *callback function*).
+ 
+Add this code to the bottom of `getData()`.
 ```javascript
 $.ajax({
 	dataType: "json",
 	url: url,
 	data: null,
-	success: jsonLoaded 
+	success: jsonLoaded // the callback function
 })
 ```
-![Web Page](gif-finder-9.jpg)
-
 
 #### B. Create the callback function
-**This code is the callback function - place it *outside* of `getData()`:**
+This function will process the JSON object that the GIPHY service returns.
 
-![Web Page](gif-finder-10.jpg)
-
-#### C. Explanation
-- #12 above - we call the `jQuery.ajax()` method and pass in a *configuration object* that contains method parameters most importantly the **url** we want to download, the **datatype** (JSON), and the function that is called once the data is loaded (the *callback function*).
-- #13 above - is a reference to `jsonLoaded`, which is the callback function we just created. 
-- #14 above - he is the `jsonLoaded()` function - note that it takes a parameter `obj` - which is the JSON we got back from the Giphy web service.
-
-#### D. Run the app and click the search button 
-You should see the JSON we download in the console:
+```javascript
+function jsonLoaded(obj) {
+	console.log("obj = " + obj);
+	console.log("obj stringified = " + JSON.stringify(obj));
+}
+```
+#### Test Your Code 
+Reload the page and click the search button. You should see the JSON we download in the console:
 
 ![Web Page](gif-finder-11.jpg)
 
 ### VII. Formatting the results for the user
 
-Now we just need to take the results, loop through them, and create some HTML. Here's the code you need to add to `jsonLoaded()`:
+Now we need to take the results, loop through them, and output the HTML to the page. In the jsonLoaded function, add the following:
 
-![Web Page](gif-finder-12.jpg)
+```javascript
+    // if there are no results, print a message and return
+	if(!obj.data || obj.data.length == 0){
+		document.querySelector("#content").innerHTML = `<p><em>No results found for '${displayTerm}'</em></p>`;
+		$("#content").fadeIn(500);
+		return; // Bail out
+	}
+		
+    /* If there is an array of results, loop through them, and create new elements in the HTML to display each of them. */
 
-Go ahead and run the code, the app should pretty much look like the second screenshot at the top of this page.
+    let results = obj.data
+    console.log("results.length = " + results.length);
+    let bigString = "<p><em>Here are " + results.length + " results for '" + displayTerm + "'</em></p>";
+		
+    for (let i=0;i<results.length;i++){
+        let result = results[i];
+        let smallURL = result.images.fixed_width_small.url;
+        let url = result.url;
+        if (!smallURL) smallURL = "images/no-image-found.png";
+        
+        // ES6 String Templating
+        var line = `<div class='result'><a target='_blank' href='${url}'><img src='${smallURL}' title= '${result.id}' />`;
+        line += `<br />View on Giphy</a></div>`;
+			
+        bigString += line;
+	}
+		
+    document.querySelector("#content").innerHTML = bigString;
+```	
 
-One more thing - to get the fading working properly, add this line of code to the bottom of `getData()`:
+Reload the page and click the button; you should see something like this: 
 
-`$("#content").fadeOut(100);` 
+![GIPHY finder search results](gif-finder-2.png)
 
-
-#### A. Explanation
-- In #15 above - if there are no results (an empty array or error) we bail out of parsing and notify the user.
-- In #16 above - here we grab the array of results, and create `bigString`, which will be a big blob of HTML that we will eventually put into the `#content` &lt;div>
-- In #17 above - start the loop
-- In #18 above - we grab the URL to the GIF that we are going to use with an &lt;img> tag
-- In #19 above - grab the main Giphy page URL, which we will later put in a link
-- In #20 above - `line` is going to be all of the HTML for a single result - in this case the title of the GIF, its URL, and its page link wrapped inside of a &lt;div>. We are doing this here using ES6 String Templates.
-- In #21 above - the commented out version used string concatenation.
-- In #22 above - add a single result to `bigString`
-- In #23 above - add everything to the `#content` &lt;div>
-- In #24 above - here we use the jQuery `fadeIn()` method to fade the content in over 1/2 a second. You can read about this method here: http://api.jquery.com/fadein/
 
 
 ### VIII. Wrap up
-When it's done, upload your completed gif-finder.html file to your igme230 folder on banjo.rit.edu, and link to it from your main class page as "GIF Finder Exercise" It must be completed by 11:59pm on Sunday, November 5. 
+When it's done, upload the completed files (HTML, CSS, JS and images) to a folder in your igme230 folder on banjo.rit.edu, and link to it from your main class page as "GIF Finder Exercise" It must be completed by 11:59pm on Sunday, November 5. 
 
 
 
