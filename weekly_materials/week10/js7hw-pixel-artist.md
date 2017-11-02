@@ -18,7 +18,7 @@
 ## Instructions
 
 
-### I. Get Started
+### Getting Started
 
 Here is your starting file with the HTML and CSS all done for you. Copy and paste the code into a new HTML document and save it with the name **pixel-artist.html**
 
@@ -115,23 +115,40 @@ Here is your starting file with the HTML and CSS all done for you. Copy and past
 
 ### II. Set up some constants, and start creating a grid
 
-To get our grid of "cells" set up and visible, add the following code to **pixel-artists.html**
+To get our grid of "cells" set up and visible, add the following code to the script tag at the bottom of the document: 
 
-![Web Page](pixel-artist-6.jpg)
+1. The following constant values. Naming these values makes our code easier to read (both for others, and for our future selves if we come back and look at this code again in the future). These variables are all "Script Scoped" so they will be visible to all the code in script. We are using `const` because we don't want these values to be re-assigned by our code later.
+  - `const numCols = 30;`
+  - `const numRows = 20;`
+  - `const cellWidth = 25;`
+  - `const cellSpacing = 1;`
 
-**Which looks like this - hey, a 1 x 30 grid!**
+2. Create a constant value for the gridContainer ID, which will hold all of our cells.
+  - `const container = document.querySelector('#gridContainer');`
+
+3. Create a new &lt;span> element, and give it the class of `cell`. Note that because the word `class` is reserved in JavaScript, we set and get an element's class attribute value by using the `.className` property. (Also, why a &lt;span> element? No particular reason - since span is typically used as a "generic in-line element", it's a reasonable choice.)
+  - `const span = document.createElement('span');`
+  - `span.className = 'cell';`
+
+4. Declare an array for the cells:
+  - `const cells = [];`
+
+5. Add a for loop to create one row of the grid. Note that we are using `span.cloneNode()` to make a copy of `span`, rather than using `createElement()` again. We also add each cell to both our array and the `gridContainer`.
+
+```javascript
+for (let col=0;col<numCols;col++) {
+    let cell = span.cloneNode();
+    cell.style.left = `${col * (cellWidth+cellSpacing)}px`;
+    cell.style.top = "0";
+    container.appendChild(cell);
+    cells.push(cell);
+```
+
+Now check the page. If you've done this correctly, you should now see a 1x30 grid!
 
 ![Web Page](pixel-artist-7.jpg)
 
-
-#### A. Explanation
-- In #1 above - first we declare some values we are going to need soon. We are naming these values because it makes our code easier to read, both for others, and for our future selves when we come back and look at this code again some day. This variables are all "Script Scoped" so they will be visible to all the code in this &lt;script> tag  (and in other &lt;script> tags). Also note that we are using `const`, because we don't want these values to be re-assigned by our code later.
-- In #2 above - get a reference to `#gridContainer`, which will hold all of our cells.
-- In #3 above - create a &lt;span>, and then make it the class of `cell`. Note that because the symbol `class` is reserved in JavaScript, we set and get an element's class attribute value by using the `.className` property. Also, why a &lt;span> element? No particular reason - but being that span is a used as a "generic in-line element", it seems like the right choice.
-- In #4 above - here we are declaring our array 
-- In #5 above - here we have created one row of our grid. Note that we are using `span.cloneNode()` to make a copy of `span`, rather than using `createElement()` again. We also add each cell to both our array and the `gridContainer`.
-
-If you take a peek in the Web Inspector, you can see all of this:
+If you take a peek in the Web Inspector, you should see this:
 
 ##### The `cells` array and other script variables are visible in the debugger:
 ![Web Page](pixel-artist-9.jpg)
@@ -140,76 +157,112 @@ If you take a peek in the Web Inspector, you can see all of this:
 ![Web Page](pixel-artist-8.jpg)
 
 
-### III. Finish creating the grid
-To create all 20 rows of the grid, and a 2-dimensional array to hold them, modify the cell creation code to look like this:
+### Finish creating the grid
+To create all 20 rows of the grid, and a 2-dimensional array to hold them, we'll add a new loop that creates an array for each of the rows. We also calculate the vertical position for new row, rather than setting it to an absolute value of 0. Finally, we add both the row and column position of the cell to the array. 
 
-![Web Page](pixel-artist-10.jpg)
+```javascript
+for (let row = 0; row < numRows; row++) {
+	cells.push([]);
+	for (let col = 0; col < numCols; col++) {
+		let cell = span.cloneNode();
+		cell.style.left = `${col * (cellWidth + cellSpacing)}px`;
+		cell.style.top = `${row * (cellWidth+cellSpacing)}px`;
+		container.appendChild(cell);
+		cells.push(cell);
+		cells[row][col] = cell;
+	}
+}
+``` 
 
-
-**Reload the page, you should see all 20 rows now:**
+**Reload the page. You should see all 20 rows now:**
 ![Web Page](pixel-artist-11.jpg)
-
-#### A. Explanation
-- a new array is now created each time the outer loop iterates - `cells.push([]);`.
-- we also set the `cell.style.top` property based on the current `row` value.
 
 ### IV. Get basic clicking working
 
 Clicking on a cell should turn it to the selected color - let's get that working now.
 
-**Here's the code:**
+1. Define a script-level variable of `color` that will hold the currently selected color. For now, hard code the value to "red" (a CSS keyword color that evaluates to #FF0000). 
 
-![Web Page](pixel-artist-12.jpg)
+3. Add an `onclick` event listener to the container, and have it call the `fillCell` function. This gives us a single click event that can handle all of the cells, rather than each cell (600 of them!) having their own click event handler. However, to change only one cell inside the container, we'll have to have our fillCell function figure out which cell we clicked on. 
 
-**We now have the MVP (Minimum Viable Product) of our app! Clicking on a cell turns it red!**
+2. Create the `fillCell` function to change the color of a specific cell. We'll be passing in the click coordinates as "e", so `e.clientX` and `e.clientY` give us the exact `window` coordinates of the mouse click. To determine which cell in the array they clicked on, we need to calculate how far from the edge of the window the container &lt;div> is (that's what `getBoundingRect()` does), and use both the width and the spacing of the cells in our calculations. Note that we are setting the `className` property (NOT .class) to `cellSelected`, which removes the cell border for that cell.
+```javascript
+function fillCell(e) {
+	let rect = container.getBoundingClientRect();
+	let mouseX = e.clientX - rect.left;
+	let mouseY = e.clientY - rect.top;
+	let columnWidth = cellWidth+cellSpacing;
+	let col = Math.floor(mouseX/columnWidth);
+	let row = Math.floor(mouseY/columnWidth);
+	let selected Cell = cells[row][col];
+	selectedCell.className = 'cellSelected';
+	selectedCell.style.backgroundColor = color;
+	console.log(`${col},${row}`);
+}
+```
+
+**Congratulatioins! You now have the MVP (Minimum Viable Product) of your app! Clicking on a cell turns it red!**
 
 ![Web Page](pixel-artist-13.jpg)
 
 
-#### A. Explanation
-- In #6 above - we create the script variable `color` that will hold the currently selected color - for now we will hard code that value at `"red"` (which is a CSS keyword that evaluates to the color #FF0000).
-- In #7 above - we hook up the `onclick` event of the container &lt;div> to call the `fillCell()` function. As was mentioned at the beginning of this exercise, this means that we a single click event that can handle all of the cells, rather than each cell (600 of them!) having their own click event handler.
-- In #8 above - `e.clientX` and `e.clientY` give us where the user clicked in `window` coordinates. In order to determine which cell in the array they clicked on, we need to calculate how far from the edge of the window the container &lt;div> is (that's what `getBoundingRect()` does), and use both the width and the spacing of the cells in our calculations.
-- In #8 above - note that we are setting the `className` property (NOT .class - the is no such element property) to `cellSelected`, which gets rid of the cell border.
-
-
 ### V. Get dragging working
-Right now we can click on individual cells to change their color, but wouldn't it be nice if we could click, and then drag the mouse and "paint" multiple pixels. Let's make that happen.
+Right now we can click on individual cells to change their color, but it would be so much better if we could click and then drag the mouse to "paint" multiple pixels. Let's make that happen.
 
-**Here's the code:**
+1. Create a script variable -  `mouseIsDown` - to keep track of whether the mouse is currently down. Initialize it with a value of `false`.
 
-![Web Page](pixel-artist-14.jpg)
+2. When the mouse is held down, we want to fill the cells we drag over. But when moving the mouse, we don't want the browser to use its default behavior of highlighting selected elements. We'll accomplish this by using the `preventDefault` method to stop the default behavior of a `mousemove`, and we want to call `fillCell()` whenever we move the mouse. 
+
+```javascript
+container.onmousemove = (e) => {
+	e.preventDefault();
+	if (mouseIsDown) fillCell(e);
+}
+```
+
+3. Set the `mouseIsDown` value to true or false depending on user behavior. In the first instruction, we're looking for every time the mouse button is pressed while the mouse is inside the container; in the second, we're looking for every time the mouse button is released anywhere in the window, in case the user drags out of the container area. 
+```javascript
+container.onmousedown = (e) => {
+	e.preventDefault();
+	mouseIsDown = true;
+}
+
+window.onmouseup = (e) => {
+	e.preventDefault();
+	mouseIsDown = false;
+}
+```
+
 
 **Reload the page and try it out, you should now be able to click and drag and paint multiple cells.**
-
-#### A. Explanation
-- In #9 above - we create a script variable -  `mouseIsDown` - to keep track of whether the mouse is currently down.
-- In #10 above - `e.preventDefault();` prevents the default browser behavior of a `mousemove` - in this case we don't want to highlight the space in the cells as we click and drag. And if the mouse is down, go ahead and call `fillCell()` whenever we move the mouse. Do you see now why we made `fillCell()` a function that we could call from 2 places?
-- In #11 above - `mouseIsDown` is now `true` - the code should be self-explanatory at this point.
-- In #12 above - `mouseIsDown` is now `false`, note we are attaching this event to the `window`. This is so that if the user lifts off the mouse anywhere on the page (i.e. outside of the `#gridContainer`), then "painting" will stop.
+![Web Page](pixel-artist-14.jpg)
 
 
 ### VI. Get the color chooser working
 
-**Here's the code: - note we are hooking into the `onchange` event of the &lt;select>**
+To change the color we're painting with, we need to modify the `color` variable based on the selection in the #colorchooser select element. 
 
+```javascript
+document.querySelector("#colorChooser").onchange = (e)=> {
+    color = e.target.value;
+}
+```
+**Reload the page and try it out, you should now be able to choose different fill colors.**
 ![Web Page](pixel-artist-15.jpg)
 
-**Reload the page and try it out, you should now be able to choose different fill colors.**
 
 ### VI. Deliverable
 When it's done, upload your completed pixel-artist.html file to your igme230 folder on banjo.rit.edu, and link to it from your main class page as "Pixel Artist Exercise". It must be completed by 11:59pm on Friday, November 3. 
 
 ### VII. Discussion
 
-- That's enough for now - congratulations are in order for your typing acumen!
+- That's enough for now - congratulations are in order for your copying and pasting skills! Make sure you really understand what each line of code here is doing, though. 
 
 - Did you notice that for this pixel art application, we actually don't need the 2 dimensional array and the "which cell did the user click in" code? Actually, `e.target.style.backgroundColor = color;` would have been enough.
 
 - The reason we over-engineered this example was so that you could take this "grid" example and extend it by creating different kinds of tile-based apps if you desired to. Here's one example of what you could do - [*Conway's Game of Life*](gameoflife/gameoflife.md)
 
-- Recall that your 2D array `cells` is an array of `HTMLELement` objects - and that you can add properties to these elements by using HTML 5 Custom Data attributes - like this: 
-`cell.setAttribute('data-hitpoints','25');` or `cell.setAttribute('data-tileType','grass');`. Some nice examples of using this API are here: http://html5doctor.com/html5-custom-data-attributes/
+- Recall that your 2D array `cells` is an array of `HTMLELement` objects - and that you can add properties to these elements by using HTML 5 Custom Data attributes - like this:  `cell.setAttribute('data-hitpoints','25');` or `cell.setAttribute('data-tileType','grass');`. Some nice examples of using this API are here: http://html5doctor.com/html5-custom-data-attributes/
 
 
 
