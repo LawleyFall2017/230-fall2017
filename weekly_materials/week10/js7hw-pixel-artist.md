@@ -201,7 +201,7 @@ function fillCell(e) {
 }
 ```
 
-**Congratulatioins! You now have the MVP (Minimum Viable Product) of your app! Clicking on a cell turns it red!**
+**Congratulations! You now have the MVP (Minimum Viable Product) of your app! Clicking on a cell turns it red!**
 
 ![Web Page](pixel-artist-13.jpg)
 
@@ -235,7 +235,6 @@ window.onmouseup = (e) => {
 
 
 **Reload the page and try it out, you should now be able to click and drag and paint multiple cells.**
-![Web Page](pixel-artist-14.jpg)
 
 
 ### VI. Get the color chooser working
@@ -248,7 +247,6 @@ document.querySelector("#colorChooser").onchange = (e)=> {
 }
 ```
 **Reload the page and try it out, you should now be able to choose different fill colors.**
-![Web Page](pixel-artist-15.jpg)
 
 
 ### VI. Deliverable
