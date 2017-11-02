@@ -194,7 +194,7 @@ function fillCell(e) {
 	let columnWidth = cellWidth+cellSpacing;
 	let col = Math.floor(mouseX/columnWidth);
 	let row = Math.floor(mouseY/columnWidth);
-	let selected Cell = cells[row][col];
+	let selectedCell = cells[row][col];
 	selectedCell.className = 'cellSelected';
 	selectedCell.style.backgroundColor = color;
 	console.log(`${col},${row}`);
