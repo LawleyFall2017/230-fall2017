@@ -216,7 +216,7 @@ A great deal of the Javascript on the web uses a freely-available library of cod
 - **Tuesday/Thursday Exercise**: You'll implement two JavaScript web apps, and then recreate them using JQuery and JQueryUI. 
 
 ## <a name="week12">Week 12</a> (Nov 14/16): Specialized JavaScript Libraries
-This week we'll talk about a number of specialized JS libraries, including some used for games, and some used 
+This week we'll talk about a number of specialized JS libraries, including some used for games. 
 
 
 ## <a name="week13">Week 13</a> (Nov 21): Web Accessibility
