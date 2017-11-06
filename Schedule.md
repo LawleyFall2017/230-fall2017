@@ -211,9 +211,11 @@ This week we'll start using JavaScript to implement interactivity in websites.
   - [GIF Finder Application](weekly_materials/week10/js9hw-gif-finder.md)
 
 ## <a name="week11">Week 11</a> (Nov 7/9): JQuery & JQueryUI
-A great deal of the Javascript on the web uses a freely-available library of code called JQuery (which, in fact, was originally written by an RIT student!). This week we'll look at JQuery and how to use it in your pages. 
+A great deal of the Javascript on the web uses a freely-available library of code called JQuery (which, in fact, was originally written by an RIT student!). This week we'll look at JQuery (and its sister library, jQueryUI), and learn how to use it in your web pages. 
 
-- **Tuesday/Thursday Exercise**: You'll implement two JavaScript web apps, and then recreate them using JQuery and JQueryUI. 
+- **Tuesday Exercises**
+  - [Magnetic Poetry Exercise 1]: You'll learn how to write a magnetic poetry JavaScript app.
+  - [Magnetic Poetry Exercise 2]: You'll modify the app to use jQueryUI.
 
 ## <a name="week12">Week 12</a> (Nov 14/16): Specialized JavaScript Libraries
 This week we'll talk about a number of specialized JS libraries, including some used for games, and some used 
