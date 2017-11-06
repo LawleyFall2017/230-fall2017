@@ -214,8 +214,8 @@ This week we'll start using JavaScript to implement interactivity in websites.
 A great deal of the Javascript on the web uses a freely-available library of code called JQuery (which, in fact, was originally written by an RIT student!). This week we'll look at JQuery (and its sister library, jQueryUI), and learn how to use it in your web pages. 
 
 - **Tuesday Exercises**
-  - [Magnetic Poetry Exercise 1]: You'll learn how to write a magnetic poetry JavaScript app.
-  - [Magnetic Poetry Exercise 2]: You'll modify the app to use jQueryUI.
+  - [Magnetic Poetry Exercise 1](weekly_materials/week11/mag-poetry1.md): You'll learn how to write a magnetic poetry JavaScript app.
+  - [Magnetic Poetry Exercise 2](weekly_materials/week11/mag-poetry2.md): You'll modify the app to use jQueryUI.
 
 ## <a name="week12">Week 12</a> (Nov 14/16): Specialized JavaScript Libraries
 This week we'll talk about a number of specialized JS libraries, including some used for games, and some used 
