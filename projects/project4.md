@@ -71,10 +71,10 @@ GitHub README file updated with final project info | 1 |
 Landing page with well-designed interaction | 3 |
 Three full-screen interactive application/illustration pages ||
 \- Variations on a shared theme | 3 |
-\- Well-designed | 6 |
+\- Well-designed | 3 |
 \- Utilize rendered graphics | 3 |
 \- Utilize JavaScript for interactivity | 6 |
-\- "Above and Beyond" | 3 |
+\- "Above and Beyond" | 6 |
 Documentation page (integrated into site) | 3 |
 HTML validates | 1 |
 CSS validates | 1 |
