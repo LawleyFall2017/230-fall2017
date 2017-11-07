@@ -147,7 +147,7 @@ function positionWords(){
 	for (let word of allWords){
 		setPosition(word,wordLeft,wordTop);
 		let wordWidth = word.clientWidth;
-		wordLeft += wordWidth = wordSpacing;
+		wordLeft += wordWidth += wordSpacing;
 		if (wordLeft >= MAX_WORD_LEFT){
 			wordLeft = WORD_MARGIN;
 			wordTop += LINE_HEIGHT;
