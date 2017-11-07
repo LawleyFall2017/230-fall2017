@@ -40,26 +40,25 @@ In our original code, we changed the z-index of the word we were dragging, so th
 
 Once you have this working, open the Elements tab of the inspector, and look at how the attributes of the words change as you drag them. 
 
-
 ## Optional Challenge 1: Constrain the Title Words in Sidebar
-Using an option from the Draggable API, constrain the movement of the title words so that they can't be removed from the sidebar. 
+Using an option from the [jQuery Draggable API](http://api.jqueryui.com/draggable/), constrain the movement of the title words so that they can't be moved out of the sidebar. 
 
 (An even more difficult challenge would be to find a way to constrain the poetry words so that they can only be on the fridge or in the tray.) 
 
 ## Optional Challenge 2: Reading the Words from an Array
-Instead of putting the poetry words directly into your HTML, define them as an array in your script, and then add a function to loop through the array, create the `<p>` elements, and insert them into the DOM.
+Instead of putting a list of `<p>` elements containing the words directly into your HTML, include them as an array in your script. Then add a function to loop through the array, create the `<p>` elements, and insert them into the DOM.
 
-*If you use different words in your array, the same caveat from the last exercise applies: make sure you modify your code for the starting poem to only use words that are in your list. You should also remove any phrases or any words with punctuation.)*
+*If you use different words in your array, the same caveat from the last exercise applies: make sure you modify your code for the starting poem to only use words that are in your list. You should also remove any words or phrases with spaces or punctuation.*
 
 ## Submission
 Upload your revised file to banjo.rit.edu, and link to it from your class page. It must be submitted by 11:59pm on Wednesday, November 9. 
 
 ## Possible Enhancements
-There is quite a bit you could do with this app to make it a potential portfolio or final project piece. Here are a few ideas:
+You could enhance this app to make it a potential portfolio piece, or part of your final project. Here are a few ideas:
 - add a button that resets the board to its starting state
 - load new word sets with a `<select>` option
 - use images instead of words
-- save poems to local storage
+- save poems to local storage, and provide an option to reload them
 - share poems with a querystring URL
-- slightly rotate words when they're moved so they look more realistic (CSS transform/rotation)
-- allow users to add words (be careful here; never underestimate users' ability to make trouble when allowed to create content)
+- give words a slight random rotation when they're moved so they look more realistic (CSS transform/rotation)
+- allow users to add their own words (be careful with this, though; never underestimate users' ability to make trouble when allowed to create content)
