@@ -11,7 +11,7 @@
 
 
 ## Getting Started
-Download the magnetic-poetry-starter.zip file. It contains a magnetic-poetry.html file with your starting content, and a magnetic-poetry.css file with the CSS styles for the application. Open the magnetic-poetry.html file in Chrome. It should look like this: 
+Download the [magnetic-poetry-starter.zip](magnetic-poetry-starter.zip) file. It contains a magnetic-poetry.html file with your starting content, and a magnetic-poetry.css file with the CSS styles for the application. Open the magnetic-poetry.html file in Chrome. It should look like this: 
 
 ![Web Page](mag-poetry-starter.png)
 
