@@ -218,7 +218,7 @@ A great deal of the Javascript on the web uses a freely-available library of cod
   - [Magnetic Poetry Exercise 2](weekly_materials/week11/mag-poetry2.md): You'll modify the app to use jQueryUI.
 
 ## <a name="week12">Week 12</a> (Nov 14/16): Specialized JavaScript Libraries
-This week we'll talk about a number of specialized JS libraries, including some used for games, and some used 
+This week we'll talk about a number of specialized JS libraries, including some used for games. 
 
 
 ## <a name="week13">Week 13</a> (Nov 21): Web Accessibility
