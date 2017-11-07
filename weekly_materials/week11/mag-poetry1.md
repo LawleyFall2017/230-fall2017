@@ -19,21 +19,19 @@ Download the magnetic-poetry-starter.zip file. It contains a magnetic-poetry.htm
 ## Understanding the Page Structure and CSS
 Some things to note about the code: 
 
-1. The `#container` div, which will hold all of the app content, is set to 815px in width, and is centered on the page. It will be a little over 480-pixels high because of the elements inside it. It is also set to position: relative, but without any top or left offsets--so there is no change to the element's default position on the page. This is important, because when we use absolute positioning on elements within it, their position will be calculated based on the *nearest positioned ancestor*--which defaults to the body if no other element uses positioning. By assigning `position: relative` to the container, it replaces body as the context for positioning. 
+1. The `#container` div, which will hold all of the app content, is set to 815px in width, and is centered on the page using `margin: 0 auto`. It also has a `position: relative` rule. This is important, because when we use absolute positioning for the word tiles, the position will be calculated based on the *nearest positioned ancestor*. If no other element uses positioning, that will default to the body element. By assigning `position: relative` to the `#container` div, it becomes the nearest positioned ancester. But because we don't actually want to shift the location of the container (beyond centering it on the page), we haven't specified a top or left offsets, and there is no change to the its default position on the page.
 
-1. Note that the words are currently stacked on top of each other. This is because the class specifies `position: absolute`, but does not include `top` and `left` offsets--as a result, they're all positioned at "0,0" - the top-left of #container div, which, as noted above, is the *nearest positioned ancestor*.
+1. Note that the words are currently stacked on top of each other. This is because the `.word` class specifies `position: absolute`, but does not include `top` or `left` offsets--as a result, they're all positioned at "0,0" - which is the top left corner of their nearest positioned ancestor (the #container div).
 
 1. The `#fridge` element has a fixed width and height of 640x480px and is floated left. This is where the user will place their magnets.
 
 1. the `#sidebar` element has a fixed width and height of 160x480px and is floated right. This is where the title "tiles" are placed.
 
-If you'd like, you can modify the colors specified in the CSS to something you find more appealing - either now or when you have completed the exercise.
-
 
 ## Modifying the Content
 1. Currently  `#title4` and `#title5` read "Ace" and "Coder". Change these to your name.
 
-1. If necessary, modify the position and rotation and font-size of these tiles to keep the layout looking nice.
+1. If necessary, modify the position, rotation, and/or font-size of the name tiles to keep them contained within the sidebar.
 
 1. If you want to, you can change some words in the word list. (For some ideas, try https://magneticpoetry.com; they provide a word list pdf for all of their sets.) *If you do this, make sure you modify your code for the starting poem to use words that are in your list. You should also remove any phrases or any words with punctuation.* 
 
@@ -81,14 +79,12 @@ function getWord(text){
 }
 ```
 
-
 **Go ahead and open your page in Chrome, it should look like this ("gibber"--or the word that you selected--has now moved off of the stack of words in the corner) - if it doesn't, check the JavaScript console:**
 
 ![Web Page](mag-poetry-beginning.jpg)
 
 
 ## Completing the Starting Poem 
-
 Here is some code you can copy and paste into `setStartingPoem()`. This will position all 11 of the starting words. 
 
 ```javascript
@@ -112,7 +108,6 @@ setPosition(getWord("horror"),275,330);
 ![Web Page](mag-poetry-poem.jpg)
 
 ## Creating Block Variables and Constants
-
 Next we'll add variable that will be used to keep a reference to whatever word the user is currently attempting to drag, and  some useful constants we will need when we start positioning elements on the screen. Put these at the very top of your main block (before the window.onload function).
 
 ```javascript
@@ -129,7 +124,6 @@ const MAX_Z_INDEX = 1000;
 **Go ahead and reload the page, it should look the same. Check the JavaScript console to be absolutely sure there are no errors.**
 
 ## Organizing the Word Tiles
-
 Right now most of the words are still stuck in the upper-left corner of the screen. We'll fix that by laying them out in the "word tray" located just under the `#fridge`.
 
 Add the `positionWords` function to your script. It will lay out the words neatly at the bottom of the screen, and to set up the `mousedown` handlers that we will soon need.
@@ -181,7 +175,7 @@ These comments refer to the "See Note x" comments in the code.
 
 **Important - if your browser is having trouble seeing some of your block variables like `WORD_SPACING` etc, it could be a browser bug (Safari 11 seems to have this issue). To fix it, just delete the 2 top-level braces and put your whole app back into *Script Scope*, that seems to fix the issue on Safari.**
 
-### VII. Getting word dragging working
+## Implementing Word Dragging
 We're almost done - we just need to get the word dragging working by adding support for `mousemove` and `mouseup`. We previously put the `mousedown` handler on each word, but with these next two mouse methods, we need to attach them to the entire document, which makes 100% sense if you think about it for a little while (especially for `mousemove`).
 
 Create the setupDragging function, which will add mouse events to the document so that the user can drag words around. (Consult the notes below for explanations.)
@@ -224,12 +218,12 @@ Once you've set up both functions, call the `setupDragging()` function at the en
 
 **Reload the page - all the words should be nicely arranged as before. Dragging should now work.**
 
-#### A. Explanation
+#### Explanation
 - Note 1 above - in `document.onmousemove` we drag the word to the position of the mouse, and have to adjust our coordinates so that we always drag from the middle of the word, not the edge. Note that the **move cursor* that appears when we mouse over the words is done by our CSS.
 - Note 2 above - in `document.onmouseup` we clear out `selectedElement`, and make sure that the word we just selected is not at the highest z-index.
 - Note 3  above - in our `getMousePos()` helper function we are merely translating the window coordinates we get from the event handler to the equivalent #fridge coordinates. This just means we subtract the left and top values of `#fridge` from the numbers we get from the mouse event. **Example:** 10,10 in window coordinates is roughly 0,0 in `#fridge` coordinates.
 
-### Submission
+## Submission
 Upload your files to banjo.rit.edu, and link to them from your class page. They must be submitted by 11:59pm on Wednesday, November 9. 
 
 
