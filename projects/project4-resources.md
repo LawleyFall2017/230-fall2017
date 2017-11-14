@@ -15,7 +15,7 @@
   - [GreenSock Tutorials](https://greensock.com/learning)
 
 ### JavaScript Animation Libraries
-- [A Guide to the jQuery animate() method]A(https://www.sitepoint.com/guide-jquery-animate-method/)
+- [A Guide to the jQuery animate() method](https://www.sitepoint.com/guide-jquery-animate-method/)
 - [Animate.js](https://daneden.github.io/animate.css/)
 - [Anime.js](http://animejs.com/)
 - [Magic Animations](https://github.com/miniMAC/magic)
