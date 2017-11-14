@@ -6,7 +6,7 @@ This week you'll be planning for your final project, both in terms of content an
 ## Step 1: Define Your Content and Functional Requirements
 What are you going to make? Storyboard it, and think about what kind of functionality you'll need in order to implement it. 
 
-# Step 2: Set Up Your GitHub Repo
+## Step 2: Set Up Your GitHub Repo
 Create a repo for your project, which will include a README.md file describing what you're going to do. If it's a private repo, make sure you add me as a collaborator. If you're working with a partner, you should share a single repo. 
 
 ## Step 3: What JavaScript Will You Need to Implement Your Idea?
