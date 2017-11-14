@@ -220,8 +220,6 @@ A great deal of the Javascript on the web uses a freely-available library of cod
 ## <a name="week12">Week 12</a> (Nov 14/16): Specialized JavaScript Libraries
 This week we'll talk about a number of specialized JS libraries that give you the ability to create interactive graphics. You'll choose one of these to focus on this week, and will identify a tutorial for that library that you will complete for this week's exercise.  
 
-[Week 12 In-Class Exercise](weekly_materials/week12/jsLibraryExercise.md)
-
 ### General Articles
 - [A Comparison of Animation Technologies (CSS-Tricks)](https://css-tricks.com/comparison-animation-technologies/)
 
