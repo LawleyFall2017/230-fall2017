@@ -222,7 +222,6 @@ This week we'll talk about a number of specialized JS libraries that give you th
 
 ### General Articles
 - [A Comparison of Animation Technologies (CSS-Tricks)](https://css-tricks.com/comparison-animation-technologies/)
-
 -  Web Graphics Approaches (MDN Articles)
    - [Canvas](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)
    - [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG)
@@ -231,13 +230,11 @@ This week we'll talk about a number of specialized JS libraries that give you th
 
 ### HTML/CSS Animation
 - [GreenSock Animation Protocol (GSAP)](https://greensock.com/): Animation library for DOM elements (can also be used with with SVG and Canvas)
-
   - [GreenSock Tutorials](https://greensock.com/learning)
 
 
 ### SVG Libraries & Resources
 - [The Simple Intro to SVG Animation](https://davidwalsh.name/svg-animation)
-
 - [SVG.js](http://svgjs.com/): Lightweight library for manipulating and animating SVG
   - [SVG.js tutorials](http://svgjs.com/tutorials/)
   - [SVG.js YouTube tutorials](https://www.youtube.com/playlist?list=PLcTXcpndN-Skpwyr-tKbty69Oa2RY21wI)
@@ -251,7 +248,6 @@ This week we'll talk about a number of specialized JS libraries that give you th
 
 ### Canvas Tutorials and Libraries
 - [MDN Canvas Tutorial](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial)
-
 - [Anime.js](http://animejs.com/): JavaScript animation engine
   - [Anime.js YouTube tutorial](https://www.youtube.com/watch?v=g7WnZ9hxUak)
   - [Anime.js Demos](http://animejs.com/documentation/)
@@ -261,11 +257,9 @@ This week we'll talk about a number of specialized JS libraries that give you th
 
 ### Web GL Tutorials and Libraries
 - [MDN WebGL Tutorial](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Tutorial)
-
 - [PixiJS](http://www.pixijs.com/): 2D WebGL graphics rendering library, widely used for both games and interactive web graphics. 
   - [Learning PixiJS](https://github.com/kittykatattack/learningPixi)
   - [PixiJS Examples](http://pixijs.io/examples/#/basics/basic.js)
-
 - [Three.js](https://threejs.org/): 3D graphics library that can work with WebGL (GPU-based graphics), or Canvas or SVG (CPU-based graphics)
   - [Three.js Documentation](https://threejs.org/docs/index.html#manual/introduction/Creating-a-scene)
   - [Learning 3D Graphics on the Web with Three.js (Lynda.com)](https://www.lynda.com/JavaScript-tutorials/Learning-3D-Graphics-Web-Three-js/586668-2.html?org=rit.edu)
