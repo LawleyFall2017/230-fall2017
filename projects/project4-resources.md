@@ -16,14 +16,16 @@
 
 ### JavaScript Animation Libraries
 - [A Guide to the jQuery animate() method](https://www.sitepoint.com/guide-jquery-animate-method/)
-- [Animate.js](https://daneden.github.io/animate.css/)
 - [Anime.js](http://animejs.com/)
   - [Intro to Anime.js (video tutorial)](https://www.youtube.com/watch?v=g7WnZ9hxUak)
   - [Animating the DOM with Anime.js](https://www.sitepoint.com/animating-the-dom-with-anime-js/)
   - [How to Create A Favorite Animation with Anime.js](https://hackernoon.com/how-to-create-a-favorite-animation-with-anime-js-5f9ec02c80dd)
-- [Magic Animations](https://github.com/miniMAC/magic)
 - [Velocity.js](http://julian.com/research/velocity)
-
+  - [Silky Smooth Web Animation with Velocity.js](https://webdesign.tutsplus.com/tutorials/silky-smooth-web-animation-with-velocityjs--cms-24266)
+  - [Make Your Website Interactive and Fun with Velocity.js](https://www.sitepoint.com/how-to-use-velocity-js-without-jquery/)
+  - [Velocity.js Tutorial: Common Animation UI Patterns](https://magneticcreative.com/velocity-js-tutorial-common-animation-ui-patterns/)
+- [Magic Animations](https://github.com/miniMAC/magic)
+- [Animate.js](https://daneden.github.io/animate.css/)
 
 ## SVG Graphics
 
