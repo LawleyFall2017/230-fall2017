@@ -218,7 +218,7 @@ A great deal of the Javascript on the web uses a freely-available library of cod
   - [Magnetic Poetry Exercise 2](weekly_materials/week11/mag-poetry2.md): You'll modify the app to use jQueryUI.
 
 ## <a name="week12">Week 12</a> (Nov 14/16): Specialized JavaScript Libraries
-In the Project 4 Resource Page, I've provided links to a number of JS libraries that give you the ability to create interactive graphics, and tutorials for many of them. You'll be choosing one of them (or another JS library that you think will be more useful for your proposed project), and completing a tutorial or a demo page using it.  
+On the [Project 4 Resource Page](projects/project4-resources.md, I've provided links to a )number of JS libraries that give you the ability to create interactive graphics, and tutorials for many of them. You'll be choosing one of them (or another JS library that you think will be more useful for your proposed project), and completing a tutorial or a demo page using it.  
 
 [Week 12 Exercise](weekly_materials/week12/p4prepExercise.md) - This week's instructions and deliverables. 
 
