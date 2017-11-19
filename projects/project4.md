@@ -28,7 +28,7 @@ Before thinking about the technical aspects of your project, take some time to c
 Create a new GitHub repository for this project. Initialize a README file that includes the text of your proposal. If you will be working with a partner, create a single repo and add the other person as a collaborator. (I would prefer that you make the repo public, but if you feel strongly about making it private, make sure that you add me as a collaborator, as well.) 
 
 ### Submitting Your Proposal
-Submit your project proposal to the myCourses dropbox by 8am on 11:59pm on Sunday, November 19. If you are proposing to work with a partner, the proposal should include both of your names, and you should each submit a copy to myCourses.
+Submit your project proposal to the myCourses dropbox by 11:59pm on Sunday, November 19. If you are proposing to work with a partner, the proposal should include both of your names, and you should each submit a copy to myCourses.
 
 ## Final Project (Updated on GitHub and linked from your course page by 11:59 on Sunday, 10 December)
 
