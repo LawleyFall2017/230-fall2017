@@ -1,4 +1,4 @@
-# Week 4 Accessibility In-Class Exercise 
+# Week 13 Accessibility In-Class Exercise 
 
 ## Overview & Goals
 Today you're going to evaluate your own project 1 page, and an official RIT page of your choosing, using the web-based version of [WebAIM's Web Accessibility Evaluation Tool](http://wave.webaim.org/) or the [WebAIM WAVE Chrome extension](http://wave.webaim.org/extension/) keeping in mind the key issues discussed in today's lecture. 
