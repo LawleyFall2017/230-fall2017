@@ -19,4 +19,4 @@ Play with the library or libraries that you think will work best for your projec
 Post at least one example of a demo or completed tutorial to banjo for your exercise this week, no later than 11:59pm on Friday night. 
 
 ## Step 6: Finish Your Proposal
-Write up your content and technology plan in your README.md document. If you want your final project grade to replace the grade for projects 1 and 2, make sure you indicate that in your document. This is due by Sunday, 11/19, at 11:59pm.
+Write up your content and technology plan in your [project 4 proposoal](https://github.com/LawleyFall2017/230-fall2017/blob/master/projects/project4.md). If you want your final project grade to replace the grade for projects 1 and 2, make sure you indicate that in your document. This should be uploaded to the dropbox in myCourses by Sunday, 11/19, at 11:59pm. 
