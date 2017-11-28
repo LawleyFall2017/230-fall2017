@@ -218,53 +218,9 @@ A great deal of the Javascript on the web uses a freely-available library of cod
   - [Magnetic Poetry Exercise 2](weekly_materials/week11/mag-poetry2.md): You'll modify the app to use jQueryUI.
 
 ## <a name="week12">Week 12</a> (Nov 14/16): Specialized JavaScript Libraries
-This week we'll talk about a number of specialized JS libraries that give you the ability to create interactive graphics. You'll choose one of these to focus on this week, and will identify a tutorial for that library that you will complete for this week's exercise.  
+On the [Project 4 Resource Page](projects/project4-resources.md, I've provided links to a )number of JS libraries that give you the ability to create interactive graphics, and tutorials for many of them. You'll be choosing one of them (or another JS library that you think will be more useful for your proposed project), and completing a tutorial or a demo page using it.  
 
 [Week 12 Exercise](weekly_materials/week12/p4prepExercise.md) - This week's instructions and deliverables. 
-
-### General Articles
-- [A Comparison of Animation Technologies (CSS-Tricks)](https://css-tricks.com/comparison-animation-technologies/)
--  Web Graphics Approaches (MDN Articles)
-   - [Canvas](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)
-   - [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG)
-   - [WebGL](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API)
-
-
-### HTML/CSS Animation
-- [GreenSock Animation Protocol (GSAP)](https://greensock.com/): Animation library for DOM elements (can also be used with with SVG and Canvas)
-  - [GreenSock Tutorials](https://greensock.com/learning)
-
-
-### SVG Libraries & Resources
-- [The Simple Intro to SVG Animation](https://davidwalsh.name/svg-animation)
-- [SVG.js](http://svgjs.com/): Lightweight library for manipulating and animating SVG
-  - [SVG.js tutorials](http://svgjs.com/tutorials/)
-  - [SVG.js YouTube tutorials](https://www.youtube.com/playlist?list=PLcTXcpndN-Skpwyr-tKbty69Oa2RY21wI)
-- [Snap.svg](http://snapsvg.io/demos/):
- - [Bonsai](http://bonsaijs.org/): Lightweight JS graphics library with an SVG renderer.
-   - [Bonsai documentation](http://docs.bonsaijs.org/)
-   - [Bonsai examples](http://demos.bonsaijs.org/)
-- [d3.js](https://d3js.org/) - Data-driven visualization library using JS and SVG
-  - [d3 Tutorials](https://github.com/d3/d3/wiki/Tutorials)
-
-
-### Canvas Tutorials and Libraries
-- [MDN Canvas Tutorial](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial)
-- [Anime.js](http://animejs.com/): JavaScript animation engine
-  - [Anime.js YouTube tutorial](https://www.youtube.com/watch?v=g7WnZ9hxUak)
-  - [Anime.js Demos](http://animejs.com/documentation/)
-- [Paper.js](http://paperjs.org/): Open source vector graphics scripting framework that runs on top of the HTML5 Canvas.
-  - [Paper.js Tutorials](http://paperjs.org/tutorials/)
-
-
-### Web GL Tutorials and Libraries
-- [MDN WebGL Tutorial](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Tutorial)
-- [PixiJS](http://www.pixijs.com/): 2D WebGL graphics rendering library, widely used for both games and interactive web graphics. 
-  - [Learning PixiJS](https://github.com/kittykatattack/learningPixi)
-  - [PixiJS Examples](http://pixijs.io/examples/#/basics/basic.js)
-- [Three.js](https://threejs.org/): 3D graphics library that can work with WebGL (GPU-based graphics), or Canvas or SVG (CPU-based graphics)
-  - [Three.js Documentation](https://threejs.org/docs/index.html#manual/introduction/Creating-a-scene)
-  - [Learning 3D Graphics on the Web with Three.js (Lynda.com)](https://www.lynda.com/JavaScript-tutorials/Learning-3D-Graphics-Web-Three-js/586668-2.html?org=rit.edu)
 
 ## <a name="week13">Week 13</a> (Nov 21): Web Accessibility
 On Thursday we'll talk about accessibility for the web, and I'll have you do some accessibility assessments of web pages. 

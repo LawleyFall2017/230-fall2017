@@ -19,4 +19,4 @@ Complete a tutorial or create some demo pages using the library that you think w
 Post at least one example of a new javascript library demo or completed tutorial to banjo for your exercise this week, no later than 11:59pm on Friday night, and link to it from your main class page. Include an explanation of what you chose and why (either on the example/demo/tutorial itself, or next to the link to it from your main class page).  
 
 ## Step 6: Finish Your Proposal
-Write up your content and technology plan in your README.md document. If you want your final project grade to replace the grade for projects 1 and 2, make sure you indicate that in your document. This is due by Sunday, 11/19, at 11:59pm.
+Write up your content and technology plan in your [project 4 proposoal](https://github.com/LawleyFall2017/230-fall2017/blob/master/projects/project4.md). If you want your final project grade to replace the grade for projects 1 and 2, make sure you indicate that in your document. This should be uploaded to the dropbox in myCourses by Sunday, 11/19, at 11:59pm. 

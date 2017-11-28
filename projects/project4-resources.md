@@ -15,12 +15,17 @@
   - [GreenSock Tutorials](https://greensock.com/learning)
 
 ### JavaScript Animation Libraries
-- [A Guide to the jQuery animate() method]A(https://www.sitepoint.com/guide-jquery-animate-method/)
-- [Animate.js](https://daneden.github.io/animate.css/)
+- [A Guide to the jQuery animate() method](https://www.sitepoint.com/guide-jquery-animate-method/)
 - [Anime.js](http://animejs.com/)
-- [Magic Animations](https://github.com/miniMAC/magic)
+  - [Intro to Anime.js (video tutorial)](https://www.youtube.com/watch?v=g7WnZ9hxUak)
+  - [Animating the DOM with Anime.js](https://www.sitepoint.com/animating-the-dom-with-anime-js/)
+  - [How to Create A Favorite Animation with Anime.js](https://hackernoon.com/how-to-create-a-favorite-animation-with-anime-js-5f9ec02c80dd)
 - [Velocity.js](http://julian.com/research/velocity)
-
+  - [Silky Smooth Web Animation with Velocity.js](https://webdesign.tutsplus.com/tutorials/silky-smooth-web-animation-with-velocityjs--cms-24266)
+  - [Make Your Website Interactive and Fun with Velocity.js](https://www.sitepoint.com/how-to-use-velocity-js-without-jquery/)
+  - [Velocity.js Tutorial: Common Animation UI Patterns](https://magneticcreative.com/velocity-js-tutorial-common-animation-ui-patterns/)
+- [Magic Animations](https://github.com/miniMAC/magic)
+- [Animate.js](https://daneden.github.io/animate.css/)
 
 ## SVG Graphics
 
@@ -44,8 +49,9 @@
 - [SVG.js](http://svgjs.com/): Lightweight library for manipulating and animating SVG
   - [SVG.js tutorials](http://svgjs.com/tutorials/)
   - [SVG.js YouTube tutorials](https://www.youtube.com/playlist?list=PLcTXcpndN-Skpwyr-tKbty69Oa2RY21wI)
-- [Snap.svg](http://snapsvg.io/demos/):
- - [Bonsai](http://bonsaijs.org/): Lightweight JS graphics library with an SVG renderer.
+- [Snap.svg](http://snapsvg.io/)
+  - [Snap.svg tutorial](http://svg.dabbles.info/)
+- [Bonsai](http://bonsaijs.org/): Lightweight JS graphics library with an SVG renderer.
    - [Bonsai documentation](http://docs.bonsaijs.org/)
    - [Bonsai examples](http://demos.bonsaijs.org/)
 - [d3.js](https://d3js.org/) - Data-driven visualization library using JS and SVG
