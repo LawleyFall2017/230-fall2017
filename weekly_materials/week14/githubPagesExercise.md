@@ -35,3 +35,6 @@ If you go to the GitHub Pages URL for the site, http://mamamusings.github.io/wee
 
 ## Deliverables for Today
 Add a link to your main class page for your personal GitHub Pages site, and your week14project site. 
+
+## When You're Done...
+I doubt this will take the full class period for you to complete. Use the remaining time to work on either the practice practical, or project 4. 
