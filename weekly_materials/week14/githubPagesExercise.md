@@ -31,7 +31,7 @@ Because the hosting provider for my lawley.net site provides a DNS Zone editor a
 
 The actual repository can be seen at https://github.com/mamamusings/week14project. In addition to  a README.md file and an index.html file, it also has a CNAME file--that was created when I added the custom domain information to the GitHub Pages settings for the repository. 
 
-If you go to the GitHub Pages URL for the site, http://mamamusings.github.io/week14project, you'll see that the location changes to http://week14project.lawley.net/. 
+As a result, if you go to the GitHub Pages URL for the site, http://mamamusings.github.io/week14project, you'll see that the location changes to http://week14project.lawley.net/. 
 
 ## Deliverables for Today
 Add a link to your main class page for your personal GitHub Pages site, and your week14project site. 
