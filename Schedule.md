@@ -234,6 +234,12 @@ On Thursday we'll talk about accessibility for the web, and I'll have you do som
 ## <a name="week14">Week 14</a> (Nov 28/30): Web Content Management & Hosting Environments
 While this course focuses primarily on front-end web development, almost all modern web development depends on server-side functionality as well. In some cases, that functionality is custom-designed and built--but in many other cases, it's provided by standard software packages that run on the server, like WordPress or Drupal. We'll also discuss the variety of hosting options available for web pages and applications. 
 
+- **Tuesday Resources**
+  - [MDN: Publishing Your Website](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Publishing_your_website)
+  - [GitHub Pages](https://pages.github.com/)
+  - [PC Magazine: Best Web Hosting Services of 2017](https://www.pcmag.com/article2/0,2817,2424725,00.asp)
+
+
 ## <a name="week15">Week 15</a> (Dec 5/7): Server-Side Coding & Practical Exam
 On Tuesday we'll talk about server-side authentication and simple server-side programming using PHP. On Thursday, you'll take the practical exam. 
 
