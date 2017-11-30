@@ -242,10 +242,10 @@ While this course focuses primarily on front-end web development, almost all mod
 - **[Thursday Exercise](weekly_materials/week14/githubPagesExercise.md)**: You'll be creating personal and project based GitHub Pages sites. 
 
 
-## <a name="week15">Week 15</a> (Dec 5/7): Server-Side Coding & Practical Exam
+## <a name="week15">Week 15</a> (Dec 5/7): .htaccess Authentication, Simple Server-Side Coding & Practical Exam
 On Tuesday we'll talk about server-side authentication and simple server-side programming using PHP. On Thursday, you'll take the practical exam. 
 
-- **[Tuesday Exercise](weekly_materials/week15/phpAndAuthExercise.md)**: Basic PHP functions
+- **[Tuesday Exercise](weekly_materials/week15/phpAndAuthExercise.md)**: .htaccess Authentication & Basic PHP functions
 
 - **[Optional Exercise](weekly_materials/week15/phpEmailExercise.md): Creating a Contact Form with a PHP Script**: I've created an *optional* exercise that teaches you how to make a working contact form for your site that generates an email message. This will not be graded, nor will it be on the practical exam, but it's a useful thing to know how to do. 
 
