@@ -15,7 +15,7 @@
 - [Week 12 (Nov 14/16): Specialized JavaScript Libraries](#week12)
 - [Week 13 (Nov 21): Web Accessibility](#week13)
 - [Week 14 (Nov 28/30): Web Content Management & Hosting Environments](#week14)
-- [Week 15 (Dec 5/7): Basic PHP & Practical Exam](#week15)
+- [Week 15 (Dec 5/7): .htacces Authentication, Basic PHP & Practical Exam](#week15)
 - [Finals Week: Makeup Practical Exam](#finals)
 
 ## <a name="week1">Week 1</a> (Aug 29/31): Overview: Syllabus, Expectations, Tools
