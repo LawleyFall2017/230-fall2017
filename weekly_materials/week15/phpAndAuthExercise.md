@@ -11,9 +11,9 @@ Some useful resources on PHP:
 
 ## Using .htaccess for Authentication
 
-On Tuesday, we looked at how .htaccess files can be used to modify the way a webserver treats content in your directory. Today, you're going to use it to restrict access to content in a directory. 
+Back in week 3, we looked at how [.htaccess files can be used to modify the way a webserver treats content in your directory](weekly_materials/week3/htaccessExercise.md). Today, you're going to use it to restrict access to content in a directory. 
 
-RIT makes it possible for you access the main user authentication system ("Shibboleth") in order to restrict web access to authorized users. You can use your .htaccess file to restrict access to *all* valid RIT users, or you can limit access to specific users. (Keep in mind that while you restrict access via the webserver using .htaccess, you cannot prevent other RIT users from logging into banjo.rit.edu and viewing the code of your files.)
+RIT makes it possible for you access the university's authentication system ("Shibboleth") in order to restrict web access to authorized users. You can use your .htaccess file to restrict access to *all* valid RIT users, or you can limit access to specific users. (Keep in mind that while you restrict access via the webserver using .htaccess, you cannot prevent other RIT users from logging into banjo.rit.edu and viewing the code of your files.)
 
 To restrict access in a directory to any RIT user, you'll need to place these instructions in your .htaccess file:
 
