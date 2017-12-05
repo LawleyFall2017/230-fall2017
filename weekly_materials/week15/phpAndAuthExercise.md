@@ -26,9 +26,9 @@ require valid-user
 
 The first line of the file tells the server what type of authentication is being used. The second specifies that a "session" needs to be created, which will keep track of your login status. (This means your "logged in" status will persist until you quit the browser.) The third requires the browser to use a secure connection to the server, so that your login credentials are encrypted. And the last line says that *any* user who can login to the RIT server can acccess your pages. 
 
-If you already have an .htaccess file in your week14 directory, you can add those lines to the existing file. If you don't have an .htaccess file in the week14 directory, you should create one for this exercise. *Do ***not*** try to modify the .htaccess file in your www or igme230 directory, unless you're 100% sure you've got it working properly--if you get it wrong, you will lock me out of your files, guaranteeing a zero on this assignment (and on anything else you submit until you've fixed it).*
+Create a new week15 directory in your igme230 directory for this exercise. *Do ***not*** try to modify the .htaccess file in your www or igme230 directory, unless you're 100% sure you've got it working properly--if you get it wrong, you will lock me out of your files, guaranteeing a zero on this assignment (and on anything else you submit until you've fixed it).*
 
-Upload the .htaccess file with the authentication instructions to your week14 directory. Make sure the permissions are set properly (644). Open a private browsing tab in your browser, so that any current authentication tokens you have on the computer don't affect how the page works, and go to the week14 directory. You should be prompted for your RIT user name and password, and after entering them properly, you should be able to view any files in the week14 directory. 
+Upload the .htaccess file with the authentication instructions to your week15 directory. Make sure the permissions are set properly (644). Open a private browsing tab in your browser, so that any current authentication tokens you have on the computer don't affect how the page works, and go to the week14 directory. You should be prompted for your RIT user name and password, and after entering them properly, you should be able to view any files in the week14 directory. 
 
 To restrict access to a specific user (or list of users), you would replace the last line with this, replacing the xyz1234 and abc6798 with the user ID (or IDs) that you want to provide access to.
 
@@ -91,7 +91,7 @@ echo " server.</p>";
 
 While this is also an echo command, it's outputting the value of a global PHP variable rather than a text string. PHP has a set of "super globals," one of which is the `$_SERVER array`. (You can see all of the elements of that array in the [$_SERVER documentation on the PHP website](http://php.net/manual/en/reserved.variables.server.php).
 
-Upload the edited file to your week14 directory on banjo, and load it in a browser--the server variable should have been replaced with "people.rit.edu". 
+Upload the edited file to your week15 directory on banjo, and load it in a browser--the server variable should have been replaced with "people.rit.edu". 
 
 ## Using Built-In PHP Functions
 
@@ -115,4 +115,4 @@ Once you've got that working, add some text strings before and after it (as we d
 
 
 ## Due Date
-The finished exercise should be a file called hello.php in your week14 folder, which is protected by RIT authentication, and displays server name as well as the current date and time.
+The finished exercise should be a file called hello.php in your week15 folder, which is protected by RIT authentication, and displays server name as well as the current date and time.
