@@ -28,7 +28,7 @@ The first line of the file tells the server what type of authentication is being
 
 Create a new week15 directory in your igme230 directory for this exercise. *Do ***not*** try to modify the .htaccess file in your www or igme230 directory, unless you're 100% sure you've got it working properly--if you get it wrong, you will lock me out of your files, guaranteeing a zero on this assignment (and on anything else you submit until you've fixed it).*
 
-Upload the .htaccess file with the authentication instructions to your week15 directory. Make sure the permissions are set properly (644). Open a private browsing tab in your browser, so that any current authentication tokens you have on the computer don't affect how the page works, and go to the week14 directory. You should be prompted for your RIT user name and password, and after entering them properly, you should be able to view any files in the week14 directory. 
+Upload the .htaccess file with the authentication instructions to your week15 directory. Make sure the permissions are set properly (644). Open a private browsing tab in your browser, so that any current authentication tokens you have on the computer don't affect how the page works, and go to the week15 directory. You should be prompted for your RIT user name and password, and after entering them properly, you should be able to view any files in the week15 directory. 
 
 To restrict access to a specific user (or list of users), you would replace the last line with this, replacing the xyz1234 and abc6798 with the user ID (or IDs) that you want to provide access to.
 
@@ -43,7 +43,7 @@ Make sure this is working properly before going on to the next part of the exerc
 
 In class this week we talked about server-side programming, and how it can be used to have the server dynamically insert content into a page before sending the page to the browser. Today you're going to create two very simple pages using the PHP programming language, so that you can see server-side programming in action. 
 
-Create a file in your week14 directory called hello.php. (By giving the file the .php extension, you are telling both your code editor and the web server that this file contains php code.) 
+Create a file in your week15 directory called hello.php. (By giving the file the .php extension, you are telling both your code editor and the web server that this file contains php code.) 
 
 Start with this basic HTML file: 
 ```html
@@ -73,7 +73,7 @@ Save the file, and view it locally in a browser. You shouldn't see anything on t
 
 In order for the PHP code to execute, the page has to be parsed by the server's PHP processor. 
 
-Upload the file to your week14 directory, and load it from there. You should see the Hello, World! text below the heading now. View the source of the page--your php code has been processed by the server, and replaced with the output of the command. 
+Upload the file to your week15 directory, and load it from there. You should see the Hello, World! text below the heading now. View the source of the page--your php code has been processed by the server, and replaced with the output of the command. 
 
 ## Retrieving Server Variables with PHP
 
