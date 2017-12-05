@@ -56,7 +56,7 @@ All of your project files should be maintained in the GitHub repository you crea
 - To get the "above and beyond" points, you must do something more than replicate the functionality from in-class exercises, or from online demos/tutorials. 
 
 ## Submitting Your Project
-You must have your completed project *and* your GitHub repository linked from your main class website by 11:59pm on Thursday, 11/14. If you worked with a partner, you both must have links to the project and repo in order to receive credit. I suggest (but don't require) that you each upload your own copy of the working project to your own account, or use GitHub pages, so that you can use it as a portfolio piece. 
+You must have your completed project *and* your GitHub repository linked from your main class website by 11:59pm on Thursday, 12/14. If you worked with a partner, you both must have links to the project and repo in order to receive credit. I suggest (but don't require) that you each upload your own copy of the working project to your own account, or use GitHub pages, so that you can use it as a portfolio piece. 
 
 ## Grading
 Component | Points (40) |
