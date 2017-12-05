@@ -30,7 +30,7 @@ Create a new GitHub repository for this project. Initialize a README file that i
 ### Submitting Your Proposal
 Submit your project proposal to the myCourses dropbox by 8am on 11:59pm on Sunday, November 19. If you are proposing to work with a partner, the proposal should include both of your names, and you should each submit a copy to myCourses.
 
-## Final Project (Updated on GitHub and linked from your course page by 11:59 on Sunday, 10 December)
+## Final Project (Updated on GitHub and linked from your course page by 11:59 on Thursday, 14 December)
 
 ### Three Interactive Applications or Visualizations
 Each of the pages should have content that is designed to fill the browser window, and includes at least one raster or vector graphic that is rendered in the browser (such as SVG, the HTML canvas, or even CSS-based shapes). While you can use CSS animations and/or transitions, you must also use JavaScript for some form of interactivity. To get "above and beyond" points you will need to implement a JavaScript library beyond jQuery/jQueryUI. 
@@ -56,7 +56,7 @@ All of your project files should be maintained in the GitHub repository you crea
 - To get the "above and beyond" points, you must do something more than replicate the functionality from in-class exercises, or from online demos/tutorials. 
 
 ## Submitting Your Project
-You must have your completed project *and* your GitHub repository linked from your main class website by 10:30am on May 16 (our scheduled final exam time). If you worked with a partner, you both must have links to the project and repo in order to receive credit. 
+You must have your completed project *and* your GitHub repository linked from your main class website by 11:59pm on Thursday, 11/14. If you worked with a partner, you both must have links to the project and repo in order to receive credit. I suggest (but don't require) that you each upload your own copy of the working project to your own account, or use GitHub pages, so that you can use it as a portfolio piece. 
 
 ## Grading
 Component | Points (40) |
