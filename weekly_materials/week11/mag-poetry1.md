@@ -157,8 +157,12 @@ function positionWords(){
 
 	// See Note 4
 	document.querySelector("#title1").onmousedown=doMousedown;
-	document.querySelector("#title2").onmousedown=doMousedown;	document.querySelector("#title3").onmousedown=doMousedown;	document.querySelector("#title4").onmousedown=doMousedown;	document.querySelector("#title5").onmousedown=doMousedown;}
+	document.querySelector("#title2").onmousedown=doMousedown;
+	document.querySelector("#title3").onmousedown=doMousedown;
+	document.querySelector("#title4").onmousedown=doMousedown;
+	document.querySelector("#title5").onmousedown=doMousedown;
 }
+
 ```
 Call the `positionWords()` function at the top of the `window.onload` callback function. (Make sure it's the first instruction in the function.)
 
